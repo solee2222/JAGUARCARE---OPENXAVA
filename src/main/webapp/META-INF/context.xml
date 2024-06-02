@@ -59,9 +59,9 @@
 	<Resource name="jdbc/CLINICA" auth="Container"
 			  type="javax.sql.DataSource"
 			  maxTotal="100" maxIdle="20" maxWaitMillis="10000"
-			  username="Usuario" password="123"
+			  username="Usuario" password="1234"
 			  driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
-			  url="jdbc:sqlserver://localhost:1433;databaseName=OpenXavaProjectdb;user=Usuario;password=123;encrypt=true;trustServerCertificate=true"/>
+			  url="jdbc:sqlserver://localhost:1433;databaseName=OpenXavaProjectdb;trustServerCertificate=true;"/>
 
 	
 	<!-- Informix

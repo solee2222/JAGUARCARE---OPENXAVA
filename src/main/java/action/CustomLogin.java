@@ -24,7 +24,7 @@ public class CustomLogin extends ForwardToOriginalURIBaseAction {
 		
 		IDAO dao = new ImplDAO();
 		List<Recepcionista> lista = new ArrayList<>();
-		lista = dao.get("Usuario.findByPassword",Recepcionista.class,userName, password);
+		lista = dao.get("Recepcionista.findByPassword",Recepcionista.class,userName, password);
 		if (lista == null || lista.isEmpty() || lista.size() == 0) {
 			addError("Usuario No Autorizado"); 
 			return;
