@@ -14,9 +14,9 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(members="usuario;"
-		+ "anyo,numero;"
-		+ "horaEntrada,horaSalida,date;"
+@View(members="recepcionista;"
+		+ "anyo, numero;"
+		+ "horaEntrada, horaSalida, date;"
 		+ "visitante;")
 
 public class Visita extends Identificable{
