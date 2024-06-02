@@ -14,10 +14,16 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(members="recepcionista;"
-		+ "anyo, numero;"
-		+ "horaEntrada, horaSalida, date;"
-		+ "visitante;")
+
+@View(members = "recepcionista;"
+        + "anyo, numero;"
+        + "horaEntrada, horaSalida, date;"
+        + "visitante;"
+        + "sintomatologia;"
+        + "destino;"
+        + "diagnostico;"
+        + "medicamentos;"
+        + "cantidadDispensada;")
 
 public class Visita extends Identificable{
 	
@@ -53,16 +59,16 @@ public class Visita extends Identificable{
     private Visitante visitante;
 
 	@ManyToOne(fetch=FetchType.LAZY, optional = true)
-	@DescriptionsList(descriptionProperties = "descripcion")
+	@DescriptionsList(descriptionProperties = "nombre")
 	private Sintomatologia sintomatologia; 
 	     
-
 	@Enumerated(EnumType.STRING)
 	private Destino destino;
 	    
 	private String diagnostico;
 	    
 	@ManyToMany(fetch=FetchType.LAZY)
+	@ListProperties("nombreComercial, dosis, presentacion, cantidadDisponible")
 	private List<Medicamento> medicamentos;
 	    
 	private Integer cantidadDispensada;

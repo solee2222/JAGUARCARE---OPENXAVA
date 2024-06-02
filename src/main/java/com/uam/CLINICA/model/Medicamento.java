@@ -16,8 +16,9 @@ import lombok.*;
 	@NamedQuery(name="Medicamento.findByNombre",query="select e from Medicamento e where e.nombre like ?1")
 })*/
 
-@View(name="Simple", members="nombre,nombreGenerico;"
-		+ "cantidadExistencia;")
+@Views({
+    @View(name="VistaVisita", members="nombreComercial, dosis, presentacion, cantidadDisponible")
+})
 public class Medicamento extends Identificable{
 	
 /*	@Id
