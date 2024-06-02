@@ -16,11 +16,24 @@ import lombok.*;
 
 public class Recepcionista{
 
-    @Id
+   
+	@Id
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid") //Universally unique identifier
+	@Column(length=10)
+    @Hidden
+    private String idRecepcionista;
+	
+	
+    @Column(length = 50)
     String Cedula;
+    
     @Column(length=50)
     String name;
+    
+    @Hidden
     String password;
+
 
 
 }
