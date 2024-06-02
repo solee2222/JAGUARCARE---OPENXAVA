@@ -1,5 +1,7 @@
 package com.uam.CLINICA.model;
 
+import java.util.*;
+
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
@@ -10,9 +12,9 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@NamedQueries({
+/*@NamedQueries({
 	@NamedQuery(name="Medicamento.findByNombre",query="select e from Medicamento e where e.nombre like ?1")
-})
+})*/
 
 @View(name="Simple", members="nombre,nombreGenerico;"
 		+ "cantidadExistencia;")
@@ -29,16 +31,28 @@ public class Medicamento{
 	private String id;
 	
 	@PropertyValidator(value= ValidadorMed.class)
-	private String nombre;
-	
-	private String nombreGenerico;
+	private String nombreComercial;
+	@Column
+    private String nombreGenerico;
+    @Column
+    private String dosis;
     
-	private Integer cantidadExistencia;
+    @Enumerated(EnumType.STRING)
+    private PresentacionMedicamento presentacion;
+    @Column
+	private String lote;
+    @Column
+    private Date vencimiento;
+    @Column
+    private String indicaciones;
+    @Column
+    private Integer cantidadDisponible;
+
+	@Column
+	private Integer cantidadMinima;
 	
-/*	@ManyToOne(fetch = FetchType.LAZY)
-    @ReferenceView("Simple")
-    @NoFrame
-    @ReadOnly
-    private CompraValidator compraValidator;*/
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "visita_id")
+    private Visita visita;
 
 }

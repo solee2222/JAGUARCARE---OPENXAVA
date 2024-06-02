@@ -1,7 +1,5 @@
 package com.uam.CLINICA.model;
 
-import java.util.*;
-
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
@@ -23,16 +21,16 @@ public class Visitante extends Identificable{
 	@Column(length=25)
 	private String primerApellido;
 	
-	@ElementCollection
-	@ListProperties("identificadorPais,numeroTelefono")
-	private Collection<Telefono> telefonos;
-	
-	@ManyToOne
-    @DescriptionsList
+	@Enumerated(EnumType.STRING)
     private Carrera carrera;
+    
+    @Enumerated(EnumType.STRING)
+    private TipoVisitante tipo;
+
+    private String telefono;
 	
-	@OneToMany(mappedBy="visitante")
+	/*@OneToMany(mappedBy="visitante")
 	@ListProperties("numero,date,receta.diagnostico,receta.sintomatologia.nombre,receta.medicamento.nombre,receta.cantidad")
-	Collection<Visita> visitas;
+	Collection<Visita> visitas;*/
 	
 }

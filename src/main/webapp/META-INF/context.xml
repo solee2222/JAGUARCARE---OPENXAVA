@@ -61,7 +61,7 @@
 			  maxTotal="100" maxIdle="20" maxWaitMillis="10000"
 			  username="Usuario" password="123"
 			  driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
-			  url="jdbc:sqlserver://localhost:1433;databaseName=OpenXavaProjectdbss;user=Usuario;password=123;encrypt=true;trustServerCertificate=true"/>
+			  url="jdbc:sqlserver://localhost:1433;databaseName=OpenXavaProjectdb;user=Usuario;password=123;encrypt=true;trustServerCertificate=true"/>
 
 	
 	<!-- Informix

@@ -1,7 +1,5 @@
 package com.uam.CLINICA.model;
 
-import java.util.*;
-
 import javax.persistence.*;
 import javax.persistence.Entity;
 
@@ -43,12 +41,9 @@ public class Inventario{
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = true)
 	@ReferenceView("Simple")
-	private Medicamento medicamento;
+	private Medicamento medicamentoComprado;
     
-    @ElementCollection
-    @ListProperties("medicamento.nombre,cantidad,lote,vencimiento,presentacion,proveedor.nombre")
-    private Collection<Compra> compra;
-    
+	private Integer cantidadComprada; 
     
 	
 }

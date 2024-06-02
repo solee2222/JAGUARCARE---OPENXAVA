@@ -1,6 +1,7 @@
 package com.uam.CLINICA.model;
 
 import java.time.*;
+import java.util.*;
 
 import javax.persistence.*;
 
@@ -16,8 +17,7 @@ import lombok.*;
 @View(members="usuario;"
 		+ "anyo,numero;"
 		+ "horaEntrada,horaSalida,date;"
-		+ "visitante;"
-		+ "receta;")
+		+ "visitante;")
 
 public class Visita extends Identificable{
 	
@@ -34,7 +34,7 @@ public class Visita extends Identificable{
 	@ManyToOne(fetch = FetchType.LAZY,
 			optional = false)
 	@DescriptionsList
-    private Usuario usuario;
+    private Recepcionista recepcionista;
 	
 	@Column(length=10)
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
@@ -51,12 +51,22 @@ public class Visita extends Identificable{
 	@ManyToOne(fetch = FetchType.LAZY)
 	@ReferenceView("Simple")
     private Visitante visitante;
-	
-	@ManyToOne(fetch = FetchType.LAZY,
-			optional = false)
-	@ReferenceView("Simple")
-	private Receta receta;
-	
+
+	@ManyToOne(fetch=FetchType.LAZY, optional = true)
+	@DescriptionsList(descriptionProperties = "descripcion")
+	private Sintomatologia sintomatologia; 
+	     
+
+	@Enumerated(EnumType.STRING)
+	private Destino destino;
+	    
+	private String diagnostico;
+	    
+	@ManyToMany(fetch=FetchType.LAZY)
+	private List<Medicamento> medicamentos;
+	    
+	private Integer cantidadDispensada;
+	    
 	@PrePersist
 	@PreUpdate
 	private void validarHoras() throws Exception {

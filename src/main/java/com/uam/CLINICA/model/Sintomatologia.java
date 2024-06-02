@@ -1,7 +1,5 @@
 package com.uam.CLINICA.model;
 
-import java.util.*;
-
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
@@ -15,10 +13,10 @@ import lombok.*;
 @Getter
 @Setter
 
-@NamedQueries({
+/*@NamedQueries({
 	
 	@NamedQuery(name="Sintomatologia.findByNombre",query="select e from Sintomatologia e where e.nombre like ?1")
-})
+})*/
 
 public class Sintomatologia extends Identificable{
 
@@ -26,8 +24,7 @@ public class Sintomatologia extends Identificable{
 	@Required
 	private String nombre;
 	
-	@OneToMany(mappedBy="sintomatologia")
-	@ListProperties("numero,medicamento.nombre,cantidad,diagnostico")
-	Collection<Receta> recetas;	
+    @Column(length=50)
+    String descripcion;
 
 }

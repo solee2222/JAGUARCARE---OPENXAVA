@@ -22,7 +22,7 @@
     	<class>com.openxava.naviox.model.SSORecord</class>
     	<class>com.openxava.naviox.model.User</class>
         <properties>
-            <property name="javax.persistence.schema-generation.database.action" value="update"/>
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
         </properties>
     </persistence-unit>
                     
@@ -41,7 +41,7 @@
     	<class>com.openxava.naviox.model.SSORecord</class>
     	<class>com.openxava.naviox.model.User</class>
         <properties>
-			<property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;databaseName=OpenXavaProjectdbss"/>
+			<property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;databaseName=OpenXavaProjectdb"/>
         </properties>
     </persistence-unit>    
     
