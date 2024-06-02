@@ -23,8 +23,5 @@ public class Sintomatologia extends Identificable{
 	@PropertyValidator(value = ValidadorSintoma.class)
 	@Required
 	private String nombre;
-	
-    @Column(length=50)
-    String descripcion;
 
 }

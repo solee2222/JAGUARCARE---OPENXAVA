@@ -1,6 +1,12 @@
 package com.uam.CLINICA.model;
 
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+
+import org.hibernate.annotations.*;
+import org.openxava.annotations.*;
 
 import lombok.*;
 
@@ -16,7 +22,6 @@ import lombok.*;
 
 public class Recepcionista{
 
-   
 	@Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid") //Universally unique identifier
