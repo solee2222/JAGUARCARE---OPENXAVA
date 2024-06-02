@@ -7,16 +7,14 @@ import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 import org.openxava.calculators.*;
 
-import com.uam.CLINICA.Calculadores.*;
-
 import lombok.*;
 
 @Entity
 @Getter @Setter
 @View(members=
-			"anyo, numero;"
-			+ "medicamento;"
-		+ "compra;")
+	"anyo, " + 
+	"medicamentoComprado, " +
+	"cantidadComprada;")
 
 public class Inventario{
 	
@@ -32,16 +30,8 @@ public class Inventario{
 	@DefaultValueCalculator(CurrentYearCalculator.class)
 	int anyo;
 	
-	@Column(length=6)
-	@DefaultValueCalculator(value=SiguienteNumeroInventario.class,
-	properties=@PropertyValue(name="anyo"))
-	@ReadOnly
-	int numero;
-	
-	@ManyToOne(fetch = FetchType.LAZY,
-			optional = true)
-	@ReferenceView("Simple")
-	private Medicamento medicamentoComprado;
+	@ManyToOne(fetch = FetchType.LAZY)
+    private Medicamento medicamentoComprado; 
     
 	private Integer cantidadComprada; 
     

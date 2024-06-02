@@ -51,8 +51,8 @@ public class Medicamento{
 	@Column
 	private Integer cantidadMinima;
 	
-    @ManyToOne(fetch = FetchType.LAZY)
+    /*@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "visita_id")
-    private Visita visita;
+    private Visita visita;*/
 
 }
