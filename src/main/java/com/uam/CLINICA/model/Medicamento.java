@@ -50,6 +50,19 @@ public class Medicamento extends Identificable{
 	@Column
 	private Integer cantidadMinima;
 	
+	
+	@PrePersist
+    @PreUpdate
+    private void verificarCantidadMinima() {
+        if (cantidadDisponible != null && cantidadMinima != null) {
+            if (cantidadDisponible <= cantidadMinima) {
+                throw new javax.validation.ValidationException(
+                        "La cantidad disponible de '" + nombreComercial + "' está cerca o por debajo de la cantidad mínima."
+                );
+            }
+        }
+    }
+	
     /*@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "visita_id")
     private Visita visita;*/

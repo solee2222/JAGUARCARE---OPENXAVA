@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Hoja_Identificacion_Usuarios" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="56cc173c-2229-4989-8766-b9fdee6d4766">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="establecimientoSalud" class="java.lang.String"/>
+	<field name="nombreUsuario" class="java.lang.String"/>
+	<field name="numeroCedula" class="java.lang.String"/>
+	<field name="etnia" class="java.lang.String"/>
+	<field name="fecha" class="java.util.Date"/>
+	<field name="fechaNacimiento" class="java.util.Date"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="sexo" class="java.lang.String"/>
+	<field name="categoria" class="java.lang.String"/>
+	<field name="escolaridad" class="java.lang.String"/>
+	<field name="ocupacion" class="java.lang.String"/>
+	<field name="direccionResidencia" class="java.lang.String"/>
+	<field name="localidad" class="java.lang.String"/>
+	<field name="municipio" class="java.lang.String"/>
+	<field name="departamento" class="java.lang.String"/>
+	<field name="responsableEmergencia" class="java.lang.String"/>
+	<field name="parentesco" class="java.lang.String"/>
+	<field name="direccion" class="java.lang.String"/>
+	<field name="empleador" class="java.lang.String"/>
+	<field name="direccionEmpleador" class="java.lang.String"/>
+	<field name="numeroAsegurado" class="java.lang.String"/>
+	<field name="actualizacionDirecciones" class="java.lang.String"/>
+	<field name="nombreFirmaPersonalAdmision" class="java.lang.String"/>
+	<background>
+		<band height="350" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="159" splitType="Stretch">
+			<image>
+				<reportElement x="480" y="10" width="80" height="39" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c"/>
+				<imageExpression><![CDATA["C:/Users/DELL/Downloads/ClinicaMedica.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="10" width="259" height="39" uuid="82f57760-78ba-49d6-b66c-50a2435406ea"/>
+				<imageExpression><![CDATA["C:/Users/DELL/Downloads/uam logo medicina.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="210" y="58" width="158" height="30" uuid="3ffa59e7-8fd1-4f1a-a014-0f6c0bf5f6bb"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLÍNICA MÉDICA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="559" height="30" forecolor="#0099A9" uuid="e0769d41-cdc8-47cc-9556-7cb91c477fbd"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HOJA DE IDENTIFICACIÓN DE USUARIOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="141" width="48" height="18" uuid="6a3b5447-a88e-43c6-a34f-3569bca71918"/>
+				<text><![CDATA[Etnica:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="438" y="141" width="110" height="17" uuid="4f684761-83f3-487f-a7c0-a4e607215bc5"/>
+				<textFieldExpression><![CDATA[$F{etnia}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="21" width="150" height="20" uuid="2f7b06ec-b8c6-411a-8476-f806babfd324"/>
+				<text><![CDATA[Establecimiento de Salud:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="380" y="12" width="170" height="50" forecolor="#666262" uuid="0f25da5f-1c6a-4dd0-916b-6d34739fccd9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="390" y="20" width="48" height="20" uuid="3775082d-a626-4eeb-ae30-78318efbae68"/>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="390" y="40" width="154" height="15" uuid="b0c39260-eb90-4a5c-880d-565e0274183f"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="-10" width="100" height="20" uuid="a9c0e43b-2f13-46da-bce5-fff17254aada"/>
+				<text><![CDATA[No. Expediente]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="71" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="10" width="309" height="1" uuid="43fa5621-defa-495b-b338-fbc7160c2077"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="-10" width="308" height="20" uuid="11223344-5566-7788-99aa-bbccddeeff00"/>
+				<textFieldExpression><![CDATA[$F{establecimientoSalud}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="380" y="10" width="170" height="50" forecolor="#666262" uuid="c5375c16-c2b9-4118-bc8a-8bd827bc20d7"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="391" y="20" width="153" height="20" uuid="64ec772b-4070-4dc4-898f-eeb6e58f0c9c"/>
+				<text><![CDATA[Fecha de Nacimiento:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="390" y="41" width="154" height="15" uuid="cd49a811-54fe-48ac-92a8-325a18d9b31d"/>
+				<textFieldExpression><![CDATA[$F{fechaNacimiento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="115" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="-20" width="308" height="20" uuid="88daafcf-ff2e-4118-a47a-f11e4e0a0c4f"/>
+				<textFieldExpression><![CDATA[$F{nombreUsuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="35" width="308" height="15" uuid="086ff655-30eb-4275-ac4d-23215e4e2eed"/>
+				<textFieldExpression><![CDATA[$F{numeroCedula}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="-51" width="150" height="20" uuid="cc3da589-438e-409b-8fdc-8ea003433e2d"/>
+				<text><![CDATA[Nombre del usuario:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="309" height="1" uuid="1ac26554-bb5f-4922-8ff6-0cdcb1e4d81d"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="10" width="150" height="20" uuid="adce4fab-9f8c-4bfb-a1b6-bef6cd55819e"/>
+				<text><![CDATA[No. de Cédula:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="50" width="309" height="1" uuid="f2d06973-b900-4a47-b3f0-c604bea42d83"/>
+			</line>
+			<staticText>
+				<reportElement x="380" y="11" width="30" height="18" uuid="d9300b6a-d294-468b-b079-030bce939341"/>
+				<text><![CDATA[Edad:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="410" y="11" width="50" height="18" uuid="5b0cc785-8550-460b-94c3-61cb9cfbe1bc"/>
+				<textFieldExpression><![CDATA[$F{edad}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="410" y="29" width="47" height="1" uuid="53e295a7-361f-4873-bfd8-ca3357cef2f6"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="64" width="150" height="15" uuid="f31673b1-2ba3-4c99-9784-a2a0d35be08e"/>
+				<text><![CDATA[Categoría:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="93" width="70" height="15" uuid="9289f62b-072b-4cf6-ab4a-d34f1625337e"/>
+				<text><![CDATA[Escolaridad:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="70" y="107" width="200" height="1" uuid="7bf3ca40-ba91-4a77-84de-df72a96153ce"/>
+			</line>
+			<staticText>
+				<reportElement x="270" y="94" width="70" height="15" uuid="89aae459-eae1-45d8-a132-7730654bcc4a"/>
+				<textElement markup="styled"/>
+				<text><![CDATA[Ocupación:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="340" y="108" width="209" height="1" uuid="b4b57855-43eb-432b-a875-8f0c6f024f34"/>
+			</line>
+			<textField>
+				<reportElement x="340" y="93" width="208" height="15" uuid="0aecc6ac-8975-4fb8-82ff-ba4d935e48d4"/>
+				<textFieldExpression><![CDATA[$F{ocupacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="93" width="188" height="13" uuid="aab530e0-56e7-46a3-bcad-36dfe33109b8"/>
+				<textFieldExpression><![CDATA[$F{escolaridad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="106" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="90" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="60" splitType="Stretch"/>
+	</summary>
+</jasperReport>

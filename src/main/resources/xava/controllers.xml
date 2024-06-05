@@ -26,5 +26,34 @@
 		<action name="signIn"  			
 			class="action.CustomLogin"/>			
 	</controller>
+	
+	<!--<controller name="Expediente">
+    	<extends controller="Typical"/>
+    	<action name="GenerarExpediente" icon="printer" mode="list"
+        	class="action.printExpedienteAction">
+    	</action>
+	</controller>-->
+	
+    <controller name="Expediente">
+    <extends controller="Typical"/>
+        <action name="generateExpedienteReport" icon="printer" mode="detail"
+              class="action.printExpedienteAction">
+              </action>
+    </controller>
+
+	<controller name="Visita">
+	<extends controller="Typical"/>
+    <action name="openGmail"
+            label="Abrir Gmail"
+            icon="email"
+            class="action.RedirigirAGmail">
+    </action>
+</controller>
+	
+    <!--<controller name="PatientVisitReport">
+        <action name="patientVisitChart" class="action.PatientVisitChartAction"/>
+    </controller>
+    -->
+	
     
 </controllers>

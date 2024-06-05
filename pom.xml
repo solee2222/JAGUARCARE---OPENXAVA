@@ -68,8 +68,13 @@
 			<artifactId>mssql-jdbc</artifactId>
     		<version>12.4.0.jre8</version>
 		</dependency>
-
-		
+<!--
+		<dependency>
+    		<groupId>org.jfree</groupId>
+    		<artifactId>jfreechart</artifactId>
+    		<version>1.5.3</version>
+		</dependency>
+		-->
 		<!-- Informix
 		<dependency>
 			<groupId>com.ibm.informix</groupId>

@@ -11,7 +11,13 @@
 	<default-module>		  
 		<controller name="Typical"/>		
 	</default-module>
-	
+	<!-- 
+    <module name="Visita">
+        <model name="Visita"/>
+        <view name="Visita"/>
+        <controller name="PatientVisitReport"/>
+    </module>
+	-->
 	<!-- 
 	You can define additional modules, for example:	  
 	<module name="OnlyReadTeacher">

@@ -1,5 +1,4 @@
 package com.uam.CLINICA.model;
-
 import java.time.*;
 import java.util.*;
 
@@ -30,7 +29,7 @@ public class Visita extends Identificable{
 	@Column(length=6)
 	@DefaultValueCalculator(CurrentYearCalculator.class)
 	int anyo;
-	
+		
 	@Column(length=6)
 	@DefaultValueCalculator(value=SiguienteNumeroVisita.class,
 	properties=@PropertyValue(name="anyo"))
@@ -72,21 +71,20 @@ public class Visita extends Identificable{
 	private List<Medicamento> medicamentos;
 	    
 	private Integer cantidadDispensada;
-	    
+	   
 	@PrePersist
 	@PreUpdate
 	private void validarHoras() throws Exception {
 	    if (horaEntrada != null && horaSalida != null) {
-	        LocalTime horaEntrada = LocalTime.parse(this.horaEntrada);
-	        LocalTime horaSalida = LocalTime.parse(this.horaSalida);
+	        LocalTime horaEntradaParsed = LocalTime.parse(this.horaEntrada);
+	        LocalTime horaSalidaParsed = LocalTime.parse(this.horaSalida);
 
-	        if (horaSalida.isBefore(horaEntrada)) {
+	        if (horaSalidaParsed.isBefore(horaEntradaParsed)) {
 	            throw new javax.validation.ValidationException(
-	                    "La hora de salida debe ser mayor que la hora de entrada"
+	                    "La hora de salida debe ser mayor que la hora de entrada."
 	            );
 	        }
 	    }
 	}
-
 
 }
