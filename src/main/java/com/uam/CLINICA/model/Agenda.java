@@ -32,4 +32,7 @@ public class Agenda {
 	@Column(length=10)
 	private String hora;
 	
+	@Column(length=20)
+	private String especialidad;
+	// Este campo podría ser un enum, pero no conozco las especialidades
 }
