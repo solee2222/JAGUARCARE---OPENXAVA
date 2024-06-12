@@ -71,8 +71,15 @@ public class Visita extends Identificable{
 	private List<Medicamento> medicamentos;
 	    
 	private Integer cantidadDispensada;
+	
+    @PrePersist
+    @PreUpdate
+    private void checkMedicamentoDisponible() {
+    	Medicamento medicine = new Medicamento();
+        medicine.verificarCantidadMinima();
+    }
 	   
-	@PrePersist
+/*	@PrePersist
 	@PreUpdate
 	private void validarHoras() throws Exception {
 	    if (horaEntrada != null && horaSalida != null) {
@@ -85,6 +92,6 @@ public class Visita extends Identificable{
 	            );
 	        }
 	    }
-	}
+	} */
 
 }

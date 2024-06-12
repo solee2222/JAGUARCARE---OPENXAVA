@@ -7,6 +7,7 @@ import javax.persistence.*;
 import org.openxava.annotations.*;
 
 import com.uam.CLINICA.Calculadores.*;
+import com.uam.CLINICA.exceptions.*;
 
 import lombok.*;
 
@@ -53,18 +54,15 @@ public class Medicamento extends Identificable{
 	
 	@PrePersist
     @PreUpdate
-    private void verificarCantidadMinima() {
+    public void verificarCantidadMinima() {
         if (cantidadDisponible != null && cantidadMinima != null) {
             if (cantidadDisponible <= cantidadMinima) {
-                throw new javax.validation.ValidationException(
-                        "La cantidad disponible de '" + nombreComercial + "' está cerca o por debajo de la cantidad mínima."
+                throw new RefillException(
+                        "La cantidad disponible de '" + nombreComercial + "' está cerca o por debajo de la cantidad mínima. Rellene."
                 );
             }
         }
     }
-	
-    /*@ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "visita_id")
-    private Visita visita;*/
+
 
 }
