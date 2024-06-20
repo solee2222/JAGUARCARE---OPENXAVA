@@ -21,14 +21,7 @@ import lombok.*;
     @View(name="VistaVisita", members="nombreComercial, dosis, presentacion, cantidadDisponible")
 })
 public class Medicamento extends Identificable{
-	
-/*	@Id
-	@GeneratedValue(generator = "system-uuid")
-	@Hidden
-	@GenericGenerator(name = "system-uuid", strategy = "uuid")
-    private String identificador;*/
-	
-	//y este
+
 	
 	@PropertyValidator(value= ValidadorMed.class)
 	private String nombreComercial;
