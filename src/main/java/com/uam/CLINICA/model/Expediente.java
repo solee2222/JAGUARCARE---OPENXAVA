@@ -125,15 +125,15 @@ import lombok.*;
 	    "histoClic { " +
 	        "fechaClic,numExpHis;" +
 	    
-	        "identifiDosClic [" +
+	        "identifiDosClic {" +
 	        "nomClic, fechaNaClic; carneClic, estadoClic, sexoHis,tipoPacienteHis;"
 	        + "nacClic, residenClic;"
 	        + "direCic,ciudadClic;"
 	        + "ocupaClic,escolaClic;" +
 	        "razaClic, religiClic;    " +
-	        "]"+ 
+	        "}"+ 
 	        
-			"antecedenClic [" +
+			"antecedenClic {" +
 				"indiCausaClic; numHijoClic; enfermoFalleClic;" +
 				"asmaParen; cancerParen; diabeteParen; epilepParen; transtorParen; obesiParen; " +
 				"cardioParen; hiperParen; sifiParen; tuberParen; nefroParen; otroParen; " +
@@ -145,37 +145,37 @@ import lombok.*;
 				"epilep; transmenta; obesidad; cardio; " +
 				"hiperten; sifilis; tuber; nefro; otrosHis; " +
 				"; " +
-			"]" +
+			"}" +
 
 	        
-	        "identiTresClic [" +
+	        "identiTresClic {" +
 	        "promeClic; otroClic; tipoClic; tiempoSustClic; contactClic; " +
 	        "tipoContaClic; tiempoContaClic; tipoRuidoClic; tiempoRuidoClic; " +
 	        "viveCasaClic; cuartoClic; cantPersClic; ensuCuartoClic; cafe; tabaco; bebiAlco; " +
 	        "deport; distracciones; dieta; otroCostum; " +
 	        "tipoJornadaHis; sustanciasToxicasHis; radiacionesHis; ruidoHis; " +
 	        "medicamentosHis; reposoHis; posicionLaboralHis; " +
-	        "]"+ 
+	        "}"+ 
 	        
-	        "antecePatoClic [ "+
+	        "antecePatoClic { "+
 	        "enfermeInf; inmunizacion;"+
 	        "antAlerMed; antAlerCom; antMala; antHepa; antHosp; antOpe; "+
 	        "antAsm; antPara; antTuber; antSifi; antGono; antAmig; antTrans; reposoAcciden; tipoRh; "+
-	        "]"+
+	        "}"+
 	        
-	        "padecimientoAct [ "+
+	        "padecimientoAct { "+
 	        "motivoConsul; historiaActu;"+
-	        "]"+ 
+	        "}"+ 
 	        
-	        "aparatoSis [ "+
+	        "aparatoSis { "+
 	        "cardiovas; respirato; digestiv; urogeni; endocri; neuro; organoSenti; sintoGene; gine; psicoso; " +
-	        "]"+ 
+	        "}"+ 
 
-	        "examenFisico [ "+
+	        "examenFisico { "+
 	        "pesoActu; pesoUnMes; pesoUnAnio; estatu; pulsoUnoDecu; pulsoDosDecu; despuUnoEjer; despuDosEjer; " +
 	        "tadecu; sentado; pie; cabeza; craneo; ojos; fdo; nariz; orofaringe; oido; " +
 	        "cuello; torax; campleuro; areaPre; axiDer; axiIzq; mamaDer; mamaIzq; abdomen; tr; genita; " +
-	        "]"+ 
+	        "}"+ 
 	        
 	        "dorso; miembroSup; pulsoUltiHis; miembroInf; examenNeuro; " +
 	    "}"+
@@ -183,17 +183,29 @@ import lombok.*;
 	   //expediente 9 CONSENTIMIENTO INFORMADO
 	   
 	   "Consent { " +
-	   "nomLegal; numCedCons; direCasaCons; nomFamCons; numCedFamCons; direCasaFamCons; numCeluFamCons"+
+	   "nomLegal; numCedCons; direCasaCons; "
+	   + "avisoConsentimiento ["
+	   + "nomFamCons; numCedFamCons,numCeluFamCons; direCasaFamCons; "+
+       "]"+ 
 " }"+
 
 	   //expediente 10 HOJA DE IDENTIFICACION DE USUARIOS
 	    "HojaIden { " +
-    "establecimientoSalud; nombreUsuario; numeroCedula; etnia; " +
-    "fecha; fechaNacimiento; edad;" +
-    "escolaridad; ocupacion; direccionResidencia; " +
-    "localidad; municipio; departamento; sexo; categoria;" +
-    "responsableEmergencia; estadoCivil; telefonos; parentesco; direccion; " +
-    "empleador; direccionEmpleador; numeroAsegurado; actualizacionDirecciones" +
+    "numExpHoja,etnia;"
+    + "establecimientoSalud,fecha;"
+    + "nombreUsuario,fechaNacimiento;"
+    + "numeroCedula,edad,sexo; "
+    + "categoria,estadoCivil;"
+    + "escolaridad,ocupacion;"
+    + "direccionResidencia,departamento;"
+    + "localidad,telefonos;"
+    + "municipio,numeroAsegurado;"
+    + "responsableEmergencia;"
+    + "parentesco;"
+    + "direccion;"
+    + "empleador;"
+    + "direccionEmpleador;"
+    + "actualizacionDirecciones;" +
 " }"
     //expediente 11 REPORTE DE LABORATORIO CLINICO Y MEDIOS DIAGNOSTICOS
 
@@ -1675,12 +1687,12 @@ public class Expediente extends Identificable{
     @Column(length = 150)
     private String direCasaFamCons;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String numCeluFamCons;
 
     
 	//Expediente 10 HOJA IDENTIFICACION DE USUARIOS
-    @Column(length = 150)
+    @Column(length = 20)
     private Integer numExpHoja;
     
 	@Column(length = 100)
@@ -1692,7 +1704,7 @@ public class Expediente extends Identificable{
     @Column(length = 20)
     private String numeroCedula;
 
-    @Column(length = 50)
+    @Column(length = 40)
     private String etnia;
 
     @Temporal(TemporalType.DATE)
@@ -1733,28 +1745,28 @@ public class Expediente extends Identificable{
     	
   //Enums EXP.10 Final
 
-    @Column(length = 100)
+    @Column(length = 50)
     private String escolaridad;
 
-    @Column(length = 100)
+    @Column(length = 50)
     private String ocupacion;
 
     @Column(length = 255)
     private String direccionResidencia;
 
-    @Column(length = 100)
+    @Column(length = 50)
     private String localidad;
 
-    @Column(length = 100)
+    @Column(length = 50)
     private String municipio;
     
-    @Column(length = 100)
+    @Column(length = 50)
     private String telefonos;
 
-    @Column(length = 100)
+    @Column(length = 50)
     private String departamento;
 
-    @Column(length = 100)
+    @Column(length = 50)
     private String responsableEmergencia;
 
     @Column(length = 50)
@@ -1763,10 +1775,10 @@ public class Expediente extends Identificable{
     @Column(length = 255)
     private String direccion;
 
-    @Column(length = 100)
+    @Column(length = 50)
     private String empleador;
     
-    @Column(length = 100)
+    @Column(length = 20)
     private String estadoCivil;
 
     @Column(length = 255)
@@ -1775,7 +1787,7 @@ public class Expediente extends Identificable{
     @Column(length = 20)
     private String numeroAsegurado;
 
-    @Column(length = 500)
+    @Column(length = 50)
     private String actualizacionDirecciones;
 
 	
