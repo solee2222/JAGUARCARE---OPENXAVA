@@ -12,13 +12,13 @@ import lombok.*;
 @View( members = 
 //expediente 1 CARPETA CLINICA MEDICA
 "CarpetaClinica { " +
-"primerApellido, segundoApellido, nombres;"+
-"FechaNacimiento [" +
-"diafechaNa, mesfechaNa, aniofechaNa; ]" +
-"direccionDomiciliaria; numeroINSS;"+
-"unidadLinea; " +
-"silais, municipioCarpeta;" +
-"ultMovi; dosM; unoM; dosA; unoA; diaUni; mesUni; anioUni; unidadCuadro;"+
+	"primerApellido, segundoApellido, nombres;"+
+	"FechaNacimiento [" +
+	"diafechaNa, mesfechaNa, aniofechaNa; ]" +
+	"direccionDomiciliaria; numeroINSS;"+
+	"unidadLinea; " +
+	"silais, municipioCarpeta;" +
+	"ultMovi; dosM; unoM; dosA; unoA; diaUni; mesUni; anioUni; unidadCuadro;"+
 "}"+
 
 //expediente 2 LISTADO DE PROBLEMAS
@@ -86,14 +86,13 @@ import lombok.*;
 	    " direccionCont,comunidadCont;"
 	    + "municipioCont,departCont; "
 	    + "ocupCont; "
-	    + "aseguradoActivoNuevo,tipoAseguradoHis;"
-	    + "accidenteTrabajoNuevo,llamarCont;"
+	    + "aseguradoActivoNuevo,tipoAseguradoHis,accidenteTrabajoNuevo;"
+	    + "llamarCont;"
 	    + "parentescoCont, telefCont; "
 	    + "emplCont,numSegCont;"
 	    + "uniCont,fechaEgreCont, horaCont; "
 	    + "diasCont, diagnostegre;"
 	    + "resumenCont;"
-	    + "recomCont;"
 	    + "paciCont;"
 	    + "unidadRefCont;"
 	    + "referenciaFue;"
@@ -123,9 +122,9 @@ import lombok.*;
 	    
 	    //expediente 8 HISTORIA CLINICA
 	    "histoClic { " +
-	        "fechaClic,numExpHis;" +
-	    
+
 	        "identifiDosClic {" +
+	        "fechaClic,numExpHis;" +
 	        "nomClic, fechaNaClic; carneClic, estadoClic, sexoHis,tipoPacienteHis;"
 	        + "nacClic, residenClic;"
 	        + "direCic,ciudadClic;"
@@ -166,7 +165,6 @@ import lombok.*;
 				+ "otrosHis,otroParen;" +
 			"}" +
 
-	        
 	        "identiTresClic {" 
 			+ "Trabajo  ["
 			+ "promeClic,tipoJornadaHis,posicionLaboralHis;"
@@ -174,20 +172,17 @@ import lombok.*;
 			+ "sustanciasToxicasHis,tipoClic,tiempoSustClic;"
 			+ "radiacionesHis,tipoContaClic,tiempoContaClic;"
 			+ "ruidoHis,tipoRuidoClic,tiempoRuidoClic;" +
-			"]"
+			"];"
 			
 			+ "habita  ["+
 	        "  viveCasaClic,cuartoClic,cantPersClic,ensuCuartoClic;"+
-			"]"
+			"];"
 	        
 			+ "costum  ["
 			+ "medicamentosHis,acostumbraMedicamento;"
 			+ "cafe; tabaco; bebiAlco;deport; distracciones;dieta;otroCostum;"+
-			"]"
+			"];"+
 			
-	        + "contactClic; " +
-	        "   " +
-	       
 	        "}"+ 
 	        
 	        "antecePatoClic { "+
@@ -197,7 +192,7 @@ import lombok.*;
 	        + "antHepa,antSifi;"
 	        + "antHosp,antGono;"
 	        + "antOpe,antAmig;"
-	        + "reposoHis,reposoAcciden;"
+	        + "reposoHis;reposoAcciden;"
 	        + "inmunizacion;"+
 	        "}"+
 	        
@@ -215,14 +210,15 @@ import lombok.*;
 	        + "pulsoDosDecu, despuDosEjer,sentado,pie; "
 	        
 			+ "cab  ["+
-	        " craneo; ojos; fdo; nariz; orofaringe; oido; " +
-			"]"+
+	        " cabeza; ojos; fdo; nariz; orofaringe; oido; " +
+			"];"+
 	     
 	        "cuello; torax;"
-	        + "campleuro; areaPre; axiDer; axiIzq; mamaDer; mamaIzq; abdomen; tr; genita; " +
+	        + "campleuro; "
+	        + "areaPre; axiDer; axiIzq; mamaDer; mamaIzq; abdomen; tr; genita; " +
+	    
+				"dorso; miembroSup; pulsoUltiHis; miembroInf; examenNeuro; " +
 	        "}"+ 
-	        
-	        "dorso; miembroSup; pulsoUltiHis; miembroInf; examenNeuro; " +
 	    "}"+
 
 	   //expediente 9 CONSENTIMIENTO INFORMADO
@@ -235,22 +231,22 @@ import lombok.*;
 " }"+
 
 	   //expediente 10 HOJA DE IDENTIFICACION DE USUARIOS
-	    "HojaIden { " +
-    "numExpHoja,etnia;"
-    + "establecimientoSalud,fecha;"
-    + "nombreUsuario,fechaNacimiento;"
-    + "numeroCedula,edad,sexo; "
-    + "categoria,estadoCivil;"
-    + "escolaridad,ocupacion;"
-    + "direccionResidencia,departamento;"
-    + "localidad,telefonos;"
-    + "municipio,numeroAsegurado;"
-    + "responsableEmergencia;"
-    + "parentesco;"
-    + "direccion;"
-    + "empleador;"
-    + "direccionEmpleador;"
-    + "actualizacionDirecciones;" +
+	   "HojaIden { " +
+	    "numExpHoja,etnia;"
+	    + "establecimientoSalud,fecha;"
+	    + "nombreUsuario,fechaNacimiento;"
+	    + "numeroCedula,edad,sexo; "
+	    + "categoria,estadoCivil;"
+	    + "escolaridad,ocupacion;"
+	    + "direccionResidencia,departamento;"
+	    + "localidad,telefonos;"
+	    + "municipio,numeroAsegurado;"
+	    + "responsableEmergencia;"
+	    + "parentesco;"
+	    + "direccion;"
+	    + "empleador;"
+	    + "direccionEmpleador;"
+	    + "actualizacionDirecciones;" +
 " }"
     //expediente 11 REPORTE DE LABORATORIO CLINICO Y MEDIOS DIAGNOSTICOS
 
@@ -259,10 +255,10 @@ import lombok.*;
 public class Expediente extends Identificable{
 	
 	//Expediente 1 Carpeta Clinica Medica
-	@Column(length = 50)
+	@Column(length = 30)
     private String primerApellido;
     
-    @Column(length = 50)
+    @Column(length = 30)
     private String segundoApellido;
     
     @Column(length = 50)
@@ -304,8 +300,6 @@ public class Expediente extends Identificable{
 
     @Column(length = 8)
     private String unidadCuadro;
-    
-    //Enums en primer expediente
     
     public enum dosM {
         MARCADO, NO_MARCADO
@@ -490,7 +484,6 @@ public class Expediente extends Identificable{
     }
 
     
-    
   //Expediente 3 COSNTANCIA DE ABANDONO
     
     @Column(length = 10)
@@ -536,8 +529,6 @@ public class Expediente extends Identificable{
 
     @Column(length = 50)
     private String parentescoAb;
-    
-    //Enums para exp 3
     
     public enum Responsable {
         USUARIO, RESPONSABLE_DEL_USUARIO;
@@ -662,7 +653,7 @@ public class Expediente extends Identificable{
     private String silaRef;
    
     @Column(length = 50)
-    private String nomMedRef;  // Nombre del médico referente
+    private String nomMedRef;
     
     @Column(length = 50)
     private String serviRefbajo;
@@ -672,9 +663,6 @@ public class Expediente extends Identificable{
     @Column(length = 33)
     private String horaReci;
 
-    //enum exp 4
-    
- // Para el "Tipo de establecimiento":
     public enum TipoEstablecimiento {
         PUBLICO, PRIVADO;
     }
@@ -687,7 +675,6 @@ public class Expediente extends Identificable{
         return this.tipoEstablecimiento != null ? this.tipoEstablecimiento.name() : "Valor por defecto";
     }
 
-    // Para el "Tipo de referencia":
     public enum TipoReferencia {
         URGENTE, NO_URGENTE;
     }
@@ -700,7 +687,6 @@ public class Expediente extends Identificable{
         return this.tipoReferencia != null ? this.tipoReferencia.name() : "Valor por defecto";
     }
 
-    // Para el "Asegurado activo":
     public enum AseguradoActivo {
         SI, NO;
     }
@@ -713,7 +699,6 @@ public class Expediente extends Identificable{
         return this.aseguradoActivo != null ? this.aseguradoActivo.name() : "Valor por defecto";
     }
 
-    // Para el "Accidente de trabajo":
     public enum AccidenteTrabajo {
         INTENCIONAL, AUTO_INFLIGIDO, ACCIDENTAL, SE_IGNORA;
     }
@@ -727,7 +712,6 @@ public class Expediente extends Identificable{
     }
 
     
-    // Para el "Tipo Asegurado"
     public enum TipoAsegurado {
         COTIZANTE, BENEFICIARIO;
     }
@@ -788,8 +772,6 @@ public class Expediente extends Identificable{
     @Column(length = 100)
     private String resumenCont;
     @Column(length = 100)
-    private String recomCont;
-    @Column(length = 100)
     private String paciCont;
     @Column(length = 100)
     private String unidadRefCont;
@@ -798,7 +780,6 @@ public class Expediente extends Identificable{
     @Column(length = 50)
     private String nomMedCont;
     
-    //TIPO ESTA.
     public enum TipoEstablecimientoNuevo {
         PUBLICONT, PRIVADOCONT;
     }
@@ -811,7 +792,6 @@ public class Expediente extends Identificable{
         return this.tipoEstablecimientoNuevo != null ? this.tipoEstablecimientoNuevo.name() : "Valor por defecto";
     }
     
-    //asegurado
     public enum AseguradoActivoNuevo {
         SICONT, NOCONT;
     }
@@ -825,7 +805,6 @@ public class Expediente extends Identificable{
     }
 
     
-    //acciden.
     public enum AccidenteTrabajoNuevo {
         INTENCIONALCONT, AUTO_INFLIGIDOCONT, ACCIDENTALCONT, SE_IGNORACONT;
     }
@@ -839,7 +818,6 @@ public class Expediente extends Identificable{
     }
 
     
-    //refere
     public enum ReferenciaFue {
         ADECUADA, INADECUADA;
     }
@@ -1013,43 +991,40 @@ public class Expediente extends Identificable{
     @Column(length = 180)
     private String enfermoFalleClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String promeClic;
 
     @Column(length = 200)
     private String otroClic;
 
-    @Column(length = 150)
+    @Column(length = 40)
     private String tipoClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String tiempoSustClic;
 
-    @Column(length = 150)
-    private String contactClic;
-
-    @Column(length = 150)
+    @Column(length = 40)
     private String tipoContaClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String tiempoContaClic;
 
-    @Column(length = 150)
+    @Column(length = 40)
     private String tipoRuidoClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String tiempoRuidoClic;
 
-    @Column(length = 150)
+    @Column(length = 5)
     private String viveCasaClic;
 
-    @Column(length = 150)
+    @Column(length = 5)
     private String cuartoClic;
 
-    @Column(length = 150)
+    @Column(length = 5)
     private Integer cantPersClic;
 
-    @Column(length = 150)
+    @Column(length = 5)
     private String ensuCuartoClic;
 
     @Column(length = 150)
@@ -1115,38 +1090,35 @@ public class Expediente extends Identificable{
     @Column(length = 200)
     private String psicoso;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String pesoActu;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String estatu;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String pulsoUnoDecu;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String pulsoDosDecu;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String despuUnoEjer;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String despuDosEjer;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String tadecu;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String sentado;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String pie;
 
     @Column(length = 200)
     private String cabeza;
-
-    @Column(length = 150)
-    private String craneo;
 
     @Column(length = 200)
     private String ojos;
@@ -1211,7 +1183,6 @@ public class Expediente extends Identificable{
     @Column(length = 200)
     private String examenNeuro;
     
- // Enum para Hijos en Historia
     public enum hijosHisto {
         SIHI, NOHI;
     }
@@ -1224,7 +1195,6 @@ public class Expediente extends Identificable{
         return this.hijosHisto != null ? this.hijosHisto.name() : "Valor por defecto";
     }
 
-    // Enum para Asma en Historia
     public enum AsmaHist {
         SIA, NOA;
     }
@@ -1238,7 +1208,6 @@ public class Expediente extends Identificable{
     }
 
 
-    // Enum para Cáncer en Historia
     public enum CancerHis {
         SIC, NOC;
     }
@@ -1252,7 +1221,6 @@ public class Expediente extends Identificable{
     }
 
 
-    // Enum para Diabetes en Historia
     public enum Diabetes {
         SID, NOD;
     }
@@ -1265,8 +1233,6 @@ public class Expediente extends Identificable{
         return this.diabetes != null ? this.diabetes.name() : "Valor por defecto";
     }
 
-
-    // Enum para Epilepsia en Historia
     public enum Epilep {
         SIE, NOE;
     }
@@ -1279,8 +1245,6 @@ public class Expediente extends Identificable{
         return this.epilep != null ? this.epilep.name() : "Valor por defecto";
     }
 
-
-    // Enum para Trastornos mentales en Historia
     public enum Transmenta {
         SIT, NOT;
     }
@@ -1293,7 +1257,6 @@ public class Expediente extends Identificable{
         return this.transmenta != null ? this.transmenta.name() : "Valor por defecto";
     }
 
-    // Enum para Obesidad en Historia
     public enum Obesidad {
         SIOB, NOOB;
     }
@@ -1307,7 +1270,6 @@ public class Expediente extends Identificable{
     }
 
 
-    // Enum para Cardiopatías en Historia
     public enum Cardio {
         SICAR, NOCAR;
     }
@@ -1320,8 +1282,6 @@ public class Expediente extends Identificable{
         return this.cardio != null ? this.cardio.name() : "Valor por defecto";
     }
 
-
-    // Enum para Hipertensión en Historia
     public enum Hiperten {
         SIHIP, NOHIP;
     }
@@ -1760,8 +1720,6 @@ public class Expediente extends Identificable{
 
     @Column(length = 10)
     private String edad;
-    
-    //Enums EXP.10 Inicio
     
     public enum Sexo {
         M, F

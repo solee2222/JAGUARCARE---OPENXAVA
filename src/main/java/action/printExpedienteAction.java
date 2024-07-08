@@ -155,7 +155,6 @@ public class printExpedienteAction extends JasperReportBaseAction {
             parameters.put("diasCont", expediente.getDiasCont());
             parameters.put("diagnostegre", expediente.getDiagnostegre());
             parameters.put("resumenCont", expediente.getResumenCont());
-            parameters.put("recomCont", expediente.getRecomCont());
             parameters.put("paciCont", expediente.getPaciCont());
             parameters.put("unidadRefCont", expediente.getUnidadRefCont());
             parameters.put("noPermitidaCont", expediente.getNoPermitidaCont());
@@ -232,7 +231,6 @@ public class printExpedienteAction extends JasperReportBaseAction {
             parameters.put("otroClic", expediente.getOtroClic());
             parameters.put("tipoClic", expediente.getTipoClic());
             parameters.put("tiempoSustClic", expediente.getTiempoSustClic());
-            parameters.put("contactClic", expediente.getContactClic());
             parameters.put("tipoContaClic", expediente.getTipoContaClic());
             parameters.put("tiempoContaClic", expediente.getTiempoContaClic());            
             parameters.put("tipoRuidoClic", expediente.getTipoRuidoClic());
@@ -272,7 +270,6 @@ public class printExpedienteAction extends JasperReportBaseAction {
             parameters.put("sentado", expediente.getSentado());
             parameters.put("pie", expediente.getPie());
             parameters.put("cabeza", expediente.getCabeza());
-            parameters.put("craneo", expediente.getCraneo());
             parameters.put("ojos", expediente.getOjos());
             parameters.put("fdo", expediente.getFdo());
             parameters.put("nariz", expediente.getNariz());

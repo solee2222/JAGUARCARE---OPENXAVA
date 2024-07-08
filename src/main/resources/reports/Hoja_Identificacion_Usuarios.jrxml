@@ -266,7 +266,6 @@
 	<field name="otroClic" class="java.lang.String"/>
 	<field name="tipoClic" class="java.lang.String"/>
 	<field name="tiempoSustClic" class="java.lang.String"/>
-	<field name="contactClic" class="java.lang.String"/>
 	<field name="tipoContaClic" class="java.lang.String"/>
 	<field name="tiempoContaClic" class="java.lang.String"/>
 	<field name="tipoRuidoClic" class="java.lang.String"/>
@@ -1360,13 +1359,6 @@
 					<font size="18"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{diasCont}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="310" y="1010" width="1053" height="30" uuid="c2baff40-fcd8-4628-a11e-8581f2ec5722"/>
-				<textElement>
-					<font size="18"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{recomCont}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
 				<reportElement x="57" y="1090" width="628" height="290" uuid="f2591926-8e22-4faf-acb5-264b5a0098c1"/>
