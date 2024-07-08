@@ -168,20 +168,37 @@ import lombok.*;
 
 	        
 	        "identiTresClic {" 
-			+ "Trabajo  [" +
-			"]" +
-	        "promeClic; otroClic; tipoClic; tiempoSustClic; contactClic; " +
-	        "tipoContaClic; tiempoContaClic; tipoRuidoClic; tiempoRuidoClic; " +
-	        "viveCasaClic; cuartoClic; cantPersClic; ensuCuartoClic; cafe; tabaco; bebiAlco; " +
-	        "deport; distracciones; dieta; otroCostum; " +
-	        "tipoJornadaHis; sustanciasToxicasHis; radiacionesHis; ruidoHis; " +
-	        "medicamentosHis; reposoHis; posicionLaboralHis; " +
+			+ "Trabajo  ["
+			+ "promeClic,tipoJornadaHis,posicionLaboralHis;"
+			+ "otroClic;"
+			+ "sustanciasToxicasHis,tipoClic,tiempoSustClic;"
+			+ "radiacionesHis,tipoContaClic,tiempoContaClic;"
+			+ "ruidoHis,tipoRuidoClic,tiempoRuidoClic;" +
+			"]"
+			
+			+ "habita  ["+
+	        "  viveCasaClic,cuartoClic,cantPersClic,ensuCuartoClic;"+
+			"]"
+	        
+			+ "costum  ["
+			+ "medicamentosHis,acostumbraMedicamento;"
+			+ "cafe; tabaco; bebiAlco;deport; distracciones;dieta;otroCostum;"+
+			"]"
+			
+	        + "contactClic; " +
+	        "   " +
+	       
 	        "}"+ 
 	        
 	        "antecePatoClic { "+
-	        "enfermeInf; inmunizacion;"+
-	        "antAlerMed; antAlerCom; antMala; antHepa; antHosp; antOpe; "+
-	        "antAsm; antPara; antTuber; antSifi; antGono; antAmig; antTrans; reposoAcciden; tipoRh; "+
+	        "enfermeInf;antAlerMed,antAsm,antTrans;"
+	        + "antAlerCom,antPara,tipoRh;"
+	        + "antMala,antTuber;"
+	        + "antHepa,antSifi;"
+	        + "antHosp,antGono;"
+	        + "antOpe,antAmig;"
+	        + "reposoHis,reposoAcciden;"
+	        + "inmunizacion;"+
 	        "}"+
 	        
 	        "padecimientoAct { "+
@@ -193,9 +210,16 @@ import lombok.*;
 	        "}"+ 
 
 	        "examenFisico { "+
-	        "pesoActu; pesoUnMes; pesoUnAnio; estatu; pulsoUnoDecu; pulsoDosDecu; despuUnoEjer; despuDosEjer; " +
-	        "tadecu; sentado; pie; cabeza; craneo; ojos; fdo; nariz; orofaringe; oido; " +
-	        "cuello; torax; campleuro; areaPre; axiDer; axiIzq; mamaDer; mamaIzq; abdomen; tr; genita; " +
+	        "pesoActu, pesoUnMes,pesoUnAnio, estatu;"
+	        + "pulsoUnoDecu, despuUnoEjer, tadecu;"
+	        + "pulsoDosDecu, despuDosEjer,sentado,pie; "
+	        
+			+ "cab  ["+
+	        " craneo; ojos; fdo; nariz; orofaringe; oido; " +
+			"]"+
+	     
+	        "cuello; torax;"
+	        + "campleuro; areaPre; axiDer; axiIzq; mamaDer; mamaIzq; abdomen; tr; genita; " +
 	        "}"+ 
 	        
 	        "dorso; miembroSup; pulsoUltiHis; miembroInf; examenNeuro; " +
