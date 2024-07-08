@@ -22,7 +22,7 @@ public class Visitante extends Identificable{
 	private String primerApellido;
 	
 	@Enumerated(EnumType.STRING)
-    private Carrera carrera;
+    private Carrera carrera; 
     
     @Enumerated(EnumType.STRING)
     private TipoVisitante tipo;
