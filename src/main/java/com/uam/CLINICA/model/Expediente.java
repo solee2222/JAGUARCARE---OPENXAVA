@@ -54,15 +54,14 @@ import lombok.*;
 	    
 //expediente 4 FORMATO PARA LA REFERENCIA DE PACIENTES
 "FormatoReferencia { " +
-	"unidadSalud; " +
-	"servicioRef,expedienteRef;" +
+	"expedienteRef;" +
+	"unidadSalud,servicioRef; " +
 	"tipoEstablecimiento, tipoReferencia;"+
-	"nombreApellido; " +
-	"edadReferencia,sexoRef; " +
-	"direccionRef,comunidadRef; " +
-	"municipioRef,departamentoRef,ocupacionReferencia; " +
-	"aseguradoActivo; tipoAsegurado;"+
-	"accidenteTrabajo;"+
+	"nombreApellido,edadReferencia,sexoRef; " +
+	"direccionRef,comunidadRef ;" +
+	"municipioRef,departamentoRef;"
+	+ "ocupacionReferencia; " +
+	"aseguradoActivo, tipoAsegurado,accidenteTrabajo;"+
 	"comunicacionLlamar; " +
 	"parentescoRef,telefonoRef; " +
 	"empleadorReferencia,numeroSeguro; " +
@@ -72,7 +71,8 @@ import lombok.*;
 	"diagnosticoProblem; " +
 	"fechaEnvio,horaEnvio; " +
 	"acompRef; " +
-	"envioServ,uniRef,silaRef; " +
+	"envioServ,uniRef;"
+	+ "silaRef; " +
 	"contactoRef; " +
 	"nomMedRef; " +
 	"serviRefbajo; " +
@@ -80,12 +80,24 @@ import lombok.*;
 "}"+
 	    //expediente 5 FORMATO PARA LA CONTRAREFERENCIA DE PACIENTES
 	"Contrarreferencia { " +
-	    "contUniSalud; servicioCont; expedienteCont; nomApCont; " +
-	    "edadCont; sexoCont; direccionCont; municipioCont; "
-	    + "departCont; ocupCont; llamarCont; parentescoCont; telefCont; emplCont; numSegCont; uniCont; " +
-	     "tipoEstablecimientoNuevo; aseguradoActivoNuevo; accidenteTrabajoNuevo; referenciaFue; " +
-	     "fechaEgreCont; horaCont; diasCont; diagnostegre; resumenCont; recomCont; paciCont; unidadRefCont;"
-	    + "noPermitidaCont; nomMedCont; tipoAseguradoHis;"+
+	    "contUniSalud, expedienteCont;"
+	    + "servicioCont, tipoEstablecimientoNuevo;"
+	    + "nomApCont,edadCont, sexoCont; " +
+	    " direccionCont;"
+	    + "municipioCont,departCont; "
+	    + "ocupCont; "
+	    + "aseguradoActivoNuevo,tipoAseguradoHis;"
+	    + "accidenteTrabajoNuevo,llamarCont;"
+	    + "parentescoCont, telefCont; "
+	    + "emplCont,numSegCont;"
+	    + "uniCont,fechaEgreCont, horaCont; "
+	    + "diasCont, diagnostegre;"
+	    + "resumenCont;"
+	    + "recomCont;"
+	    + "paciCont;"
+	    + "unidadRefCont;"
+	    + "referenciaFue;"
+	    + "noPermitidaCont; nomMedCont; "+
 	    " }"+
 
 	    //expediente 6 NOTAS DE EVOLUCION Y TRATAMIENTO
@@ -212,7 +224,7 @@ public class Expediente extends Identificable{
     @Column(length = 20)
     private String municipioCarpeta;
     
-    @Column(length = 300)
+    @Column(length = 400)
     private String direccionDomiciliaria;
     
     @Column(length = 8)
@@ -444,7 +456,7 @@ public class Expediente extends Identificable{
     private String nombreFirmante;
     
     
-    @Column(length = 20)
+    @Column(length = 30)
     private String servicioSaludRetiro;
     
     @Column(length = 200)
@@ -494,13 +506,13 @@ public class Expediente extends Identificable{
     @Column(length = 100)
     private String unidadSalud;
     
-    @Column(length = 100)
+    @Column(length = 70)
     private String servicioRef;
     
-    @Column(length = 20)
+    @Column(length = 10)
     private String expedienteRef;
     
-    @Column(length = 255)
+    @Column(length = 100)
     private String nombreApellido;
     
     @Column(length = 3)
@@ -509,13 +521,13 @@ public class Expediente extends Identificable{
     @Column(length = 14)
     private Integer sexoRef;
     
-    @Column(length = 200)
+    @Column(length = 100)
     private String direccionRef;
     
     @Column(length = 50)
     private String comunidadRef;
     
-    @Column(length = 50)
+    @Column(length = 100)
     private String municipioRef;
     
     @Column(length = 50)
@@ -527,7 +539,7 @@ public class Expediente extends Identificable{
     @Column(length = 100)
     private String comunicacionLlamar;
     
-    @Column(length = 50)
+    @Column(length = 100)
     private String parentescoRef;
     
     @Column(length = 20)
@@ -536,16 +548,16 @@ public class Expediente extends Identificable{
     @Column(length = 100)
     private String empleadorReferencia;
     
-    @Column(length = 20)
+    @Column(length = 50)
     private String numeroSeguro;
     
-    @Column(length = 255)
+    @Column(length = 100)
     private String motivoReferencia;
     
     @Column(length = 10)
     private String pulso;
     
-    @Column(length = 50)
+    @Column(length = 10)
     private String presionArterial;
     
     @Column(length = 10)
@@ -560,10 +572,10 @@ public class Expediente extends Identificable{
     @Column(length = 10)
     private String talla;
     
-    @Column(length = 2048)  
+    @Column(length = 200)  
     private String resumenClinico;
     
-    @Column(length = 255)
+    @Column(length = 200)
     private String diagnosticoProblem;
     @Column
     @Temporal(TemporalType.DATE)
@@ -580,13 +592,13 @@ public class Expediente extends Identificable{
     @Column(length = 100)
     private String contactoRef;
     
-    @Column(length = 100)
+    @Column(length = 50)
     private String uniRef;
     
     @Column(length = 100)
     private String silaRef;
    
-    @Column(length = 255)
+    @Column(length = 100)
     private String nomMedRef;  // Nombre del médico referente
     
     @Column(length = 100)
@@ -668,33 +680,33 @@ public class Expediente extends Identificable{
 
   //expediente 5 FORMATO PARA LA CONTRAREFERENCIA DE PACIENTES
     
-    @Column(length = 100)
+    @Column(length = 50)
     private String contUniSalud;
-    @Column(length = 100)
+    @Column(length = 50)
     private String servicioCont;
-    @Column(length = 20)
-    private String expedienteCont;
-    @Column(length = 255)
-    private String nomApCont;
     @Column(length = 10)
+    private String expedienteCont;
+    @Column(length = 50)
+    private String nomApCont;
+    @Column(length = 3)
     private String edadCont;
     @Column(length = 10)
     private String sexoCont;
-    @Column(length = 255)
+    @Column(length = 50)
     private String direccionCont;
-    @Column(length = 100)
+    @Column(length = 50)
     private String municipioCont;
-    @Column(length = 100)
+    @Column(length = 50)
     private String departCont;
-    @Column(length = 100)
+    @Column(length = 50)
     private String ocupCont;
-    @Column(length = 255)
+    @Column(length = 50)
     private String llamarCont;
     @Column(length = 50)
     private String parentescoCont;
     @Column(length = 20)
     private String telefCont;
-    @Column(length = 100)
+    @Column(length = 50)
     private String emplCont;
     @Column(length = 20)
     private String numSegCont;
@@ -706,19 +718,19 @@ public class Expediente extends Identificable{
     private String horaCont;
     @Column(length = 10)
     private String diasCont;
-    @Column(length = 255)
+    @Column(length = 80)
     private String diagnostegre;
-    @Column(length = 2048)
+    @Column(length = 100)
     private String resumenCont;
-    @Column(length = 2048)
+    @Column(length = 100)
     private String recomCont;
     @Column(length = 100)
     private String paciCont;
     @Column(length = 100)
     private String unidadRefCont;
-    @Column(length = 255)
-    private String noPermitidaCont;
     @Column(length = 100)
+    private String noPermitidaCont;
+    @Column(length = 50)
     private String nomMedCont;
     
     //TIPO ESTA.
