@@ -133,6 +133,7 @@ public class printExpedienteAction extends JasperReportBaseAction {
 
 
           //expediente 5 FORMATO PARA LA CONTRAREFERENCIA DE PACIENTES
+            parameters.put("comunidadCont", expediente.getComunidadCont());
             parameters.put("contUniSalud", expediente.getContUniSalud());
             parameters.put("servicioCont", expediente.getServicioCont());
             parameters.put("expedienteCont", expediente.getExpedienteCont());
