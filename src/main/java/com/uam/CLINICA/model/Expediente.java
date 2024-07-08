@@ -133,18 +133,37 @@ import lombok.*;
 	        "razaClic, religiClic;    " +
 	        "}"+ 
 	        
-			"antecedenClic {" +
-				"indiCausaClic; numHijoClic; enfermoFalleClic;" +
-				"asmaParen; cancerParen; diabeteParen; epilepParen; transtorParen; obesiParen; " +
-				"cardioParen; hiperParen; sifiParen; tuberParen; nefroParen; otroParen; " +
-				"madreEdadHis; madreSana; madreEnfer; madreCausa; madreEdadMuer; " +
-				"padreEdad; padreSano; padreEnfer; padreCausa; padreEdadMuer; " +
-				"hermanoEdad; hermaSnado; hermaEnfer; hermaCausa; hermaEdadMuer; " +
-				"esposEdad; espoSano; espoEnfe; espoCausa; espoEdad; " +
-				"hijosHisto; asmaHist; cancerHis; diabetes; " +
-				"epilep; transmenta; obesidad; cardio; " +
-				"hiperten; sifilis; tuber; nefro; otrosHis; " +
-				"; " +
+			"antecedenClic {"
+			+ "Familia  ["
+			+ "Vivos  [" +
+			"madreEdadHis,madreSana,madreEnfer;"
+			+ "padreEdad, padreSano, padreEnfer;"
+			+ "hermanoEdad, hermaSnado, hermaEnfer;"
+			+ "esposEdad, espoSano, espoEnfe;"+
+			"]"
+			+ "Muerto  [" +
+			 "madreCausa, madreEdadMuer;"
+			+ "padreCausa, padreEdadMuer;"
+			+ "hermaCausa, hermaEdadMuer;"
+			+ "espoCausa, espoEdad;"+
+
+			"]" +
+			"]" +
+				"hijosHisto,indiCausaClic;"
+				+ "numHijoClic; enfermoFalleClic;"
+				
+				+ "asmaHist,asmaParen;"
+				+ "cancerHis,cancerParen;"
+				+ "diabetes,diabeteParen;"
+				+ "epilep,epilepParen;"
+				+ "transmenta,transtorParen;"
+				+ "obesidad,obesiParen;"
+				+ "cardio,cardioParen;"
+				+ "hiperten,hiperParen;"
+				+ "sifilis, sifiParen;"
+				+ "tuber, tuberParen;"
+				+ "nefro,nefroParen;"
+				+ "otrosHis,otroParen;" +
 			"}" +
 
 	        
@@ -914,49 +933,49 @@ public class Expediente extends Identificable{
         return this.sexoHis != null ? this.sexoHis.name() : "Valor por defecto";
     }
 
-    @Column(length = 50)
+    @Column(length = 40)
     private String fechaClic;
     
     @Column(length = 10)
     private Integer numExpHis;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String nomClic;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String carneClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String nacClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String direCic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String ocupaClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String razaClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String estadoClic;
 
-    @Column(length = 150)
+    @Column(length = 20)
     private String numExpClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String fechaNaClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String residenClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String ciudadClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String escolaClic;
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String religiClic;
 
     @Column(length = 150)
@@ -1787,7 +1806,7 @@ public class Expediente extends Identificable{
     @Column(length = 20)
     private String numeroAsegurado;
 
-    @Column(length = 50)
+    @Column(length = 500)
     private String actualizacionDirecciones;
 
 	
