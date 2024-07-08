@@ -123,11 +123,14 @@ import lombok.*;
 	    
 	    //expediente 8 HISTORIA CLINICA
 	    "histoClic { " +
-	        "fechaClic; nomClic; " +
+	        "fechaClic,numExpHis;" +
 	    
 	        "identifiDosClic [" +
-	        "carneClic; nacClic; direCic; ocupaClic;sexoHis;" +
-	        "razaClic; estadoClic; numExpClic; fechaNaClic; residenClic; ciudadClic; escolaClic; religiClic; " +
+	        "nomClic, fechaNaClic; carneClic, estadoClic, sexoHis,tipoPacienteHis;"
+	        + "nacClic, residenClic;"
+	        + "direCic,ciudadClic;"
+	        + "ocupaClic,escolaClic;" +
+	        "razaClic, religiClic;    " +
 	        "]"+ 
 	        
 			"antecedenClic [" +
@@ -141,7 +144,7 @@ import lombok.*;
 				"hijosHisto; asmaHist; cancerHis; diabetes; " +
 				"epilep; transmenta; obesidad; cardio; " +
 				"hiperten; sifilis; tuber; nefro; otrosHis; " +
-				"tipoPacienteHis; " +
+				"; " +
 			"]" +
 
 	        
@@ -899,10 +902,10 @@ public class Expediente extends Identificable{
         return this.sexoHis != null ? this.sexoHis.name() : "Valor por defecto";
     }
 
-    @Column(length = 150)
+    @Column(length = 50)
     private String fechaClic;
     
-    @Column(length = 150)
+    @Column(length = 10)
     private Integer numExpHis;
 
     @Column(length = 150)

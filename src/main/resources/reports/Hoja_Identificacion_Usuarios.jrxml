@@ -14,6 +14,7 @@
 		<![CDATA[]]>
 	</queryString>
 	<field name="horaAb" class="java.lang.String"/>
+	<field name="comunidadCont" class="java.lang.String"/>
 	<field name="acostumbraMedicamento" class="java.lang.String"/>
 	<field name="estadoProblemaDosAsString" class="java.lang.String"/>
 	<field name="estadoProblemaNueveAsString" class="java.lang.String"/>
@@ -1418,6 +1419,13 @@
 					<paragraph lineSpacing="1_1_2"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{resumenCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1045" y="400" width="324" height="30" uuid="69da5174-0c57-4c44-88db-37bd73164a27"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comunidadCont}]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="1689">
