@@ -134,7 +134,7 @@ import lombok.*;
 	        "}"+ 
 	        
 			"antecedenClic {"
-			+ "Familia  ["
+			+ "Familia ["
 			+ "Vivos  [" +
 			"madreEdadHis,madreSana,madreEnfer;"
 			+ "padreEdad, padreSano, padreEnfer;"
@@ -149,7 +149,7 @@ import lombok.*;
 
 			"]" +
 			"]" +
-				"hijosHisto,indiCausaClic;"
+				"hijosHisto;indiCausaClic;"
 				+ "numHijoClic; enfermoFalleClic;"
 				
 				+ "asmaHist,asmaParen;"
@@ -167,7 +167,9 @@ import lombok.*;
 			"}" +
 
 	        
-	        "identiTresClic {" +
+	        "identiTresClic {" 
+			+ "Trabajo  [" +
+			"]" +
 	        "promeClic; otroClic; tipoClic; tiempoSustClic; contactClic; " +
 	        "tipoContaClic; tiempoContaClic; tipoRuidoClic; tiempoRuidoClic; " +
 	        "viveCasaClic; cuartoClic; cantPersClic; ensuCuartoClic; cafe; tabaco; bebiAlco; " +
@@ -969,22 +971,22 @@ public class Expediente extends Identificable{
     @Column(length = 50)
     private String residenClic;
 
-    @Column(length = 50)
+    @Column(length = 60)
     private String ciudadClic;
 
-    @Column(length = 50)
+    @Column(length = 57)
     private String escolaClic;
 
-    @Column(length = 50)
+    @Column(length = 60)
     private String religiClic;
 
-    @Column(length = 150)
+    @Column(length = 180)
     private String indiCausaClic;
 
-    @Column(length = 150)
+    @Column(length = 3)
     private Integer numHijoClic;
 
-    @Column(length = 150)
+    @Column(length = 180)
     private String enfermoFalleClic;
 
     @Column(length = 150)
