@@ -12,9 +12,9 @@ import lombok.*;
 @Entity
 @Getter @Setter
 @View(members=
-	"anyo, " + 
-	"medicamentoComprado, " +
-	"cantidadComprada;")
+	"anyo; " + 
+	"medicamentoComprado;cantidadmedComprada;"
+	+ "insumoComprado;cantidadinsumoComprada;")
 
 public class Inventario{
 	
@@ -24,17 +24,18 @@ public class Inventario{
 	@GenericGenerator(name = "system-uuid", strategy = "uuid")
     private String identificador;
 	
-	private int id;
-	
 	@Column(length=4)
 	@DefaultValueCalculator(CurrentYearCalculator.class)
 	int anyo;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-    private Medicamento medicamentoComprado; 
-    
-	private Integer cantidadComprada; 
-    
+    private Medicamento medicamentoComprado;
 	
+	@ManyToOne(fetch = FetchType.LAZY)
+    private Insumo insumoComprado;
+    
+	private Integer cantidadmedComprada; 
+    
+	private Integer cantidadinsumoComprada;
 }
 

@@ -21,8 +21,9 @@ import lombok.*;
         + "sintomatologia;"
         + "destino;"
         + "diagnostico;"
+        + "cantidadDispensada;"
         + "medicamentos;"
-        + "cantidadDispensada;")
+    )
 
 public class Visita extends Identificable{
 	
@@ -65,12 +66,13 @@ public class Visita extends Identificable{
 	private Destino destino;
 	    
 	private String diagnostico;
+	
+	private Integer cantidadDispensada;
 	    
 	@ManyToMany(fetch=FetchType.LAZY)
 	@ListProperties("nombreComercial, dosis, presentacion, cantidadDisponible")
 	private List<Medicamento> medicamentos;
 	    
-	private Integer cantidadDispensada;
 	
     @PrePersist
     @PreUpdate
