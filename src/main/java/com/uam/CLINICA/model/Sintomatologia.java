@@ -13,10 +13,10 @@ import lombok.*;
 @Getter
 @Setter
 
-/*@NamedQueries({
+@NamedQueries({
 	
 	@NamedQuery(name="Sintomatologia.findByNombre",query="select e from Sintomatologia e where e.nombre like ?1")
-})*/
+})
 
 public class Sintomatologia extends Identificable{
 

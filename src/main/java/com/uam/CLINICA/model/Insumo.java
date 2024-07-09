@@ -11,6 +11,9 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
+@NamedQueries({
+    @NamedQuery(name="Insumo.findByNombre", query="select e from Insumo e where e.nombreInsumo like ?1")
+})
 public class Insumo extends Identificable{
 	
 	@PropertyValidator(value= ValidadorInsumo.class)

@@ -13,9 +13,9 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-/*@NamedQueries({
-	@NamedQuery(name="Medicamento.findByNombre",query="select e from Medicamento e where e.nombre like ?1")
-})*/
+@NamedQueries({
+    @NamedQuery(name="Medicamento.findByNombre", query="select e from Medicamento e where e.nombreComercial like ?1") //valida el nombre del medicamento comercial
+})
 
 @Views({
     @View(name="VistaVisita", members="nombreComercial, dosis, presentacion, cantidadDisponible")
