@@ -24,24 +24,32 @@ public class Medicamento extends Identificable{
 
 	
 	@PropertyValidator(value= ValidadorMed.class)
+	@Required(message="Ingrese el nombre comercial del medicamento")
 	private String nombreComercial;
 	@Column
+	@Required(message="Ingrese el nombre gen\u00e9rico del medicamento")
     private String nombreGenerico;
     @Column
+    @Required(message="Ingrese la dosis")
     private String dosis;
     
     @Enumerated(EnumType.STRING)
     private PresentacionMedicamento presentacion;
     @Column
+    @Required(message="Ingrese el lote del medicamento")
 	private String lote;
     @Column
+	@Required(message="Ingrese la fecha de vencimiento")
     private Date vencimiento;
-    @Column
+    @Column(length=200)
+	@Required(message="Ingrese las indicaciones")
     private String indicaciones;
     @Column
+	@Required(message="Ingrese la cantidad disponible")
     private Integer cantidadDisponible;
 
 	@Column
+	@Required(message="Ingrese la cantidad m\u00ednima")
 	private Integer cantidadMinima;
 	
 	
@@ -51,7 +59,7 @@ public class Medicamento extends Identificable{
         if (cantidadDisponible != null && cantidadMinima != null) {
             if (cantidadDisponible <= cantidadMinima) {
                 throw new RefillException(
-                        "La cantidad disponible de '" + nombreComercial + "' está cerca o por debajo de la cantidad mínima. Rellene."
+                        "La cantidad disponible de '" + nombreComercial + "' est\u00e1 cerca o por debajo de la cantidad m\u00ednima. Rellene."
                 );
             }
         }

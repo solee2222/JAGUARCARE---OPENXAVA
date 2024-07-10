@@ -51,7 +51,7 @@ public class Visita extends Identificable{
 	private String horaEntrada;
 
 	@Column(length=10)
-	@Required
+	@Required(message="Ingrese la hora de salida")
 	private String horaSalida;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -63,10 +63,11 @@ public class Visita extends Identificable{
 	private Sintomatologia sintomatologia; 
 	     
 	@Enumerated(EnumType.STRING)
+	@Required(message="Ingrese el destino del paciente")
 	private Destino destino;
 	    
 	private String diagnostico;
-	
+	@Required(message="Ingrese la cantidad a dispensar en la visita")
 	private Integer cantidadDispensada;
 	    
 	@ManyToMany(fetch=FetchType.LAZY)
@@ -80,20 +81,6 @@ public class Visita extends Identificable{
     	Medicamento medicine = new Medicamento();
         medicine.verificarCantidadMinima();
     }
-	   
-/*	@PrePersist
-	@PreUpdate
-	private void validarHoras() throws Exception {
-	    if (horaEntrada != null && horaSalida != null) {
-	        LocalTime horaEntradaParsed = LocalTime.parse(this.horaEntrada);
-	        LocalTime horaSalidaParsed = LocalTime.parse(this.horaSalida);
-
-	        if (horaSalidaParsed.isBefore(horaEntradaParsed)) {
-	            throw new javax.validation.ValidationException(
-	                    "La hora de salida debe ser mayor que la hora de entrada."
-	            );
-	        }
-	    }
-	} */
+	 
 
 }

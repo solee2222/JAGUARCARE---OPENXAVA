@@ -21,7 +21,7 @@ import lombok.*;
 public class Sintomatologia extends Identificable{
 
 	@PropertyValidator(value = ValidadorSintoma.class)
-	@Required
+	@Required(message="Ingrese el nombre del s\u00edntoma")
 	private String nombre;
 
 }

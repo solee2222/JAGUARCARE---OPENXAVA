@@ -34,8 +34,10 @@ public class Inventario{
 	@ManyToOne(fetch = FetchType.LAZY)
     private Insumo insumoComprado;
     
+	@Required(message="Ingrese la cantidad de medicamento comprada")
 	private Integer cantidadmedComprada; 
     
+	@Required(message="Ingrese la cantidad de insumo comprada")
 	private Integer cantidadinsumoComprada;
 }
 

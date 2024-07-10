@@ -37,10 +37,12 @@ public class Recepcionista{
 	
     @Column(length = 50)
     @PropertyValidator(value= ValidadorCedRecepcionista.class)
+    @Required(message="Ingrese la c\u00e9dula")
     String cedula;
     
     @Column(length=50)
     @PropertyValidator(value= ValidadorNomRecepcionista.class)
+    @Required(message="Ingrese el nombre")
     String name;
     
     @Hidden
