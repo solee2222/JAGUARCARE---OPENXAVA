@@ -1,0 +1,22 @@
+INSERT INTO [OpenXavaProjectdb].[dbo].[Insumo] ([id], [nombreInsumo], [descripcion], [cantidadDisponible], [cantidadMinima])
+VALUES
+('40288196909abfd801909ac0b93d0011', 'Venda Elástica 15x5', 'Se usa para soporte y compresión en lesiones musculares y articulares.', 100, 50),
+('40288196909abfd801909ac0b93d0012', 'Aposito 5x9', 'Se usa para cubrir y proteger heridas.', 120, 50),
+('40288196909abfd801909ac0b93d0013', 'Aposito 6x6', 'Se usa para cubrir y proteger heridas de tamaño moderado.', 110, 50),
+('40288196909abfd801909ac0b93d0014', 'Venda Triangular', 'Se usa para inmovilización de extremidades y confección de cabestrillos.', 130, 50),
+('40288196909abfd801909ac0b93d0015', 'Gasa Estéril 4x4', 'Se usa para la limpieza y protección de heridas.', 140, 50),
+('40288196909abfd801909ac0b93d0016', 'Micropore 2x5', 'Se usa para fijar apósitos y vendajes.', 150, 50),
+('40288196909abfd801909ac0b93d0017', 'Venda Simple 6x10', 'Se usa para la fijación de apósitos y como soporte ligero.', 160, 50),
+('40288196909abfd801909ac0b93d0018', 'Venda Simple 4x10', 'Se usa para la fijación de apósitos y como soporte ligero en zonas pequeñas.', 170, 50),
+('40288196909abfd801909ac0b93d0019', 'SSN 0.9%, 500 ml', 'Se usa para la hidratación y enjuague de heridas.', 180, 50),
+('40288196909abfd801909ac0b93d0020', 'Catéter Nasal', 'Se usa para suministrar oxígeno suplementario.', 190, 50),
+('40288196909abfd801909ac0b93d0021', 'Máscara de Reservorio', 'Se usa para proporcionar una alta concentración de oxígeno.', 200, 50),
+('40288196909abfd801909ac0b93d0022', 'Lancetas Welpro', 'Se usan para realizar punciones en la piel, comúnmente en pruebas de glucosa.', 210, 50),
+('40288196909abfd801909ac0b93d0023', 'Venda Elástica 5x5', 'Se usa para soporte y compresión en lesiones musculares y articulares.', 220, 50),
+('40288196909abfd801909ac0b93d0024', 'Lancetas Nipro', 'Se usan para realizar punciones en la piel, comúnmente en pruebas de glucosa.', 230, 50),
+('40288196909abfd801909ac0b93d0025', 'SSN 0.9%, 1000 ml', 'Se usa para la hidratación y enjuague de heridas.', 240, 50),
+('40288196909abfd801909ac0b93d0026', 'Hartmann 1000 ml', 'Se usa para la rehidratación y el balance electrolítico.', 250, 50),
+('40288196909abfd801909ac0b93d0027', 'Solución Mixta', 'Se usa para la rehidratación y el balance electrolítico.', 260, 50),
+('40288196909abfd801909ac0b93d0028', 'Dextrosa 5%', 'Se usa para la administración de glucosa intravenosa.', 270, 50),
+('40288196909abfd801909ac0b93d0029', 'Guía de Suero', 'Se usa para administrar líquidos intravenosos de manera controlada.', 280, 50),
+('40288196909abfd801909ac0b93d0030', 'Catéter Venoso Central 7', 'Se usa para la administración de medicamentos y líquidos.', 290, 50);
