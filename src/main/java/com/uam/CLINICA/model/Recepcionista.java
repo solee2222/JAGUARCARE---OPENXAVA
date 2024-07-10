@@ -25,6 +25,9 @@ import lombok.*;
             			query="SELECT e FROM Recepcionista e WHERE e.name = ?1")
 		}
 		)
+@Views({
+    @View(members="name, cedula; password;")
+})
 
 public class Recepcionista{
 
@@ -45,7 +48,8 @@ public class Recepcionista{
     @Required(message="Ingrese el nombre")
     String name;
     
-    @Hidden
+    @Column(length=50)
+    @Required(message="Ingrese la contraseña")
     String password;
 
 
