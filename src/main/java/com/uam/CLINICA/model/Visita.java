@@ -16,13 +16,13 @@ import lombok.*;
 
 @View(members = "recepcionista;"
         + "anyo, numero;"
-        + "hora_Entrada, hora_Salida, date;"
+        + "horaEntrada, horaSalida, date;"
         + "visitante;"
         + "sintomatologia;"
         + "destino;"
         + "diagnostico;"
         + "medicamentos;"
-        + "cantidad_Dispensada;")
+        + "cantidadDispensada;")
 
 public class Visita extends Identificable{
 	
@@ -45,13 +45,13 @@ public class Visita extends Identificable{
 	@DefaultValueCalculator(CurrentLocalDateCalculator.class)
 	private LocalDate date; 
 	
-	@Column(length=10)
+	@Column(name="hora_entrada")
 	@DefaultValueCalculator(HoraCalculador.class)
-	private String hora_Entrada;
+	private String horaEntrada;
 
-	@Column(length=10)
+	@Column(name="hora_salida")
 	@Required
-	private String hora_Salida;
+	private String horaSalida;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@ReferenceView("Simple")
@@ -67,10 +67,11 @@ public class Visita extends Identificable{
 	private String diagnostico;
 	    
 	@ManyToMany(fetch=FetchType.LAZY)
-	@ListProperties("nombreComercial, dosis, presentacion, cantidad_Disponible")
+	@ListProperties("nombreComercial, dosis, presentacion, cantidadDisponible")
 	private List<Medicamento> medicamentos;
 	    
-	private Integer cantidad_Dispensada;
+	@Column(name="cantidad_dispensada")
+	private Integer cantidadDispensada;
 	
     private void checkMedicamentoDisponible() {
     	Medicamento medicine = new Medicamento();

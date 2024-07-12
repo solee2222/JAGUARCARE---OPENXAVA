@@ -9,10 +9,6 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(members=
-	"anyo, " + 
-	"medicamentocomprado, " +
-	"cantidadmed_Comprada;")
 
 public class Inventario extends Identificable {
 	
@@ -21,18 +17,22 @@ public class Inventario extends Identificable {
 	@DefaultValueCalculator(CurrentYearCalculator.class)
 	int anyo;
 	
+	@Required(message="Ingrese la cantidad de medicamento comprada")
+	@Column(name="cantidadmed_comprada")
+	private Integer cantidadmedComprada; 
+    
+	@Required(message="Ingrese la cantidad de insumo comprada")
+	@Column(name="cantidadinsumo_comprada")
+	private Integer cantidadinsumoComprada;
+	
+	
 	@ManyToOne(fetch = FetchType.LAZY)
     private Medicamento medicamentocomprado;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
     private Insumo insumocomprado;
     
-	@Required(message="Ingrese la cantidad de medicamento comprada")
-	private Integer cantidadmed_Comprada; 
-    
-	@Required(message="Ingrese la cantidad de insumo comprada")
-	private Integer cantidadinsumo_Comprada;
-	
+
 }
 
 

@@ -8,7 +8,7 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(name="Simple",members = "primer_Nombre, primer_Apellido")
+@View(name="Simple",members = "primerNombre, primerApellido")
 
 public class Visitante {
 	@Id

@@ -19,7 +19,7 @@ import lombok.*;
 })*/
 
 @Views({
-    @View(name="VistaVisita", members="nombreComercial, dosis, presentacion, cantidad_Disponible")
+    @View(name="VistaVisita", members="nombreComercial, dosis, presentacion, cantidadDisponible")
 })
 public class Medicamento {
 	
@@ -46,14 +46,14 @@ public class Medicamento {
     @Column
     private String indicaciones;
     @Column(name="cantidad_disponible")
-    private Integer cantidad_Disponible;
+    private Integer cantidadDisponible;
 
 	@Column(name="cantidad_minima")
-	private Integer cantidad_Minima;
+	private Integer cantidadMinima;
 	
     public void verificarCantidadMinima() {
-        if (cantidad_Disponible != null && cantidad_Minima != null) {
-            if (cantidad_Disponible <= cantidad_Minima) {
+        if (cantidadDisponible != null && cantidadMinima != null) {
+            if (cantidadDisponible <= cantidadMinima) {
                 throw new RefillException(
                         "La cantidad disponible de '" + nombreComercial + "' está cerca o por debajo de la cantidad mínima. Rellene."
                 );
