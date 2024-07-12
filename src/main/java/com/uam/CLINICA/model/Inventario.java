@@ -1,9 +1,7 @@
 package com.uam.CLINICA.model;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
 
-import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 import org.openxava.calculators.*;
 
@@ -16,14 +14,8 @@ import lombok.*;
 	"medicamentocomprado, " +
 	"cantidadmed_Comprada;")
 
-public class Inventario{
+public class Inventario extends Identificable {
 	
-	
-	@Id
-	@GeneratedValue(generator = "system-uuid")
-	@Hidden
-	@GenericGenerator(name = "system-uuid", strategy = "uuid")
-    private String identificador;
 	
 	@Column(length=4)
 	@DefaultValueCalculator(CurrentYearCalculator.class)

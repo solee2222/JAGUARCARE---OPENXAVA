@@ -8,7 +8,6 @@ import javax.persistence.Entity;
 import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 
-import com.uam.CLINICA.Calculadores.*;
 import com.uam.CLINICA.exceptions.*;
 
 import lombok.*;
@@ -20,7 +19,7 @@ import lombok.*;
 })*/
 
 @Views({
-    @View(name="VistaVisita", members="nombre_Comercial, dosis, presentacion, cantidad_Disponible")
+    @View(name="VistaVisita", members="nombreComercial, dosis, presentacion, cantidad_Disponible")
 })
 public class Medicamento {
 	
@@ -30,10 +29,11 @@ public class Medicamento {
 	@GenericGenerator(name = "system-uuid", strategy = "uuid")
     private String id;
 	
-	@PropertyValidator(value= ValidadorMed.class)
-	private String nombre_Comercial;
-	@Column
-    private String nombre_Generico;
+	@Column(name = "nombre_comercial")
+	//@PropertyValidator(value= ValidadorMed.class)
+	private String nombreComercial;
+	@Column(name = "nombre_generico")
+    private String nombreGenerico;
     @Column
     private String dosis;
     
@@ -45,17 +45,17 @@ public class Medicamento {
     private Date vencimiento;
     @Column
     private String indicaciones;
-    @Column
+    @Column(name="cantidad_disponible")
     private Integer cantidad_Disponible;
 
-	@Column
+	@Column(name="cantidad_minima")
 	private Integer cantidad_Minima;
 	
     public void verificarCantidadMinima() {
         if (cantidad_Disponible != null && cantidad_Minima != null) {
             if (cantidad_Disponible <= cantidad_Minima) {
                 throw new RefillException(
-                        "La cantidad disponible de '" + nombre_Comercial + "' está cerca o por debajo de la cantidad mínima. Rellene."
+                        "La cantidad disponible de '" + nombreComercial + "' está cerca o por debajo de la cantidad mínima. Rellene."
                 );
             }
         }

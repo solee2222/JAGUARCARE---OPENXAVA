@@ -67,7 +67,7 @@ public class Visita extends Identificable{
 	private String diagnostico;
 	    
 	@ManyToMany(fetch=FetchType.LAZY)
-	@ListProperties("nombre_Comercial, dosis, presentacion, cantidad_Disponible")
+	@ListProperties("nombreComercial, dosis, presentacion, cantidad_Disponible")
 	private List<Medicamento> medicamentos;
 	    
 	private Integer cantidad_Dispensada;

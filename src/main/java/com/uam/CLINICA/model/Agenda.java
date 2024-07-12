@@ -17,7 +17,7 @@ public class Agenda {
 	@Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid") //Universally unique identifier
-	@Column(length=10)
+	@Column
     @Hidden
     private String id_Agenda;
 	

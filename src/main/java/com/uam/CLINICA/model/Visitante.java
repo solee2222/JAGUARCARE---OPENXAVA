@@ -15,11 +15,12 @@ public class Visitante {
 	
 	private String id;
 	
-	@Column(length=25)
-	private String primer_Nombre;
 	
-	@Column(length=25)
-	private String primer_Apellido;
+	@Column(name = "primer_nombre")
+	private String primerNombre;
+	
+	 @Column(name = "primer_apellido")
+	private String primerApellido;
 	
 	@Enumerated(EnumType.STRING)
     private Carrera carrera;
@@ -28,9 +29,5 @@ public class Visitante {
     private TipoVisitante tipo;
 
     private String telefono;
-	
-	/*@OneToMany(mappedBy="visitante")
-	@ListProperties("numero,date,receta.diagnostico,receta.sintomatologia.nombre,receta.medicamento.nombre,receta.cantidad")
-	Collection<Visita> visitas;*/
 	
 }
