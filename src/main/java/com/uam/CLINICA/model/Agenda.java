@@ -17,9 +17,9 @@ public class Agenda {
 	@Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid") //Universally unique identifier
-	@Column(length=36)
+	@Column(length=10)
     @Hidden
-    private String idAgenda;
+    private String id_Agenda;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@ReferenceView("Simple")
@@ -27,15 +27,12 @@ public class Agenda {
 	
 	@DateTime
 	@Column(length=10)
-	@Required(message="Ingrese la fecha")
 	private Date fecha;
 	
 	@Column(length=10)
-	@Required(message="Ingrese la hora")
 	private String hora;
 	
 	@Column(length=20)
-	@Required(message="Ingrese la especialidad")
 	private String especialidad;
 	// Este campo podría ser un enum, pero no conozco las especialidades
 }

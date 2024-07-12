@@ -8,29 +8,25 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(name="Simple",members = "cifID,primerNombre, primerApellido")
+@View(name="Simple",members = "primer_Nombre, primer_Apellido")
 
-public class Visitante extends Identificable{
+public class Visitante {
+	@Id
 	
-	@Column(length=15)
-	@Required(message="Ingrese el CIF o C\u00e9dula del visitante")
-	private String cifID;
-	
-	@Column(length=25)
-	@Required(message="Ingrese el primer nombre")
-	private String primerNombre;
+	private String id;
 	
 	@Column(length=25)
-	@Required(message="Ingrese el primer apellido")
-	private String primerApellido;
+	private String primer_Nombre;
+	
+	@Column(length=25)
+	private String primer_Apellido;
 	
 	@Enumerated(EnumType.STRING)
-    private Carrera carrera; 
+    private Carrera carrera;
     
     @Enumerated(EnumType.STRING)
     private TipoVisitante tipo;
 
-    @Required(message="Ingrese el tel\u00e9fono")
     private String telefono;
 	
 	/*@OneToMany(mappedBy="visitante")

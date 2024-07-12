@@ -4,7 +4,6 @@ import javax.persistence.*;
 
 import org.openxava.annotations.*;
 
-import com.uam.CLINICA.Calculadores.*;
 import com.uam.CLINICA.exceptions.*;
 
 import lombok.*;
@@ -16,7 +15,6 @@ import lombok.*;
 })
 public class Insumo extends Identificable{
 	
-	@PropertyValidator(value= ValidadorInsumo.class)
 	@Required(message="Ingrese el nombre del insumo")
 	private String nombreInsumo;
 	

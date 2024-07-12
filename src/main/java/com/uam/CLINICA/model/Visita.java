@@ -16,14 +16,13 @@ import lombok.*;
 
 @View(members = "recepcionista;"
         + "anyo, numero;"
-        + "horaEntrada, horaSalida, date;"
+        + "hora_Entrada, hora_Salida, date;"
         + "visitante;"
         + "sintomatologia;"
         + "destino;"
         + "diagnostico;"
-        + "cantidadDispensada;"
         + "medicamentos;"
-    )
+        + "cantidad_Dispensada;")
 
 public class Visita extends Identificable{
 	
@@ -48,11 +47,11 @@ public class Visita extends Identificable{
 	
 	@Column(length=10)
 	@DefaultValueCalculator(HoraCalculador.class)
-	private String horaEntrada;
+	private String hora_Entrada;
 
 	@Column(length=10)
-	@Required(message="Ingrese la hora de salida")
-	private String horaSalida;
+	@Required
+	private String hora_Salida;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@ReferenceView("Simple")
@@ -63,24 +62,34 @@ public class Visita extends Identificable{
 	private Sintomatologia sintomatologia; 
 	     
 	@Enumerated(EnumType.STRING)
-	@Required(message="Ingrese el destino del paciente")
 	private Destino destino;
 	    
 	private String diagnostico;
-	@Required(message="Ingrese la cantidad a dispensar en la visita")
-	private Integer cantidadDispensada;
 	    
 	@ManyToMany(fetch=FetchType.LAZY)
-	@ListProperties("nombreComercial, dosis, presentacion, cantidadDisponible")
+	@ListProperties("nombre_Comercial, dosis, presentacion, cantidad_Disponible")
 	private List<Medicamento> medicamentos;
 	    
+	private Integer cantidad_Dispensada;
 	
-    @PrePersist
-    @PreUpdate
     private void checkMedicamentoDisponible() {
     	Medicamento medicine = new Medicamento();
         medicine.verificarCantidadMinima();
     }
-	 
+	   
+/*	@PrePersist
+	@PreUpdate
+	private void validarHoras() throws Exception {
+	    if (horaEntrada != null && horaSalida != null) {
+	        LocalTime horaEntradaParsed = LocalTime.parse(this.horaEntrada);
+	        LocalTime horaSalidaParsed = LocalTime.parse(this.horaSalida);
+
+	        if (horaSalidaParsed.isBefore(horaEntradaParsed)) {
+	            throw new javax.validation.ValidationException(
+	                    "La hora de salida debe ser mayor que la hora de entrada."
+	            );
+	        }
+	    }
+	} */
 
 }

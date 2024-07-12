@@ -12,11 +12,12 @@ import lombok.*;
 @Entity
 @Getter @Setter
 @View(members=
-	"anyo; " + 
-	"medicamentoComprado;cantidadmedComprada;"
-	+ "insumoComprado;cantidadinsumoComprada;")
+	"anyo, " + 
+	"medicamentocomprado, " +
+	"cantidadmed_Comprada;")
 
 public class Inventario{
+	
 	
 	@Id
 	@GeneratedValue(generator = "system-uuid")
@@ -29,15 +30,17 @@ public class Inventario{
 	int anyo;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-    private Medicamento medicamentoComprado;
+    private Medicamento medicamentocomprado;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-    private Insumo insumoComprado;
+    private Insumo insumocomprado;
     
 	@Required(message="Ingrese la cantidad de medicamento comprada")
-	private Integer cantidadmedComprada; 
+	private Integer cantidadmed_Comprada; 
     
 	@Required(message="Ingrese la cantidad de insumo comprada")
-	private Integer cantidadinsumoComprada;
+	private Integer cantidadinsumo_Comprada;
+	
 }
+
 
