@@ -21,7 +21,7 @@ import lombok.*;
         + "sintomatologia;"
         + "destino;"
         + "diagnostico;"
-        + "medicamentos;"
+        + "medicamento;"
         + "cantidadDispensada;")
 
 public class Visita extends Identificable{
@@ -65,32 +65,29 @@ public class Visita extends Identificable{
 	private Destino destino;
 	    
 	private String diagnostico;
+	
+	@Column(name="cantidad_dispensada")
+	private Integer cantidadDispensada;
 	    
 	@ManyToMany(fetch=FetchType.LAZY)
 	@ListProperties("nombreComercial, dosis, presentacion, cantidadDisponible")
-	private List<Medicamento> medicamentos;
-	    
-	@Column(name="cantidad_dispensada")
-	private Integer cantidadDispensada;
-	
-    private void checkMedicamentoDisponible() {
-    	Medicamento medicine = new Medicamento();
-        medicine.verificarCantidadMinima();
-    }
+	private List<Medicamento> medicamento;
+	 
 	   
-/*	@PrePersist
-	@PreUpdate
-	private void validarHoras() throws Exception {
-	    if (horaEntrada != null && horaSalida != null) {
-	        LocalTime horaEntradaParsed = LocalTime.parse(this.horaEntrada);
-	        LocalTime horaSalidaParsed = LocalTime.parse(this.horaSalida);
-
-	        if (horaSalidaParsed.isBefore(horaEntradaParsed)) {
-	            throw new javax.validation.ValidationException(
-	                    "La hora de salida debe ser mayor que la hora de entrada."
-	            );
-	        }
-	    }
-	} */
+    @PrePersist
+    @PreUpdate
+    private void actualizarCantidadDisponible() throws Exception {
+        if (cantidadDispensada != null && medicamento != null && !medicamento.isEmpty()) {
+            for (Medicamento med : medicamento) {
+                int nuevaCantidad = med.getCantidadDisponible() - cantidadDispensada;
+                if (nuevaCantidad < 0) {
+                    throw new javax.validation.ValidationException(
+                            "La cantidad dispensada no puede ser mayor que la cantidad disponible."
+                    );
+                }
+                med.setCantidadDisponible(nuevaCantidad);
+            }
+        }
+    }
 
 }

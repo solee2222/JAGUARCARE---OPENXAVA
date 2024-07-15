@@ -17,11 +17,9 @@ public class Inventario extends Identificable {
 	@DefaultValueCalculator(CurrentYearCalculator.class)
 	int anyo;
 	
-	@Required(message="Ingrese la cantidad de medicamento comprada")
 	@Column(name="cantidadmed_comprada")
 	private Integer cantidadmedComprada; 
     
-	@Required(message="Ingrese la cantidad de insumo comprada")
 	@Column(name="cantidadinsumo_comprada")
 	private Integer cantidadinsumoComprada;
 	
@@ -32,7 +30,23 @@ public class Inventario extends Identificable {
 	@ManyToOne(fetch = FetchType.LAZY)
     private Insumo insumocomprado;
     
-
+    @PrePersist
+    @PreUpdate
+    private void actualizarMedicamentoDisponible() throws Exception {
+        if (cantidadmedComprada != null && medicamentocomprado != null) {
+            int nuevaCantidad = medicamentocomprado.getCantidadDisponible() + cantidadmedComprada;
+            medicamentocomprado.setCantidadDisponible(nuevaCantidad);
+        }
+    }
+    
+    @PrePersist
+    @PreUpdate
+    private void actualizarInsumoDisponible() throws Exception {
+        if (cantidadinsumoComprada != null && insumocomprado != null) {
+            int nuevaCantidadInsumo = insumocomprado.getCantidadDisponible() + cantidadinsumoComprada;
+            insumocomprado.setCantidadDisponible(nuevaCantidadInsumo);
+        }
+    }
 }
 
 

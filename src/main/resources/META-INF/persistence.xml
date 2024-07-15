@@ -41,7 +41,7 @@
     	<class>com.openxava.naviox.model.SSORecord</class>
     	<class>com.openxava.naviox.model.User</class>
         <properties>
-			<property name="hibernate.connection.url" value="jdbc:postgresql://5.161.219.182:5432/jaguarcare"/>
+			<property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;databaseName=JaguarCare;trustServerCertificate=true;"/>
         </properties>
     </persistence-unit>    
     
