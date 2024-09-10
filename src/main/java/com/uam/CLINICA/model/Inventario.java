@@ -9,7 +9,7 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-
+@View(name="VistaInventario", members="medicamentocomprado,insumocomprado;cantidadmedComprada,cantidadinsumoComprada;")
 public class Inventario extends Identificable {
 	
 	

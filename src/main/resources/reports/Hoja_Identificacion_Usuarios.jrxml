@@ -223,7 +223,6 @@
 	<field name="diasCont" class="java.lang.String"/>
 	<field name="diagnostegre" class="java.lang.String"/>
 	<field name="resumenCont" class="java.lang.String"/>
-	<field name="recomCont" class="java.lang.String"/>
 	<field name="paciCont" class="java.lang.String"/>
 	<field name="unidadRefCont" class="java.lang.String"/>
 	<field name="noPermitidaCont" class="java.lang.String"/>
@@ -305,7 +304,6 @@
 	<field name="sentado" class="java.lang.String"/>
 	<field name="pie" class="java.lang.String"/>
 	<field name="cabeza" class="java.lang.String"/>
-	<field name="craneo" class="java.lang.String"/>
 	<field name="ojos" class="java.lang.String"/>
 	<field name="fdo" class="java.lang.String"/>
 	<field name="nariz" class="java.lang.String"/>
@@ -364,7 +362,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/carpetaClinica.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/carpetaClinica.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="20" y="926" width="350" height="30" uuid="59e52de5-0f18-409b-aa2a-005d65e20e27"/>
@@ -459,28 +457,28 @@
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{dosMAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{dosMAsString}.equals("MARCADO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image rotation="Left">
 				<reportElement x="1307" y="1236" width="56" height="47" uuid="849b0edd-98dc-420e-abf6-6d941fbcb2b7">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{unoMAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{unoMAsString}.equals("MARCADO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image rotation="Left">
 				<reportElement x="1307" y="1187" width="56" height="47" uuid="b89c0fd3-d111-42fb-af34-a93c00989bfa">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{dosAAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{dosAAsString}.equals("MARCADO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image rotation="Left">
 				<reportElement x="1307" y="1140" width="56" height="47" uuid="e9c33fdc-71e7-4b7d-9a24-2b1c6f0b15b8">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{unoAAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{unoAAsString}.equals("MARCADO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="1306" y="1079" width="58" height="58" uuid="f3b541ab-990e-4204-bd77-848926b50be2">
@@ -533,7 +531,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/listaProblema.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/listaProblema.png"]]></imageExpression>
 			</image>
 			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
 				<reportElement x="50" y="334" width="139" height="59" uuid="52ca0b65-31bd-4dc8-b5c0-d31ebb69f895"/>
@@ -551,43 +549,43 @@
 			</textField>
 			<image>
 				<reportElement x="926" y="586" width="214" height="60" uuid="5d2b0fc9-c39f-4f06-8b84-a5df0c789123"/>
-				<imageExpression><![CDATA[$F{estadoProblemaCincoAsString}.equals("INACTIVOCinco") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaCincoAsString}.equals("INACTIVOCinco") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1147" y="586" width="201" height="60" uuid="98bc4c2f-0636-49ba-8d4c-b7e5da6f05c2"/>
-				<imageExpression><![CDATA[$F{estadoProblemaCincoAsString}.equals("RESUELTOCinco") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaCincoAsString}.equals("RESUELTOCinco") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="923" y="647" width="221" height="62" uuid="1f8e945a-9de5-4dbb-9836-46b1c4bfa8b7"/>
-				<imageExpression><![CDATA[$F{estadoProblemaSeisAsString}.equals("INACTIVOSeis") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaSeisAsString}.equals("INACTIVOSeis") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1145" y="648" width="202" height="61" uuid="c5f1623a-bdae-45af-8870-509e85db9fef"/>
-				<imageExpression><![CDATA[$F{estadoProblemaSeisAsString}.equals("RESUELTOSeis") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaSeisAsString}.equals("RESUELTOSeis") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="923" y="710" width="217" height="61" uuid="c7e2cda8-3aee-409f-af6b-6c5efc087d6d"/>
-				<imageExpression><![CDATA[$F{estadoProblemaSieteAsString}.equals("INACTIVOSiete") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaSieteAsString}.equals("INACTIVOSiete") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1144" y="710" width="206" height="60" uuid="57d3b2f7-08f7-4b1c-a501-f6af0364f627"/>
-				<imageExpression><![CDATA[$F{estadoProblemaSieteAsString}.equals("RESUELTOSiete") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaSieteAsString}.equals("RESUELTOSiete") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="924" y="775" width="216" height="60" uuid="0da1c100-abe7-4988-b0d6-17e0af0b12ee"/>
-				<imageExpression><![CDATA[$F{estadoProblemaOchoAsString}.equals("INACTIVOOcho") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaOchoAsString}.equals("INACTIVOOcho") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1147" y="775" width="200" height="60" uuid="72e0fe31-eb69-4b74-aada-cdc1bfea4e0e"/>
-				<imageExpression><![CDATA[$F{estadoProblemaOchoAsString}.equals("RESUELTOOcho") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaOchoAsString}.equals("RESUELTOOcho") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="924" y="839" width="216" height="60" uuid="793b1549-e8ec-40d7-b5b8-0c6eaae1749c"/>
-				<imageExpression><![CDATA[$F{estadoProblemaNueveAsString}.equals("INACTIVONueve") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaNueveAsString}.equals("INACTIVONueve") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1145" y="838" width="204" height="60" uuid="ab00446a-45df-4dbc-af72-df576a740e9f"/>
-				<imageExpression><![CDATA[$F{estadoProblemaNueveAsString}.equals("RESUELTONueve") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaNueveAsString}.equals("RESUELTONueve") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="265" y="334" width="655" height="59" uuid="ab09c578-eeaa-4322-8749-a17c7a73194f"/>
@@ -599,35 +597,35 @@
 			</textField>
 			<image>
 				<reportElement x="924" y="334" width="220" height="57" uuid="10e4c5b1-d1be-44d5-a6a4-7513d77f0a0f"/>
-				<imageExpression><![CDATA[$F{estadoProblemaAsString}.equals("INACTIVOUno") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaAsString}.equals("INACTIVOUno") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1144" y="334" width="205" height="60" uuid="acc27c48-1820-4f44-9b60-6ff2d316d827"/>
-				<imageExpression><![CDATA[$F{estadoProblemaAsString}.equals("RESUELTOUno") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaAsString}.equals("RESUELTOUno") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="924" y="398" width="216" height="57" uuid="5e91484c-eaef-4b2b-bde5-a8a8b2d39168"/>
-				<imageExpression><![CDATA[$F{estadoProblemaDosAsString}.equals("INACTIVODos") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaDosAsString}.equals("INACTIVODos") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1146" y="397" width="201" height="58" uuid="4fa1c122-373e-441f-ba8f-0628a8b2f446"/>
-				<imageExpression><![CDATA[$F{estadoProblemaDosAsString}.equals("RESUELTODos") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaDosAsString}.equals("RESUELTODos") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="924" y="460" width="216" height="60" uuid="bf14496c-1a23-4e5b-8a4d-86b368b1618e"/>
-				<imageExpression><![CDATA[$F{estadoProblemaTresAsString}.equals("INACTIVOTres") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaTresAsString}.equals("INACTIVOTres") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1146" y="460" width="201" height="60" uuid="fe8341d0-5dfc-4c50-b17d-42f8a27e3b2e"/>
-				<imageExpression><![CDATA[$F{estadoProblemaTresAsString}.equals("RESUELTOTres") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaTresAsString}.equals("RESUELTOTres") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="924" y="523" width="216" height="60" uuid="ac4b1e3b-82e8-4c77-8187-c739918e4e2b"/>
-				<imageExpression><![CDATA[$F{estadoProblemaCuatroAsString}.equals("INACTIVOCuatro") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaCuatroAsString}.equals("INACTIVOCuatro") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1146" y="523" width="201" height="60" uuid="d1b5bfa2-b282-48ba-88a9-09c796db67cd"/>
-				<imageExpression><![CDATA[$F{estadoProblemaCuatroAsString}.equals("RESUELTOCuatro") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{estadoProblemaCuatroAsString}.equals("RESUELTOCuatro") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="266" y="396" width="655" height="59" uuid="420935de-064c-4cb0-bc59-cc74c9c0a164"/>
@@ -700,7 +698,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/constancia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/constancia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="60" y="220" width="470" height="30" uuid="91f25ddc-79ee-41b5-a593-df26f49a64de"/>
@@ -711,23 +709,23 @@
 			</textField>
 			<image>
 				<reportElement x="851" y="517" width="20" height="18" uuid="123e4567-e89b-12d3-a456-426614174000"/>
-				<imageExpression><![CDATA[$F{responsableAsString}.equals("USUARIO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{responsableAsString}.equals("USUARIO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1150" y="517" width="27" height="18" uuid="123e4567-e89b-12d3-a456-426614174001"/>
-				<imageExpression><![CDATA[$F{responsableAsString}.equals("RESPONSABLE_DEL_USUARIO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{responsableAsString}.equals("RESPONSABLE_DEL_USUARIO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="767" y="747" width="20" height="18" uuid="123e4567-e89b-12d3-a456-426614174002"/>
-				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("PERSONA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("PERSONA") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="869" y="746" width="27" height="18" uuid="123e4567-e89b-12d3-a456-426614174003"/>
-				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("HIJA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("HIJA") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1004" y="746" width="27" height="18" uuid="123e4567-e89b-12d3-a456-426614174004"/>
-				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("FAMILIAR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("FAMILIAR") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="60" y="290" width="850" height="30" uuid="edb0dc9f-43fc-4ae8-934d-b9ffeb44ef91"/>
@@ -850,7 +848,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/referencia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/referencia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="230" y="262" width="295" height="30" uuid="bd6bc62f-3590-4f1e-8af5-a3ae588f5d39"/>
@@ -861,51 +859,51 @@
 			</textField>
 			<image>
 				<reportElement x="140" y="330" width="20" height="20" uuid="3f76c8d4-b6ae-4f8b-972b-1b9ad6f5e0d5"/>
-				<imageExpression><![CDATA[$F{tipoEstablecimientoAsString}.equals("PUBLICO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoAsString}.equals("PUBLICO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="293" y="330" width="20" height="20" uuid="5df80a64-dbe0-4c81-b621-b8fc32ebf3dc"/>
-				<imageExpression><![CDATA[$F{tipoEstablecimientoAsString}.equals("PRIVADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoAsString}.equals("PRIVADO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1204" y="301" width="20" height="20" uuid="c1f74a4c-d729-4d83-9022-835b5573e839"/>
-				<imageExpression><![CDATA[$F{tipoReferenciaAsString}.equals("URGENTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoReferenciaAsString}.equals("URGENTE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1347" y="301" width="20" height="20" uuid="8e8b934b-2188-4a07-9837-2c9c257986ff"/>
-				<imageExpression><![CDATA[$F{tipoReferenciaAsString}.equals("NO_URGENTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoReferenciaAsString}.equals("NO_URGENTE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="75" y="513" width="20" height="20" uuid="9c25b496-f36b-404a-8cf7-7dcae28a5091"/>
-				<imageExpression><![CDATA[$F{aseguradoActivoAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{aseguradoActivoAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="176" y="512" width="20" height="20" uuid="34b3da02-b0f5-432a-bb71-1a5a1645cb08"/>
-				<imageExpression><![CDATA[$F{aseguradoActivoAsString}.equals("NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{aseguradoActivoAsString}.equals("NO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="434" y="513" width="20" height="20" uuid="e815dcec-2ed7-4d07-a02d-1af0d5e5bea4"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("INTENCIONAL") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("INTENCIONAL") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="640" y="512" width="20" height="20" uuid="1af02b76-aa21-4a9f-9c3e-97be07b9349b"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("AUTO_INFLIGIDO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("AUTO_INFLIGIDO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="815" y="512" width="20" height="20" uuid="d2c7551b-14e0-47db-9786-5b537f4b3922"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("ACCIDENTAL") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("ACCIDENTAL") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="967" y="513" width="20" height="20" uuid="3062f61c-50b5-45ed-9794-7a6926f6f4ba"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("SE_IGNORA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("SE_IGNORA") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="186" y="600" width="20" height="20" uuid="48bf6c7f-1c45-4b3e-8dbb-8070e2a727a5"/>
-				<imageExpression><![CDATA[$F{tipoAseguradoAsString}.equals("COTIZANTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoAseguradoAsString}.equals("COTIZANTE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="185" y="635" width="20" height="20" uuid="cb68a3d1-388e-4cb2-8b4f-65e36017318b"/>
-				<imageExpression><![CDATA[$F{tipoAseguradoAsString}.equals("BENEFICIARIO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoAseguradoAsString}.equals("BENEFICIARIO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="160" y="400" width="295" height="30" uuid="d70029ec-2296-48d9-b188-7c0859fa7a2b"/>
@@ -1178,7 +1176,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/contrareferencia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/contrareferencia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="242" y="264" width="283" height="30" uuid="a3f6540f-8bec-4fbb-9a2f-5e624f9f7381"/>
@@ -1192,14 +1190,14 @@
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{tipoAseguradoHisAsString}.equals("COTIZANTEHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoAseguradoHisAsString}.equals("COTIZANTEHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="197" y="608" width="20" height="20" uuid="fa1ec4b9-d55b-4209-8e15-a4635b6599b6">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{tipoAseguradoHisAsString}.equals("BENEHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoAseguradoHisAsString}.equals("BENEHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="543" y="301" width="329" height="30" uuid="f819a6f2-be00-4098-a15a-5791bdbe9a53"/>
@@ -1210,43 +1208,43 @@
 			</textField>
 			<image>
 				<reportElement x="147" y="330" width="20" height="20" uuid="cae5de21-b792-4bda-870f-0ea85b9e6fbb"/>
-				<imageExpression><![CDATA[$F{tipoEstablecimientoNuevoAsString}.equals("PUBLICONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoNuevoAsString}.equals("PUBLICONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="290" y="330" width="20" height="20" uuid="1a89fa85-8191-475a-993f-bc8322ee8b94"/>
-				<imageExpression><![CDATA[$F{tipoEstablecimientoNuevoAsString}.equals("PRIVADOCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoNuevoAsString}.equals("PRIVADOCONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="80" y="506" width="20" height="20" uuid="ef1b713c-c5ef-45d2-aa23-5d23bdf5401b"/>
-				<imageExpression><![CDATA[$F{aseguradoActivoNuevoAsString}.equals("SICONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{aseguradoActivoNuevoAsString}.equals("SICONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="181" y="505" width="20" height="20" uuid="f5c1af22-2087-47b9-b16f-85f62c3f60b6"/>
-				<imageExpression><![CDATA[$F{aseguradoActivoNuevoAsString}.equals("NOCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{aseguradoActivoNuevoAsString}.equals("NOCONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="486" y="525" width="20" height="20" uuid="a154fc10-4702-4ba0-8dfb-5c841b4c3a28"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("INTENCIONALCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("INTENCIONALCONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="708" y="525" width="20" height="20" uuid="bbb71e5f-e2a8-45e5-b3b1-a2f7dab68dfa"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("AUTO_INFLIGIDOCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("AUTO_INFLIGIDOCONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="909" y="526" width="20" height="20" uuid="d004ac42-1b2b-4506-9d3d-a4c9799b8760"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("ACCIDENTALCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("ACCIDENTALCONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1087" y="524" width="20" height="20" uuid="fc43bba5-0aad-4db1-8108-e18b3b5a507b"/>
-				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("SE_IGNORACONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("SE_IGNORACONT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="381" y="1413" width="20" height="20" uuid="8c231abe-45be-43e9-9b47-036256c1e0ff"/>
-				<imageExpression><![CDATA[$F{referenciaFueAsString}.equals("ADECUADA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{referenciaFueAsString}.equals("ADECUADA") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="567" y="1412" width="20" height="20" uuid="af0422ae-7c31-4b07-93b6-05825e5e9e34"/>
-				<imageExpression><![CDATA[$F{referenciaFueAsString}.equals("INADECUADA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{referenciaFueAsString}.equals("INADECUADA") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="1054" y="262" width="330" height="30" uuid="09b67d0a-9729-43e9-a06e-0b5958dff6c0"/>
@@ -1427,7 +1425,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1evolucion.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/1evolucion.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="60" y="297" width="720" height="30" uuid="435b07ce-c329-4162-b4b9-23041cc46cd4"/>
@@ -1502,7 +1500,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2evolucion.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/2evolucion.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="243" y="370" width="756" height="1220" uuid="8165f9de-6ede-4746-9faa-0a3050647341"/>
@@ -1542,7 +1540,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1enfermeria.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/1enfermeria.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="60" y="287" width="720" height="30" uuid="12e0e412-1999-4b37-9056-a433827dcfcc"/>
@@ -1617,7 +1615,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2enfermeria.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/2enfermeria.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="249" y="370" width="756" height="1218" uuid="7c6b1671-2433-4c79-a17a-5abdbe5982a8"/>
@@ -1657,7 +1655,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1historia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/1historia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="123" y="257" width="637" height="30" uuid="f3cecebe-4da9-4602-be91-96a7694e6531"/>
@@ -1668,7 +1666,7 @@
 			</textField>
 			<image>
 				<reportElement x="1107" y="380" width="23" height="20" uuid="c59e8abf-5327-4111-bcce-b1bd36e94c32"/>
-				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("ESTUDIANTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("ESTUDIANTE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1274" y="384" width="23" height="20" uuid="37eb8b8f-6d27-4b57-a25f-f1b253d5f0b3">
@@ -1676,97 +1674,97 @@
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("COLABORADOR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("COLABORADOR") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1348" y="384" width="23" height="20" uuid="784b9923-d1de-47b6-9381-2c92c8a5a0f7">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("CIVIL") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("CIVIL") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="991" y="1164" width="80" height="41" uuid="4fd3bf90-470f-4d10-89b0-c2b8d830dcbc"/>
-				<imageExpression><![CDATA[$F{cardioAsString}.equals("SICAR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{cardioAsString}.equals("SICAR") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="907" y="1160" width="79" height="41" uuid="ec8c07c3-3f5a-49e9-899b-65a13dadb539"/>
-				<imageExpression><![CDATA[$F{cardioAsString}.equals("NOCAR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{cardioAsString}.equals("NOCAR") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="340" y="1160" width="90" height="41" uuid="5fc6d957-7d91-44ea-9ca9-03e45b162b0a"/>
-				<imageExpression><![CDATA[$F{asmaHistAsString}.equals("SIA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{asmaHistAsString}.equals("SIA") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="260" y="1160" width="79" height="41" uuid="f77a8c60-1f5c-4f4b-aa9f-6b5613a8b84d"/>
-				<imageExpression><![CDATA[$F{asmaHistAsString}.equals("NOA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{asmaHistAsString}.equals("NOA") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="342" y="1205" width="90" height="41" uuid="2b9aee4d-cb04-4c58-af47-a1b7b5b8c9fc"/>
-				<imageExpression><![CDATA[$F{cancerHisAsString}.equals("SIC") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{cancerHisAsString}.equals("SIC") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="260" y="1205" width="79" height="41" uuid="c0f56dca-9b28-4594-99a8-d57848c7c02d">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{cancerHisAsString}.equals("NOC") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{cancerHisAsString}.equals("NOC") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="340" y="1252" width="89" height="49" uuid="3e87b1d7-7580-48ee-8b77-33fa2ce72a60"/>
-				<imageExpression><![CDATA[$F{diabetesAsString}.equals("SID") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{diabetesAsString}.equals("SID") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="260" y="1252" width="79" height="49" uuid="6ebea56f-91f8-45e7-9717-a4fe05f46759"/>
-				<imageExpression><![CDATA[$F{diabetesAsString}.equals("NOD") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{diabetesAsString}.equals("NOD") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="342" y="1310" width="87" height="40" uuid="2b5b9733-d0c8-4f43-8cdc-63a5538f51d9"/>
-				<imageExpression><![CDATA[$F{epilepAsString}.equals("SIE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{epilepAsString}.equals("SIE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="260" y="1310" width="80" height="40" uuid="9ba3dc57-3d8d-47f3-8533-2d5b0f917362"/>
-				<imageExpression><![CDATA[$F{epilepAsString}.equals("NOE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{epilepAsString}.equals("NOE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="217" y="980" width="32" height="27" uuid="3b6748dc-bb8d-474d-8615-1c7ff0f60cf4"/>
-				<imageExpression><![CDATA[$F{hijosHistoAsString}.equals("SIHI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{hijosHistoAsString}.equals("SIHI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="218" y="914" width="37" height="29" uuid="1e2d01fa-752b-4687-8d92-82fe5f283c3d"/>
-				<imageExpression><![CDATA[$F{hijosHistoAsString}.equals("NOHI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{hijosHistoAsString}.equals("NOHI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="990" y="1205" width="79" height="41" uuid="8ed4d85b-2cd3-4656-a0ee-5c6f589c8c78"/>
-				<imageExpression><![CDATA[$F{hipertenAsString}.equals("SIHIP") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{hipertenAsString}.equals("SIHIP") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="904" y="1205" width="79" height="41" uuid="5de61bbf-d2f8-4f57-9e55-cb7b82c0ed0f"/>
-				<imageExpression><![CDATA[$F{hipertenAsString}.equals("NOHIP") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{hipertenAsString}.equals("NOHIP") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="991" y="1435" width="80" height="63" uuid="f31df3f4-bf31-4893-8ab4-52c7f6339e76"/>
-				<imageExpression><![CDATA[$F{otrosHisAsString}.equals("SIOTR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{otrosHisAsString}.equals("SIOTR") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="904" y="1435" width="79" height="64" uuid="1e80f198-6c7d-4385-bd26-d5e601797e4b"/>
-				<imageExpression><![CDATA[$F{otrosHisAsString}.equals("NOOTR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{otrosHisAsString}.equals("NOOTR") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="343" y="1360" width="80" height="66" uuid="9c9bc06d-fcd4-4849-a5fc-9cb4b9c1e5d8"/>
-				<imageExpression><![CDATA[$F{transmentaAsString}.equals("SIT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{transmentaAsString}.equals("SIT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="260" y="1360" width="79" height="67" uuid="59cf1fd7-5907-40e9-bf3c-85d3d7f03632"/>
-				<imageExpression><![CDATA[$F{transmentaAsString}.equals("NOT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{transmentaAsString}.equals("NOT") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="343" y="1440" width="80" height="59" uuid="72c3f67a-0e95-4dab-a603-9a6f0dabc641"/>
-				<imageExpression><![CDATA[$F{obesidadAsString}.equals("SIOB") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{obesidadAsString}.equals("SIOB") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="261" y="1440" width="79" height="59" uuid="2d9e6050-0c56-4d71-bc58-b2866c6a95f6"/>
-				<imageExpression><![CDATA[$F{obesidadAsString}.equals("NOOB") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{obesidadAsString}.equals("NOOB") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="140" y="344" width="620" height="30" uuid="ace50422-a0d3-4e01-b410-e05baf4cced8"/>
@@ -1840,11 +1838,11 @@
 			</textField>
 			<image>
 				<reportElement x="865" y="382" width="20" height="20" uuid="c2f7fead-07d4-4228-9f00-7475a666e841"/>
-				<imageExpression><![CDATA[$F{sexoHisAsString}.equals("MASCULINOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sexoHisAsString}.equals("MASCULINOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="924" y="382" width="20" height="20" uuid="b1a3adfb-ef7b-46b1-a9bf-4e30e3e3782e"/>
-				<imageExpression><![CDATA[$F{sexoHisAsString}.equals("FEMENINOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sexoHisAsString}.equals("FEMENINOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="1004" y="345" width="358" height="30" uuid="3f25e169-bf89-4faf-b6d0-54aacdf19882"/>
@@ -1869,36 +1867,36 @@
 			</textField>
 			<image>
 				<reportElement x="992" y="1250" width="79" height="51" uuid="7b91cb17-8b95-4db7-9059-a67c01d761c5"/>
-				<imageExpression><![CDATA[$F{sifilisAsString}.equals("SISI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sifilisAsString}.equals("SISI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="901" y="1252" width="79" height="49" uuid="3b294146-e5f4-49c5-abe1-3c1f76dffa2d">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{sifilisAsString}.equals("NOSI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sifilisAsString}.equals("NOSI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="991" y="1306" width="80" height="49" uuid="a2b0f0b5-4b09-4985-8c14-eaeeca8f8db1">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{tuberAsString}.equals("SITU") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tuberAsString}.equals("SITU") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="901" y="1310" width="90" height="49" uuid="880a07d3-0e76-4ad7-99a2-d67a80de533e">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{tuberAsString}.equals("NOTU") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tuberAsString}.equals("NOTU") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="991" y="1359" width="80" height="69" uuid="c4f8dc4f-00c0-403d-8634-f7f55de3dabb"/>
-				<imageExpression><![CDATA[$F{nefroAsString}.equals("SINE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{nefroAsString}.equals("SINE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="901" y="1364" width="79" height="59" uuid="e206e964-2a63-4d58-88cf-17dc1c466498"/>
-				<imageExpression><![CDATA[$F{nefroAsString}.equals("NONE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{nefroAsString}.equals("NONE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="490" y="910" width="872" height="30" uuid="2ee98c3b-9033-4959-aee5-82dfe61a82c0"/>
@@ -2154,7 +2152,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2historia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/2historia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="389" y="210" width="560" height="30" uuid="ca942809-4d4f-447d-9add-f9f459c048c8"/>
@@ -2165,83 +2163,83 @@
 			</textField>
 			<image>
 				<reportElement x="1062" y="220" width="20" height="20" uuid="934c9bfc-f8c0-446b-9b2e-d2f1dd440bc1"/>
-				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("DIURNOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("DIURNOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1197" y="220" width="20" height="20" uuid="a7d73012-7f87-48b4-aa17-ee4d06c076e6"/>
-				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("NOCTURNOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("NOCTURNOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1300" y="220" width="20" height="20" uuid="bd3abefe-2cc7-4fe4-9888-acf2a93425ab"/>
-				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("MIXTOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("MIXTOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="460" y="393" width="20" height="20" uuid="f9d31197-3789-4527-9ce8-518c8d8ba42e"/>
-				<imageExpression><![CDATA[$F{sustanciasToxicasHisAsString}.equals("SUSTOXICASHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sustanciasToxicasHisAsString}.equals("SUSTOXICASHIS_SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="389" y="393" width="20" height="20" uuid="aceb2e05-ae8a-40bc-9422-256c1ab5c1a1"/>
-				<imageExpression><![CDATA[$F{sustanciasToxicasHisAsString}.equals("SUSTOXICASHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sustanciasToxicasHisAsString}.equals("SUSTOXICASHIS_NO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="440" y="437" width="20" height="20" uuid="4d826ae2-9223-4fca-b72a-9a1fcb39c1c9"/>
-				<imageExpression><![CDATA[$F{radiacionesHisAsString}.equals("RADHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{radiacionesHisAsString}.equals("RADHIS_SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="367" y="437" width="20" height="20" uuid="65524ec8-33d5-43f1-a5fc-e839e5c88f11"/>
-				<imageExpression><![CDATA[$F{radiacionesHisAsString}.equals("RADHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{radiacionesHisAsString}.equals("RADHIS_NO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="226" y="477" width="20" height="20" uuid="d6aafe54-b0d4-4777-8ea3-098544b2943b"/>
-				<imageExpression><![CDATA[$F{ruidoHisAsString}.equals("RUIDOHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{ruidoHisAsString}.equals("RUIDOHIS_SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="156" y="477" width="20" height="20" uuid="3bdfd8f2-1e81-43f2-9866-e9c890597f0b"/>
-				<imageExpression><![CDATA[$F{ruidoHisAsString}.equals("RUIDOHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{ruidoHisAsString}.equals("RUIDOHIS_NO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="583" y="677" width="20" height="20" uuid="114e792f-e07f-4318-8b72-88c733c57460"/>
-				<imageExpression><![CDATA[$F{medicamentosHisAsString}.equals("MEDICAMENTOSHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{medicamentosHisAsString}.equals("MEDICAMENTOSHIS_SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="510" y="678" width="20" height="20" uuid="2bcf0f59-a9a5-4f79-95fe-3345db920b65"/>
-				<imageExpression><![CDATA[$F{medicamentosHisAsString}.equals("MEDICAMENTOSHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{medicamentosHisAsString}.equals("MEDICAMENTOSHIS_NO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="936" y="1340" width="20" height="20" uuid="a976f3c9-f0b1-498a-907b-c19fbfdef6ed"/>
-				<imageExpression><![CDATA[$F{reposoHisAsString}.equals("REPOSOHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{reposoHisAsString}.equals("REPOSOHIS_SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="863" y="1340" width="20" height="20" uuid="72d8ad07-95da-4b90-bd85-69ceebb1e242"/>
-				<imageExpression><![CDATA[$F{reposoHisAsString}.equals("REPOSOHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{reposoHisAsString}.equals("REPOSOHIS_NO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="253" y="264" width="40" height="20" uuid="cc7e4bb9-9d72-4c85-b3b8-a1b2df4b8b25"/>
-				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("SENTADOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("SENTADOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="399" y="264" width="40" height="20" uuid="55f0984e-0b00-4f1a-9891-5d56b0f89635"/>
-				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("PIEHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("PIEHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="590" y="264" width="34" height="20" uuid="f7185b04-59ac-4f8c-8aa3-9de599f5c860"/>
-				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("CAMINANDOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("CAMINANDOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="710" y="260" width="40" height="20" uuid="e20d224b-3b5a-43fa-bddd-191f76d4e3f1"/>
-				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("MIXTOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("MIXTOHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="896" y="264" width="40" height="20" uuid="4f1fbeb9-df93-4ac3-aa90-cf368fc97b60"/>
-				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("OFICINAHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("OFICINAHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1024" y="264" width="40" height="20" uuid="812c8363-8b1e-4605-a192-94f8b3b1b3c3"/>
-				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("TALLERHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("TALLERHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1205" y="262" width="40" height="20" uuid="e7b9df68-5c3b-4e0a-989e-f8c6065d3b6b"/>
-				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("AIRE_LIBREHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("AIRE_LIBREHIS") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="120" y="301" width="1244" height="30" uuid="1c9d32af-9813-4506-a8ff-429d203a26df"/>
@@ -2357,57 +2355,57 @@
 			</textField>
 			<image>
 				<reportElement x="382" y="1086" width="41" height="24" uuid="a1b2c3d4-e5f6-7890-1234-567890abcdef"/>
-				<imageExpression><![CDATA[$F{antAlerMedAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antAlerMedAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="381" y="1124" width="40" height="21" uuid="b2c3d4e5-f6a7-8901-2345-678901bcdefa"/>
-				<imageExpression><![CDATA[$F{antAlerComAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antAlerComAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="381" y="1166" width="38" height="26" uuid="c3d4e5f6-a7b8-9012-3456-789012cdefab">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<imageExpression><![CDATA[$F{antMalaAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antMalaAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="380" y="1210" width="39" height="20" uuid="d4e5f6a7-b8c9-0123-4567-890123defabc"/>
-				<imageExpression><![CDATA[$F{antHepaAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antHepaAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="380" y="1250" width="40" height="20" uuid="e5f6a7b8-c9d0-1234-5678-901234efabcd"/>
-				<imageExpression><![CDATA[$F{antHospAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antHospAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="381" y="1290" width="40" height="20" uuid="f6a7b8c9-d0e1-2345-6789-012345fabcde"/>
-				<imageExpression><![CDATA[$F{antOpeAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antOpeAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="703" y="1088" width="35" height="20" uuid="a7b8c9d0-e1f2-3456-7890-123456abcdef"/>
-				<imageExpression><![CDATA[$F{antAsmAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antAsmAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="701" y="1124" width="37" height="20" uuid="b8c9d0e1-f2a3-4567-8901-234567bcdefa"/>
-				<imageExpression><![CDATA[$F{antParaAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antParaAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="703" y="1169" width="35" height="20" uuid="c9d0e1f2-a3b4-5678-9012-345678cdefab"/>
-				<imageExpression><![CDATA[$F{antTuberAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antTuberAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="701" y="1210" width="37" height="20" uuid="d0e1f2a3-b4c5-6789-0123-456789defabc"/>
-				<imageExpression><![CDATA[$F{antSifiAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antSifiAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="701" y="1250" width="40" height="20" uuid="e1f2a3b4-c5d6-7890-1234-056789efabcd"/>
-				<imageExpression><![CDATA[$F{antGonoAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antGonoAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="701" y="1290" width="40" height="20" uuid="f2a3b4c5-d6e7-8901-2345-067890fabcde"/>
-				<imageExpression><![CDATA[$F{antAmigAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antAmigAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="958" y="1086" width="41" height="20" uuid="a3b4c5d6-e7f8-9012-3456-078901abcdef"/>
-				<imageExpression><![CDATA[$F{antTransAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{antTransAsString}.equals("SI") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="50" y="1481" width="1318" height="30" uuid="85f2d85c-a997-4b52-a337-1df34396dfc9"/>
@@ -2473,7 +2471,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/3historia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/3historia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="52" y="205" width="1318" height="30" uuid="896d6e18-c12f-4e54-877f-6c70dfbcd323"/>
@@ -2582,7 +2580,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/4historia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/4historia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="323" y="130" width="1038" height="30" uuid="184a57f4-0c57-4a0d-8ee9-58acfa7e0e2f"/>
@@ -2872,7 +2870,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/5historia.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/5historia.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="325" y="133" width="1042" height="30" uuid="fddf80ad-0fef-4ea5-9fe8-d2c466526468"/>
@@ -2998,7 +2996,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1consentimiento.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/1consentimiento.png"]]></imageExpression>
 			</image>
 		</band>
 		<band height="1689">
@@ -3008,7 +3006,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2consentimiento.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/2consentimiento.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="290" y="242" width="450" height="30" uuid="9257f389-4a34-43f3-b6be-6b4a4f1fd340"/>
@@ -3067,7 +3065,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/3consentimiento.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/3consentimiento.png"]]></imageExpression>
 			</image>
 		</band>
 		<band height="1689">
@@ -3077,7 +3075,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/usuario.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/usuario.png"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="60" y="306" width="790" height="30" uuid="2f00a65c-79ee-43da-abeb-8363c7fd4299"/>
@@ -3137,27 +3135,27 @@
 			</textField>
 			<image>
 				<reportElement x="1249" y="447" width="20" height="18" uuid="f79ea2a1-8367-454f-a94c-0b8850d8ba38"/>
-				<imageExpression><![CDATA[$F{sexoAsString}.equals("M") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sexoAsString}.equals("M") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="1300" y="447" width="27" height="18" uuid="849b0edd-98dc-420e-abf6-6d941fbcb2b7"/>
-				<imageExpression><![CDATA[$F{sexoAsString}.equals("F") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{sexoAsString}.equals("F") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="209" y="521" width="77" height="35" uuid="aca3f7ab-46ae-4743-951c-d826e668e887"/>
-				<imageExpression><![CDATA[$F{categoriaAsString}.equals("COTIZANTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("COTIZANTE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="353" y="521" width="87" height="39" uuid="cfc7b6ee-b27c-4de2-b911-d4e05b014057"/>
-				<imageExpression><![CDATA[$F{categoriaAsString}.equals("CONYUGE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("CONYUGE") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="473" y="520" width="77" height="37" uuid="17644fee-a0b4-4d93-8a66-7d0ec879caff"/>
-				<imageExpression><![CDATA[$F{categoriaAsString}.equals("HIJO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("HIJO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<image>
 				<reportElement x="560" y="518" width="95" height="45" uuid="e9018ef2-0da8-40bf-b88d-cb6e63815fac"/>
-				<imageExpression><![CDATA[$F{categoriaAsString}.equals("JUBILADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("JUBILADO") ? "./imagen/check.png" : null]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement x="210" y="575" width="450" height="25" uuid="914ba682-100c-446d-982e-d9327b91a4e0"/>
@@ -3328,7 +3326,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement fill="Solid"/>
-				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/reporte.png"]]></imageExpression>
+				<imageExpression><![CDATA["./imagen/reporte.png"]]></imageExpression>
 			</image>
 		</band>
 	</detail>
