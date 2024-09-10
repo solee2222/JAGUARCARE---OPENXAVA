@@ -37,16 +37,14 @@ public class Inventario extends Identificable {
             int nuevaCantidad = medicamentocomprado.getCantidadDisponible() + cantidadmedComprada;
             medicamentocomprado.setCantidadDisponible(nuevaCantidad);
         }
-    }
-    
-    @PrePersist
-    @PreUpdate
-    private void actualizarInsumoDisponible() throws Exception {
+        
         if (cantidadinsumoComprada != null && insumocomprado != null) {
             int nuevaCantidadInsumo = insumocomprado.getCantidadDisponible() + cantidadinsumoComprada;
             insumocomprado.setCantidadDisponible(nuevaCantidadInsumo);
         }
+        
     }
+    
 }
 
 
