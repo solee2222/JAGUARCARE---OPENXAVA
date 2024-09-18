@@ -238,7 +238,7 @@ import lombok.*;
 	    + "numeroCedula,edad,sexo; "
 	    + "categoria,estadoCivil;"
 	    + "escolaridad,ocupacion;"
-	    + "direccionResidencia,departamento;"
+	    + "direccionResidencia;departamento;"
 	    + "localidad,telefonos;"
 	    + "municipio,numeroAsegurado;"
 	    + "responsableEmergencia;"
@@ -508,7 +508,7 @@ public class Expediente extends Identificable{
     @Column(length = 20)
     private String numeroCedAb;
     
-    @Column(length = 20)
+    @Column(length = 100)
     private String nombreFirmante;
     
     
@@ -521,13 +521,13 @@ public class Expediente extends Identificable{
     @Column(length = 200)
     private String razones;
     
-    @Column(length = 20)
+    @Column(length = 100)
     private String responsableUsuario;
    
     @Column(length = 255)
     private String nombrePersonaRetiraUsuario;
 
-    @Column(length = 50)
+    @Column(length = 300)
     private String parentescoAb;
     
     public enum Responsable {
@@ -557,23 +557,23 @@ public class Expediente extends Identificable{
     
    //expediente 4 FORMATO PARA LA REFERENCIA DE PACIENTES
     
-    @Column(length = 50)
+    @Column(length = 40)
     private String unidadSalud;
     
-    @Column(length = 70)
+    @Column(length = 40)
     private String servicioRef;
     
     @Column(length = 10)
     private String expedienteRef;
     
-    @Column(length = 50)
+    @Column(length = 100)
     private String nombreApellido;
     
     @Column(length = 3)
     private Integer edadReferencia;
     
     @Column(length = 14)
-    private Integer sexoRef;
+    private String sexoRef;
     
     @Column(length = 50)
     private String direccionRef;
@@ -590,10 +590,10 @@ public class Expediente extends Identificable{
     @Column(length = 50)
     private String ocupacionReferencia;
     
-    @Column(length = 50)
+    @Column(length = 100)
     private String comunicacionLlamar;
     
-    @Column(length = 50)
+    @Column(length = 100)
     private String parentescoRef;
     
     @Column(length = 20)
@@ -602,10 +602,10 @@ public class Expediente extends Identificable{
     @Column(length = 50)
     private String empleadorReferencia;
     
-    @Column(length = 50)
+    @Column(length = 30)
     private String numeroSeguro;
     
-    @Column(length = 50)
+    @Column(length = 200)
     private String motivoReferencia;
     
     @Column(length = 10)
@@ -626,10 +626,10 @@ public class Expediente extends Identificable{
     @Column(length = 10)
     private String talla;
     
-    @Column(length = 100)  
+    @Column(length = 1000)  
     private String resumenClinico;
     
-    @Column(length = 100)
+    @Column(length = 300)
     private String diagnosticoProblem;
     @Column
     @Temporal(TemporalType.DATE)
@@ -759,7 +759,7 @@ public class Expediente extends Identificable{
     private String emplCont;
     @Column(length = 20)
     private String numSegCont;
-    @Column(length = 20)
+    @Column(length = 50)
     private String uniCont;
     @Temporal(TemporalType.DATE)
     private Date fechaEgreCont;
@@ -769,11 +769,11 @@ public class Expediente extends Identificable{
     private String diasCont;
     @Column(length = 80)
     private String diagnostegre;
-    @Column(length = 100)
+    @Column(length = 1000)
     private String resumenCont;
-    @Column(length = 100)
+    @Column(length = 1000)
     private String paciCont;
-    @Column(length = 100)
+    @Column(length = 1000)
     private String unidadRefCont;
     @Column(length = 100)
     private String noPermitidaCont;
@@ -889,13 +889,13 @@ public class Expediente extends Identificable{
     @Temporal(TemporalType.TIMESTAMP)
     private Date fechaDosNotasEnf;
     
-    @Column(length = 20)
+    @Column(length = 2048)
     private String obserCuidadoEnfDos;
 
-    @Column(length = 20)
+    @Column(length = 2048)
     private String planesdosEnf;
     
-    @Column(length = 100)
+    @Column(length = 2048)
     private String problemDos;
 
     @Temporal(TemporalType.TIMESTAMP)
@@ -913,7 +913,7 @@ public class Expediente extends Identificable{
     @Column(length = 100)
     private String acostumbraMedicamento;
     
-    @Column(length = 20)
+    @Column(length = 200)
     private String reposoAcciden;
 
     @Column(length = 20)
@@ -988,7 +988,7 @@ public class Expediente extends Identificable{
     @Column(length = 3)
     private Integer numHijoClic;
 
-    @Column(length = 180)
+    @Column(length = 1800)
     private String enfermoFalleClic;
 
     @Column(length = 50)
@@ -1057,7 +1057,7 @@ public class Expediente extends Identificable{
     @Column(length = 150)
     private String motivoConsul;
 
-    @Column(length = 150)
+    @Column(length = 1500)
     private String historiaActu;
 
     @Column(length = 200)
@@ -1144,19 +1144,19 @@ public class Expediente extends Identificable{
     @Column(length = 200)
     private String campleuro;
 
-    @Column(length = 150)
+    @Column(length = 200)
     private String areaPre;
 
-    @Column(length = 150)
+    @Column(length = 200)
     private String axiDer;
 
-    @Column(length = 150)
+    @Column(length = 200)
     private String axiIzq;
 
-    @Column(length = 150)
+    @Column(length = 200)
     private String mamaDer;
 
-    @Column(length = 150)
+    @Column(length = 200)
     private String mamaIzq;
 
     @Column(length = 200)
@@ -1680,7 +1680,7 @@ public class Expediente extends Identificable{
     @Column(length = 150)
     private String numCedCons;
 
-    @Column(length = 150)
+    @Column(length = 1500)
     private String direCasaCons;
 
     @Column(length = 150)
@@ -1754,7 +1754,7 @@ public class Expediente extends Identificable{
     @Column(length = 50)
     private String ocupacion;
 
-    @Column(length = 255)
+    @Column(length = 300)
     private String direccionResidencia;
 
     @Column(length = 50)
