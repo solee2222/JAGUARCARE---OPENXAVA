@@ -1,14 +1,17 @@
 package com.uam.CLINICA.model;
 
+import java.time.*;
+
 import javax.persistence.*;
 
 import org.openxava.annotations.*;
+import org.openxava.util.*;
 
 import lombok.*;
 
 @Entity
 @Getter @Setter
-@View(name="Simple",members = "primerNombre, primerApellido")
+@View(name="Simple",members = "primerNombre, primerApellido; carrera, tipo")
 
 public class Visitante {
 	@Id
@@ -29,5 +32,29 @@ public class Visitante {
     private TipoVisitante tipo;
 
     private String telefono;
+    
+ // Esto va en todas las entidades.
+  	@ReadOnly
+  	 public LocalDate fechaIng;
+  	@ReadOnly
+  	 public String usuarioIng;
+  	@ReadOnly
+  	 public String usuarioUpd;
+  	@ReadOnly
+  	 public LocalDate fechaUpd;
+  	
+  	@PrePersist
+  	public void prepersist()
+  	{
+  		fechaIng = LocalDate.now();
+  		usuarioIng = Users.getCurrent();
+  	}
+  	
+  	@PreUpdate
+  	public void preupdate()
+  	{
+  		fechaUpd = LocalDate.now();
+  		usuarioUpd = Users.getCurrent();
+  	}
 	
 }

@@ -3,9 +3,7 @@ package com.uam.CLINICA.model;
 import java.util.*;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
 
-import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 
 import com.uam.CLINICA.exceptions.*;
@@ -21,13 +19,8 @@ import lombok.*;
 @Views({
     @View(name="VistaVisita", members="nombreComercial, dosis, presentacion, cantidadDisponible")
 })
-public class Medicamento {
-	
-	@Id
-	@GeneratedValue(generator = "system-uuid")
-	@Hidden
-	@GenericGenerator(name = "system-uuid", strategy = "uuid")
-    private String id;
+public class Medicamento  extends Identificable {
+
 	
 	@Column(name = "nombre_comercial")
 	//@PropertyValidator(value= ValidadorMed.class)

@@ -29,6 +29,7 @@ public class Visita extends Identificable{
 	@Column(length=6)
 	@DefaultValueCalculator(CurrentYearCalculator.class)
 	int anyo;
+
 		
 	@Column(length=6)
 	@DefaultValueCalculator(value=SiguienteNumeroVisita.class,
