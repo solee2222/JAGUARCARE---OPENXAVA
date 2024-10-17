@@ -55,6 +55,12 @@ public class Visitante {
   	{
   		fechaUpd = LocalDate.now();
   		usuarioUpd = Users.getCurrent();
+ 		if (!usuarioUpd.equals(usuarioIng))
+ 		{
+ 			throw new javax.validation.ValidationException(
+                    "No puede modificar este elemento porque lo creó otra persona."
+            );
+ 		}
   	}
 	
 }

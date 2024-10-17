@@ -43,6 +43,16 @@ public class Identificable {
  	{
  		fechaUpd = LocalDate.now();
  		usuarioUpd = Users.getCurrent();
+ 		System.out.println("CREADO: " + usuarioIng);
+ 		System.out.println("MODIFICADOR: " + usuarioUpd);
+ 		System.out.println("IGUALES O NO: " + !usuarioUpd.equals(usuarioIng));
+ 		if (!usuarioUpd.equals(usuarioIng))
+ 		{
+ 			throw new javax.validation.ValidationException(
+                    "No puede modificar este elemento porque lo creó otra persona."
+            );
+ 		}
+
  	}
     
    
