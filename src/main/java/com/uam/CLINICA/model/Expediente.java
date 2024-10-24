@@ -9,9 +9,9 @@ import org.openxava.annotations.*;
 import lombok.*;
 
 @Entity
-@View( members = 
+@View( members =
 //expediente 1 CARPETA CLINICA MEDICA
-"CarpetaClinica { " +
+	"CarpetaClinica { Auditoria [usuarioIng,fechaIng;usuarioUpd,fechaUpd]; " +
 	"primerApellido, segundoApellido, nombres;"+
 	"FechaNacimiento [" +
 	"diafechaNa, mesfechaNa, aniofechaNa; ]" +

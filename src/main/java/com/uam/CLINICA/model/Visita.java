@@ -14,7 +14,7 @@ import lombok.*;
 @Entity
 @Getter @Setter
 
-@View(members = "recepcionista;"
+@View(members = "Auditoria [usuarioIng,fechaIng;usuarioUpd,fechaUpd];"
         + "anyo, numero;"
         + "horaEntrada, horaSalida, date;"
         + "visitante;"
@@ -23,7 +23,9 @@ import lombok.*;
         + "diagnostico;"
         + "medicamento;"
         + "cantidadDispensada;")
-
+@Views({
+	
+})
 public class Visita extends Identificable{
 	
 	@Column(length=6)

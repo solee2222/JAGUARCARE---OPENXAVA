@@ -13,6 +13,7 @@ import lombok.*;
 @NamedQueries({
     @NamedQuery(name="Insumo.findByNombre", query="select e from Insumo e where e.nombreInsumo like ?1")
 })
+@View(members="Auditoria [usuarioIng,fechaIng;usuarioUpd,fechaUpd];nombreInsumo;descripcion;cantidadDisponible;cantidadMinima")
 public class Insumo extends Identificable{
 	
 	@Required(message="Ingrese el nombre del insumo")

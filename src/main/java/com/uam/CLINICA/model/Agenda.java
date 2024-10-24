@@ -11,6 +11,8 @@ import lombok.*;
 @Entity
 @Getter @Setter
 //@EntityListeners(ClinicaListener.class )
+@View(members="Auditoria [usuarioIng,fechaIng;usuarioUpd,fechaUpd];visitante;fecha;especialidad")
+
 public class Agenda extends Identificable{
 	
 	/*@Id

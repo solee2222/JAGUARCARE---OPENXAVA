@@ -11,7 +11,9 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
+
 @View(name="Simple",members = "primerNombre, primerApellido; carrera, tipo")
+@View(name="VisitanteAuditoria",members = "Auditoria [usuarioIng,fechaIng;usuarioUpd,fechaUpd];primerNombre, primerApellido; carrera, tipo")
 
 public class Visitante {
 	@Id
@@ -23,7 +25,7 @@ public class Visitante {
 	private String primerNombre;
 	
 	 @Column(name = "primer_apellido")
-	private String primerApellido;
+	private String primerApellido; 
 	
 	@Enumerated(EnumType.STRING)
     private Carrera carrera;

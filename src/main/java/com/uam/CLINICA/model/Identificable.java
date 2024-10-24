@@ -23,12 +23,16 @@ public class Identificable {
     
  // Esto va en todas las entidades.
  	@ReadOnly
+ 	@Hidden
  	 public LocalDate fechaIng;
  	@ReadOnly
+ 	@Hidden
  	 public String usuarioIng;
+ 	@Hidden
  	@ReadOnly
  	 public String usuarioUpd;
  	@ReadOnly
+ 	@Hidden
  	 public LocalDate fechaUpd;
  	
  	@PrePersist
