@@ -43,6 +43,9 @@ public class Visitante {
   	@ReadOnly
   	 public String usuarioUpd;
   	@ReadOnly
+  	@Hidden
+ 	 public String usuarioDel;
+  	@ReadOnly
   	 public LocalDate fechaUpd;
   	
   	@PrePersist
@@ -64,5 +67,19 @@ public class Visitante {
             );
  		}
   	}
+  	
+  	@PreRemove
+ 	public void preremove()
+ 	{
+ 		usuarioDel = Users.getCurrent();
+ 		System.out.println("INTENTO DE BORRAR: " + usuarioDel);
+ 		if (!usuarioDel.equals(usuarioIng))
+ 		{
+ 			throw new javax.validation.ValidationException(
+                    "No puede eliminar este elemento porque lo creó otra persona."
+            );
+ 		}
+
+ 	}
 	
 }

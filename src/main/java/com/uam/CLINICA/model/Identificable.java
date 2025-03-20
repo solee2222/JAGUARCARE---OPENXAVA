@@ -31,6 +31,10 @@ public class Identificable {
  	@Hidden
  	@ReadOnly
  	 public String usuarioUpd;
+
+	@Hidden
+ 	@ReadOnly
+ 	 public String usuarioDel;
  	@ReadOnly
  	@Hidden
  	 public LocalDate fechaUpd;
@@ -54,6 +58,20 @@ public class Identificable {
  		{
  			throw new javax.validation.ValidationException(
                     "No puede modificar este elemento porque lo creó otra persona."
+            );
+ 		}
+
+ 	}
+ 	
+ 	@PreRemove
+ 	public void preremove()
+ 	{
+ 		usuarioDel = Users.getCurrent();
+ 		System.out.println("INTENTO DE BORRAR: " + usuarioDel);
+ 		if (!usuarioDel.equals(usuarioIng))
+ 		{
+ 			throw new javax.validation.ValidationException(
+                    "No puede eliminar este elemento porque lo creó otra persona."
             );
  		}
 
