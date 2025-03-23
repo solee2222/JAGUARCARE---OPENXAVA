@@ -16,7 +16,7 @@ public class ValidadorCedRecepcionista implements IPropertyValidator {
         IDAO dao = new ImplDAO();
         List<Recepcionista> listaCedula = dao.get("Recepcionista.findByCedula", Recepcionista.class, String.valueOf(o));
         if (listaCedula != null && listaCedula.size() > 0) {
-            messages.add("La cÃ©dula del recepcionista ya existe");
+            messages.add("La cédula del recepcionista ya existe");
         }
     }
 }

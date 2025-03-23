@@ -10,6 +10,7 @@ import javax.persistence.NamedQuery;
 import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
 import org.openxava.util.*;
+import org.springframework.security.crypto.bcrypt.*;
 
 import com.uam.CLINICA.Calculadores.*;
 
@@ -17,17 +18,16 @@ import lombok.*;
 
 @Entity
 @Getter @Setter
-@NamedQueries(
-		{
-			@NamedQuery(name="Recepcionista.findByPassword",
-						query="select e from Recepcionista e "
-								+ "where e.cedula=?1 and e.password=?2"),
-		    @NamedQuery(name="Recepcionista.findByCedula",
-            			query="SELECT e FROM Recepcionista e WHERE e.cedula = ?1"),
-		    @NamedQuery(name="Recepcionista.findByName",
-            			query="SELECT e FROM Recepcionista e WHERE e.name = ?1")
-		}
-		)
+@NamedQueries({
+    @NamedQuery(name = "Recepcionista.findByCedula", 
+                query = "SELECT e FROM Recepcionista e WHERE e.cedula = ?1"),
+    @NamedQuery(name="Recepcionista.findByPassword",
+	query="select e from Recepcionista e "
+			+ "where e.cedula=?1 and e.password=?2"),
+@NamedQuery(name="Recepcionista.findByName",
+	query="SELECT e FROM Recepcionista e WHERE e.name = ?1")
+}
+)
 @Views({
     @View(members="name, cedula; password;")
 })
@@ -51,11 +51,14 @@ public class Recepcionista{
     @Required(message="Ingrese el nombre")
     String name;
     
-    @Column(length=50)
+    @Column(length=200)
     @Required(message="Ingrese la contraseña")
+    @Password
     @Hidden
     String password;
 
+    private static final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+    
  	@ReadOnly
   	@Hidden
  	 public String usuarioDel;
@@ -76,17 +79,23 @@ public class Recepcionista{
   	@Hidden
  	 public LocalDate fechaIng;
   	
-  	@ReadOnly
-  	@Hidden
- 	public String admin = "admin";
-  	
+
+    public void setPassword(String password) {
+        this.password = passwordEncoder.encode(password);
+        System.out.println("HASH: " + this.password);// Se guarda el hash de la contraseña
+    }
+    
+    public boolean verifyPassword(String rawPassword) {
+        return passwordEncoder.matches(rawPassword, this.password);
+    }
+    
     @PrePersist
  	public void prepersist()
  	{
  		fechaIng = LocalDate.now();
  		usuarioIng = Users.getCurrent();
  		
- 		if (!usuarioIng.equals(admin))
+ 		if (!usuarioIng.equals("admin"))
  		{
  			throw new javax.validation.ValidationException(
                     "Usted no puede crear nuevos usuarios. Solicite un usuario al administrador."
@@ -111,7 +120,7 @@ public class Recepcionista{
  	public void preremove()
  	{
  		usuarioDel = Users.getCurrent();
- 		System.out.println("INTENTO DE BORRAR: " + usuarioDel);
+ 		System.out.println(LocalDate.now() + " INTENTO DE BORRAR: " + usuarioDel);
  		if (!usuarioDel.equals(usuarioIng))
  		{
  			throw new javax.validation.ValidationException(

@@ -15,7 +15,7 @@ public class ValidadorNomRecepcionista implements IPropertyValidator {
         IDAO dao = new ImplDAO();
         List<Recepcionista> listaNombre = dao.get("Recepcionista.findByName", Recepcionista.class, String.valueOf(o));
         if (listaNombre != null && listaNombre.size() > 0) {
-            messages.add("El nombre del recepcionista ya existe");
+            messages.add("El nombre del recepcionista ya existe.");
         }
     }
 }

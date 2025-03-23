@@ -2,6 +2,8 @@ package service;
 
 import java.util.*;
 
+import com.uam.CLINICA.model.*;
+
 public interface IDAO {
 	
 
@@ -17,6 +19,9 @@ public interface IDAO {
 	   <T> void create(T entity);
 
 	   <T> T update(T entity);
+	   
+	   // Método para verificar al Recepcionista por cédula y contraseña
+	    Recepcionista findRecepcionistaByCedulaAndPassword(String cedula, String password);
 
 
 }
