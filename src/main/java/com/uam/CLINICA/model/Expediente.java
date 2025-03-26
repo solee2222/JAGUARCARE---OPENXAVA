@@ -22,17 +22,19 @@ import lombok.*;
 "}"+
 
 //expediente 2 LISTADO DE PROBLEMAS
-"ListaProblemas { " +
-	    "fechaPro, numero; nombreProblema, estadoProblema;"
-	    + "nombreProblemaDos,estadoProblemaDos;"
-	    + "nombreProblemaTres, estadoProblemaTres;"
-	    + "nombreProblemaCuatro, estadoProblemaCuatro;"
-	    + "nombreProblemaCinco, estadoProblemaCinco;"
-	    + "nombreProblemaSeis, estadoProblemaSeis;"
-	    + "nombreProblemaSiete, estadoProblemaSiete;"
-	    + "nombreProblemaOcho, estadoProblemaOcho;"
-	    + "nombreProblemaNueve,estadoProblemaNueve; " +
-	    "}"+
+	"ListaProblemas { " +
+	"fechaPro, numero; " +
+	"nombreProblema, fechaProblema, fechaProbResuelto; " +
+	"nombreProblemaDos, fechaProblemaDos, fechaProbResueltoDos; " +
+	"nombreProblemaTres, fechaProblemaTres, fechaProbResueltoTres; " +
+	"nombreProblemaCuatro, fechaProblemaCuatro, fechaProbResueltoCuatro; " +
+	"nombreProblemaCinco, fechaProblemaCinco, fechaProbResueltoCinco; " +
+	"nombreProblemaSeis, fechaProblemaSeis, fechaProbResueltoSeis; " +
+	"nombreProblemaSiete, fechaProblemaSiete, fechaProbResueltoSiete; " +
+	"nombreProblemaOcho, fechaProblemaOcho, fechaProbResueltoOcho; " +
+	"nombreProblemaNueve, fechaProblemaNueve, fechaProbResueltoNueve; " +
+	"}" +
+
 	    
 //expediente 3 CONSTANCIA DE ABANDONO
 "ConstanciaAbandono { " +
@@ -383,105 +385,78 @@ public class Expediente extends Identificable{
     @Column(length = 100)
     private String nombreProblemaNueve;
     
-    public enum estadoProblema { 
-    	INACTIVOUno, RESUELTOUno 
-    }
-    public enum estadoProblemaDos { 
-    	INACTIVODos, RESUELTODos 
-    }
-    public enum estadoProblemaTres { 
-    	INACTIVOTres, RESUELTOTres 
-    }
-    public enum estadoProblemaCuatro { 
-    	INACTIVOCuatro, RESUELTOCuatro 
-    }
-    public enum estadoProblemaCinco { 
-    	INACTIVOCinco, RESUELTOCinco 
-    }
-    public enum estadoProblemaSeis { 
-    	INACTIVOSeis, RESUELTOSeis 
-    }
-    public enum estadoProblemaSiete { 
-    	INACTIVOSiete, RESUELTOSiete 
-    }
-    public enum estadoProblemaOcho { 
-    	INACTIVOOcho, RESUELTOOcho 
-    }
-    public enum estadoProblemaNueve { 
-    	INACTIVONueve, RESUELTONueve 
-    }
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblema estadoProblema;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaDos estadoProblemaDos;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaTres estadoProblemaTres;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaCuatro estadoProblemaCuatro;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaCinco estadoProblemaCinco;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaSeis estadoProblemaSeis;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaSiete estadoProblemaSiete;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaOcho estadoProblemaOcho;
-
-    @Enumerated(EnumType.STRING)
-    @Column(length = 20) 
-    private estadoProblemaNueve estadoProblemaNueve;
+    				//Fechas
+    @LabelFormat(LabelFormatType.SMALL)
+    @Column
+    private Date fechaProblema;
     
-    public String getEstadoProblemaAsString() {
-        return this.estadoProblema != null ? this.estadoProblema.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaDos;
+    
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaTres;
 
-    public String getEstadoProblemaDosAsString() {
-        return this.estadoProblemaDos != null ? this.estadoProblemaDos.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaCuatro;
 
-    public String getEstadoProblemaTresAsString() {
-        return this.estadoProblemaTres != null ? this.estadoProblemaTres.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaCinco;
 
-    public String getEstadoProblemaCuatroAsString() {
-        return this.estadoProblemaCuatro != null ? this.estadoProblemaCuatro.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaSeis;
 
-    public String getEstadoProblemaCincoAsString() {
-        return this.estadoProblemaCinco != null ? this.estadoProblemaCinco.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaSiete;
 
-    public String getEstadoProblemaSeisAsString() {
-        return this.estadoProblemaSeis != null ? this.estadoProblemaSeis.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaOcho;
 
-    public String getEstadoProblemaSieteAsString() {
-        return this.estadoProblemaSiete != null ? this.estadoProblemaSiete.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProblemaNueve;
+    
+    @LabelFormat(LabelFormatType.SMALL)
+    @Column
+    private Date fechaProbResuelto;
 
-    public String getEstadoProblemaOchoAsString() {
-        return this.estadoProblemaOcho != null ? this.estadoProblemaOcho.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoDos;
 
-    public String getEstadoProblemaNueveAsString() {
-        return this.estadoProblemaNueve != null ? this.estadoProblemaNueve.name() : "Valor por defecto";
-    }
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoTres;
+
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoCuatro;
+
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoCinco;
+
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoSeis;
+
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoSiete;
+
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoOcho;
+
+    @LabelFormat(LabelFormatType.NO_LABEL)
+    @Column
+    private Date fechaProbResueltoNueve;
 
     
   //Expediente 3 COSNTANCIA DE ABANDONO

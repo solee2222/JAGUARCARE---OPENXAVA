@@ -49,16 +49,6 @@ public class printExpedienteAction extends JasperReportBaseAction {
             parameters.put("fechaPro", expediente.getFechaPro());
             parameters.put("numero", expediente.getNumero());
             parameters.put("nombreProblema", expediente.getNombreProblema());
-            parameters.put("estadoProblemaAsString", expediente.getEstadoProblemaAsString()); // Enum
-            parameters.put("estadoProblemaDosAsString", expediente.getEstadoProblemaDosAsString()); // Enum
-            parameters.put("estadoProblemaTresAsString", expediente.getEstadoProblemaTresAsString()); // Enum
-            parameters.put("estadoProblemaCuatroAsString", expediente.getEstadoProblemaCuatroAsString()); // Enum
-            parameters.put("estadoProblemaCincoAsString", expediente.getEstadoProblemaCincoAsString()); // Enum
-            parameters.put("estadoProblemaSeisAsString", expediente.getEstadoProblemaSeisAsString()); // Enum
-            parameters.put("estadoProblemaSieteAsString", expediente.getEstadoProblemaSieteAsString()); // Enum
-            parameters.put("estadoProblemaOchoAsString", expediente.getEstadoProblemaOchoAsString()); // Enum
-            parameters.put("estadoProblemaNueveAsString", expediente.getEstadoProblemaNueveAsString()); // Enum
-            parameters.put("nombreProblema", expediente.getNombreProblema());
             parameters.put("nombreProblemaDos", expediente.getNombreProblemaDos());
             parameters.put("nombreProblemaTres", expediente.getNombreProblemaTres());
             parameters.put("nombreProblemaCuatro", expediente.getNombreProblemaCuatro());
@@ -67,6 +57,25 @@ public class printExpedienteAction extends JasperReportBaseAction {
             parameters.put("nombreProblemaSiete", expediente.getNombreProblemaSiete());
             parameters.put("nombreProblemaOcho", expediente.getNombreProblemaOcho());
             parameters.put("nombreProblemaNueve", expediente.getNombreProblemaNueve());
+            parameters.put("fechaProblema", expediente.getFechaProblema());
+            parameters.put("fechaProblemaDos", expediente.getFechaProblemaDos());
+            parameters.put("fechaProblemaTres", expediente.getFechaProblemaTres());
+            parameters.put("fechaProblemaCuatro", expediente.getFechaProblemaCuatro());
+            parameters.put("fechaProblemaCinco", expediente.getFechaProblemaCinco());
+            parameters.put("fechaProblemaSeis", expediente.getFechaProblemaSeis());
+            parameters.put("fechaProblemaSiete", expediente.getFechaProblemaSiete());
+            parameters.put("fechaProblemaOcho", expediente.getFechaProblemaOcho());
+            parameters.put("fechaProblemaNueve", expediente.getFechaProblemaNueve());
+            parameters.put("fechaProbResuelto", expediente.getFechaProbResuelto());
+            parameters.put("fechaProbResueltoDos", expediente.getFechaProbResueltoDos());
+            parameters.put("fechaProbResueltoTres", expediente.getFechaProbResueltoTres());
+            parameters.put("fechaProbResueltoCuatro", expediente.getFechaProbResueltoCuatro());
+            parameters.put("fechaProbResueltoCinco", expediente.getFechaProbResueltoCinco());
+            parameters.put("fechaProbResueltoSeis", expediente.getFechaProbResueltoSeis());
+            parameters.put("fechaProbResueltoSiete", expediente.getFechaProbResueltoSiete());
+            parameters.put("fechaProbResueltoOcho", expediente.getFechaProbResueltoOcho());
+            parameters.put("fechaProbResueltoNueve", expediente.getFechaProbResueltoNueve());
+
 
            
           //expediente 3 CONSTANCIA DE ABANDONO
