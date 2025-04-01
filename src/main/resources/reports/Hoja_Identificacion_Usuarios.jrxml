@@ -42,6 +42,15 @@
 	<field name="fechaProbResueltoSiete" class="java.util.Date"/>
 	<field name="fechaProbResueltoOcho" class="java.util.Date"/>
 	<field name="fechaProbResueltoNueve" class="java.util.Date"/>
+	<field name="numeroProblemaUno" class="java.lang.String"/>
+	<field name="numeroProblemaDos" class="java.lang.String"/>
+	<field name="numeroProblemaTres" class="java.lang.String"/>
+	<field name="numeroProblemaCuatro" class="java.lang.String"/>
+	<field name="numeroProblemaCinco" class="java.lang.String"/>
+	<field name="numeroProblemaSeis" class="java.lang.String"/>
+	<field name="numeroProblemaSiete" class="java.lang.String"/>
+	<field name="numeroProblemaOcho" class="java.lang.String"/>
+	<field name="numeroProblemaNueve" class="java.lang.String"/>
 	<field name="horaFechaNotUno" class="java.lang.String"/>
 	<field name="horaFaltanteEnf" class="java.lang.String"/>
 	<field name="problemDos" class="java.lang.String"/>
@@ -156,7 +165,6 @@
 	<field name="anioUni" class="java.lang.String"/>
 	<field name="unidadCuadro" class="java.lang.String"/>
 	<field name="nombreProblema" class="java.lang.String"/>
-	<field name="numero" class="java.lang.Integer"/>
 	<field name="establecimientoSalud" class="java.lang.String"/>
 	<field name="nombreUsuario" class="java.lang.String"/>
 	<field name="numeroCedula" class="java.lang.String"/>
@@ -550,14 +558,7 @@
 				<textFieldExpression><![CDATA[$F{fechaPro}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="189" y="332" width="71" height="59" uuid="3fd5e81c-275e-4bf1-aa9a-6aabac898e16"/>
-				<textElement textAlignment="Center">
-					<font size="18"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{numero}]]></textFieldExpression>
-			</textField>
-			<textField isBlankWhenNull="true">
-				<reportElement x="265" y="334" width="655" height="59" uuid="ab09c578-eeaa-4322-8749-a17c7a73194f"/>
+				<reportElement x="267" y="334" width="655" height="59" uuid="ab09c578-eeaa-4322-8749-a17c7a73194f"/>
 				<textElement textAlignment="Left">
 					<font size="18"/>
 					<paragraph lineSpacing="Double"/>
@@ -565,7 +566,70 @@
 				<textFieldExpression><![CDATA[$F{nombreProblema}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="266" y="396" width="655" height="59" uuid="420935de-064c-4cb0-bc59-cc74c9c0a164"/>
+				<reportElement x="190" y="334" width="75" height="59" uuid="e7d6f0b1-3d9c-4f17-8c60-23d33c4d80a1"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaUno}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="189" y="396" width="76" height="59" uuid="f9a6d0c2-8c74-4a57-b6f8-4f1d2e3b97c8"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaDos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="458" width="75" height="59" uuid="8c4c1d3e-2a7f-4f87-99a1-10f5d8a3b4c6"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaTres}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="189" y="524" width="76" height="59" uuid="3b6e9c1f-8a2d-45c7-9f1d-7e6c9a1b2c3d"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaCuatro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="586" width="75" height="59" uuid="5d1f8b7a-6e3c-4b8f-9d2c-1a3b5c6d7e8f"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaCinco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="650" width="75" height="59" uuid="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaSeis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="712" width="75" height="59" uuid="1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaSiete}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="776" width="71" height="59" uuid="9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaOcho}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="839" width="70" height="59" uuid="0f1e2d3c-4b5a-6978-8a7b-6c5d4e3f2a1b"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaNueve}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="396" width="655" height="59" uuid="420935de-064c-4cb0-bc59-cc74c9c0a164"/>
 				<textElement textAlignment="Left">
 					<font size="18"/>
 					<paragraph lineSpacing="Double"/>
@@ -573,7 +637,7 @@
 				<textFieldExpression><![CDATA[$F{nombreProblemaDos}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="264" y="460" width="655" height="59" uuid="399a38d0-d1bd-4ebd-91b4-6aafd535fea7"/>
+				<reportElement x="266" y="460" width="655" height="59" uuid="399a38d0-d1bd-4ebd-91b4-6aafd535fea7"/>
 				<textElement textAlignment="Left">
 					<font size="18"/>
 					<paragraph lineSpacing="Double"/>
@@ -581,7 +645,7 @@
 				<textFieldExpression><![CDATA[$F{nombreProblemaTres}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="267" y="523" width="655" height="59" uuid="6aba10a4-7458-4d68-b65e-a52c3bc50927"/>
+				<reportElement x="266" y="523" width="655" height="59" uuid="6aba10a4-7458-4d68-b65e-a52c3bc50927"/>
 				<textElement textAlignment="Left">
 					<font size="18"/>
 					<paragraph lineSpacing="Double"/>
@@ -589,7 +653,7 @@
 				<textFieldExpression><![CDATA[$F{nombreProblemaCuatro}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="264" y="586" width="655" height="59" uuid="c5077c99-1149-44a4-887f-b02cf392d865"/>
+				<reportElement x="267" y="586" width="653" height="59" uuid="c5077c99-1149-44a4-887f-b02cf392d865"/>
 				<textElement textAlignment="Left">
 					<font size="18"/>
 					<paragraph lineSpacing="Double"/>
@@ -613,7 +677,7 @@
 				<textFieldExpression><![CDATA[$F{nombreProblemaSiete}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="265" y="775" width="655" height="59" uuid="8a4d5ed6-55f7-4c42-8a82-e9f9e729dc1f"/>
+				<reportElement x="267" y="775" width="655" height="59" uuid="8a4d5ed6-55f7-4c42-8a82-e9f9e729dc1f"/>
 				<textElement textAlignment="Left">
 					<font size="18"/>
 					<paragraph lineSpacing="Double"/>
@@ -621,7 +685,7 @@
 				<textFieldExpression><![CDATA[$F{nombreProblemaOcho}]]></textFieldExpression>
 			</textField>
 			<textField isBlankWhenNull="true">
-				<reportElement x="264" y="839" width="655" height="59" uuid="ab5fc102-9faf-4766-98f3-4ef407d2b6e2"/>
+				<reportElement x="267" y="839" width="652" height="59" uuid="ab5fc102-9faf-4766-98f3-4ef407d2b6e2"/>
 				<textElement textAlignment="Left">
 					<font size="18"/>
 					<paragraph lineSpacing="Double"/>
@@ -636,7 +700,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblema}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="924" y="396" width="216" height="59" uuid="ef6294ec-bb06-4752-a78a-8ebf80ed64ab"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -652,7 +716,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResuelto}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1147" y="396" width="202" height="59" uuid="1d358505-cd2e-4bf7-8ad9-c83da8611beb"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -660,7 +724,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResueltoDos}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="924" y="460" width="216" height="59" uuid="ecca7b71-54e0-4cb4-b9cc-710cf2f13ec6"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -668,7 +732,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblemaTres}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="924" y="523" width="216" height="59" uuid="9dff3b45-464e-4c72-a2da-f8505b438d9b"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -676,7 +740,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblemaCuatro}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="924" y="586" width="216" height="59" uuid="f89477c1-0541-417e-946b-3de6c2ef3990"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -684,7 +748,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblemaCinco}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="924" y="650" width="216" height="59" uuid="98da2acf-7794-42a2-ae59-187a67057d35"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -692,7 +756,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblemaSeis}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="924" y="712" width="216" height="59" uuid="88121227-e619-459c-a640-be0869586545"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -700,7 +764,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblemaSiete}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="924" y="775" width="216" height="59" uuid="dfe9df6a-4959-41d2-ae3e-e98070fde72c"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -708,7 +772,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblemaOcho}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="923" y="839" width="216" height="59" uuid="370008d6-b782-4d30-bc0f-9a444409cc83"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -716,7 +780,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProblemaNueve}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1146" y="459" width="202" height="59" uuid="d80c2438-7378-41c5-967f-fc4de41f90a9"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -724,7 +788,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResueltoTres}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1147" y="522" width="202" height="59" uuid="58052489-ecff-4d67-8218-281233641e27"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -732,7 +796,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResueltoCuatro}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1147" y="586" width="202" height="59" uuid="e52be711-82dc-41b1-b04e-c22cacf1b22b"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -740,7 +804,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResueltoCinco}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1147" y="650" width="202" height="59" uuid="9a62bdd7-e014-4b52-aca1-767422023b5a"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -748,7 +812,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResueltoSeis}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1146" y="712" width="202" height="59" uuid="350a47f9-fce5-4d58-9712-2c313d075746"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -756,7 +820,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResueltoSiete}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1147" y="775" width="202" height="59" uuid="69888772-2fa1-4e47-bbf0-5ff7da342c0c"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>
@@ -764,7 +828,7 @@
 				</textElement>
 				<textFieldExpression><![CDATA[$F{fechaProbResueltoOcho}]]></textFieldExpression>
 			</textField>
-			<textField isBlankWhenNull="true">
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
 				<reportElement x="1143" y="839" width="202" height="59" uuid="cacfc312-1460-4d0f-bd44-85a38e08c03e"/>
 				<textElement textAlignment="Center">
 					<font size="21"/>

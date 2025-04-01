@@ -47,7 +47,6 @@ public class printExpedienteAction extends JasperReportBaseAction {
             
             //expediente 2 LISTA DE PROBLEMAS
             parameters.put("fechaPro", expediente.getFechaPro());
-            parameters.put("numero", expediente.getNumero());
             parameters.put("nombreProblema", expediente.getNombreProblema());
             parameters.put("nombreProblemaDos", expediente.getNombreProblemaDos());
             parameters.put("nombreProblemaTres", expediente.getNombreProblemaTres());
@@ -75,6 +74,15 @@ public class printExpedienteAction extends JasperReportBaseAction {
             parameters.put("fechaProbResueltoSiete", expediente.getFechaProbResueltoSiete());
             parameters.put("fechaProbResueltoOcho", expediente.getFechaProbResueltoOcho());
             parameters.put("fechaProbResueltoNueve", expediente.getFechaProbResueltoNueve());
+            parameters.put("numeroProblemaUno", expediente.getNumeroProblemaUno());    //Parametros para num de problemas
+            parameters.put("numeroProblemaDos", expediente.getNumeroProblemaDos());
+            parameters.put("numeroProblemaTres", expediente.getNumeroProblemaTres());
+            parameters.put("numeroProblemaCuatro", expediente.getNumeroProblemaCuatro());
+            parameters.put("numeroProblemaCinco", expediente.getNumeroProblemaCinco());
+            parameters.put("numeroProblemaSeis", expediente.getNumeroProblemaSeis());
+            parameters.put("numeroProblemaSiete", expediente.getNumeroProblemaSiete());
+            parameters.put("numeroProblemaOcho", expediente.getNumeroProblemaOcho());
+            parameters.put("numeroProblemaNueve", expediente.getNumeroProblemaNueve());
 
 
            

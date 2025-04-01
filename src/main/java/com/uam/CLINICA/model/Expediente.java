@@ -23,7 +23,7 @@ import lombok.*;
 
 //expediente 2 LISTADO DE PROBLEMAS
 	"ListaProblemas { " +
-	"fechaPro, numero; " +
+	"fechaPro; " +
 	"nombreProblema, fechaProblema, fechaProbResuelto; " +
 	"nombreProblemaDos, fechaProblemaDos, fechaProbResueltoDos; " +
 	"nombreProblemaTres, fechaProblemaTres, fechaProbResueltoTres; " +
@@ -355,9 +355,6 @@ public class Expediente extends Identificable{
     @Column(length = 255)
     private Date fechaPro;
 
-    @Column(length = 20)
-    private Integer numero;
-
     @Column(length = 100)
     private String nombreProblema;
     
@@ -457,8 +454,44 @@ public class Expediente extends Identificable{
     @LabelFormat(LabelFormatType.NO_LABEL)
     @Column
     private Date fechaProbResueltoNueve;
-
     
+    			//Métodos para la numeración de los problemas
+    public String getNumeroProblemaUno() {
+        return (nombreProblema != null && !nombreProblema.trim().isEmpty()) ? "1" : "";
+    }
+
+    public String getNumeroProblemaDos() {
+        return (nombreProblemaDos != null && !nombreProblemaDos.trim().isEmpty()) ? "2" : "";
+    }
+
+    public String getNumeroProblemaTres() {
+        return (nombreProblemaTres != null && !nombreProblemaTres.trim().isEmpty()) ? "3" : "";
+    }
+
+    public String getNumeroProblemaCuatro() {
+        return (nombreProblemaCuatro != null && !nombreProblemaCuatro.trim().isEmpty()) ? "4" : "";
+    }
+
+    public String getNumeroProblemaCinco() {
+        return (nombreProblemaCinco != null && !nombreProblemaCinco.trim().isEmpty()) ? "5" : "";
+    }
+
+    public String getNumeroProblemaSeis() {
+        return (nombreProblemaSeis != null && !nombreProblemaSeis.trim().isEmpty()) ? "6" : "";
+    }
+
+    public String getNumeroProblemaSiete() {
+        return (nombreProblemaSiete != null && !nombreProblemaSiete.trim().isEmpty()) ? "7" : "";
+    }
+
+    public String getNumeroProblemaOcho() {
+        return (nombreProblemaOcho != null && !nombreProblemaOcho.trim().isEmpty()) ? "8" : "";
+    }
+
+    public String getNumeroProblemaNueve() {
+        return (nombreProblemaNueve != null && !nombreProblemaNueve.trim().isEmpty()) ? "9" : "";
+    }
+
   //Expediente 3 COSNTANCIA DE ABANDONO
     
     @Column(length = 10)
