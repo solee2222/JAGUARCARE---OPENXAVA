@@ -1,0 +1,3478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Hoja_Identificacion_Usuarios" pageWidth="1440" pageHeight="1729" columnWidth="1400" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="56cc173c-2229-4989-8766-b9fdee6d4766">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="horaAb" class="java.lang.String"/>
+	<field name="comunidadCont" class="java.lang.String"/>
+	<field name="acostumbraMedicamento" class="java.lang.String"/>
+	<field name="nombreProblemaDos" class="java.lang.String"/>
+	<field name="nombreProblemaTres" class="java.lang.String"/>
+	<field name="nombreProblemaCuatro" class="java.lang.String"/>
+	<field name="nombreProblemaCinco" class="java.lang.String"/>
+	<field name="nombreProblemaSeis" class="java.lang.String"/>
+	<field name="nombreProblemaSiete" class="java.lang.String"/>
+	<field name="nombreProblemaOcho" class="java.lang.String"/>
+	<field name="nombreProblemaNueve" class="java.lang.String"/>
+	<field name="fechaProblema" class="java.util.Date"/>
+	<field name="fechaProblemaDos" class="java.util.Date"/>
+	<field name="fechaProblemaTres" class="java.util.Date"/>
+	<field name="fechaProblemaCuatro" class="java.util.Date"/>
+	<field name="fechaProblemaCinco" class="java.util.Date"/>
+	<field name="fechaProblemaSeis" class="java.util.Date"/>
+	<field name="fechaProblemaSiete" class="java.util.Date"/>
+	<field name="fechaProblemaOcho" class="java.util.Date"/>
+	<field name="fechaProblemaNueve" class="java.util.Date"/>
+	<field name="fechaProbResuelto" class="java.util.Date"/>
+	<field name="fechaProbResueltoDos" class="java.util.Date"/>
+	<field name="fechaProbResueltoTres" class="java.util.Date"/>
+	<field name="fechaProbResueltoCuatro" class="java.util.Date"/>
+	<field name="fechaProbResueltoCinco" class="java.util.Date"/>
+	<field name="fechaProbResueltoSeis" class="java.util.Date"/>
+	<field name="fechaProbResueltoSiete" class="java.util.Date"/>
+	<field name="fechaProbResueltoOcho" class="java.util.Date"/>
+	<field name="fechaProbResueltoNueve" class="java.util.Date"/>
+	<field name="numeroProblemaUno" class="java.lang.String"/>
+	<field name="numeroProblemaDos" class="java.lang.String"/>
+	<field name="numeroProblemaTres" class="java.lang.String"/>
+	<field name="numeroProblemaCuatro" class="java.lang.String"/>
+	<field name="numeroProblemaCinco" class="java.lang.String"/>
+	<field name="numeroProblemaSeis" class="java.lang.String"/>
+	<field name="numeroProblemaSiete" class="java.lang.String"/>
+	<field name="numeroProblemaOcho" class="java.lang.String"/>
+	<field name="numeroProblemaNueve" class="java.lang.String"/>
+	<field name="horaFechaNotUno" class="java.lang.String"/>
+	<field name="horaFaltanteEnf" class="java.lang.String"/>
+	<field name="problemDos" class="java.lang.String"/>
+	<field name="fechaEvoluDos" class="java.util.Date"/>
+	<field name="horaEvoluDos" class="java.lang.String"/>
+	<field name="planesDos" class="java.lang.String"/>
+	<field name="horaEnfNota" class="java.lang.String"/>
+	<field name="fechaDosNotasEnf" class="java.util.Date"/>
+	<field name="obserCuidadoEnfDos" class="java.lang.String"/>
+	<field name="planesdosEnf" class="java.lang.String"/>
+	<field name="reposoAcciden" class="java.lang.String"/>
+	<field name="tipoRh" class="java.lang.String"/>
+	<field name="pesoUnMes" class="java.lang.String"/>
+	<field name="pesoUnAnio" class="java.lang.String"/>
+	<field name="antAlerMedAsString" class="java.lang.String"/>
+	<field name="antAlerComAsString" class="java.lang.String"/>
+	<field name="antMalaAsString" class="java.lang.String"/>
+	<field name="antHepaAsString" class="java.lang.String"/>
+	<field name="antHospAsString" class="java.lang.String"/>
+	<field name="antOpeAsString" class="java.lang.String"/>
+	<field name="antAsmAsString" class="java.lang.String"/>
+	<field name="antParaAsString" class="java.lang.String"/>
+	<field name="antTuberAsString" class="java.lang.String"/>
+	<field name="antSifiAsString" class="java.lang.String"/>
+	<field name="antGonoAsString" class="java.lang.String"/>
+	<field name="antAmigAsString" class="java.lang.String"/>
+	<field name="antTransAsString" class="java.lang.String"/>
+	<field name="tipoJornadaHisAsString" class="java.lang.String"/>
+	<field name="sustanciasToxicasHisAsString" class="java.lang.String"/>
+	<field name="radiacionesHisAsString" class="java.lang.String"/>
+	<field name="ruidoHisAsString" class="java.lang.String"/>
+	<field name="medicamentosHisAsString" class="java.lang.String"/>
+	<field name="reposoHisAsString" class="java.lang.String"/>
+	<field name="posicionLaboralHisAsString" class="java.lang.String"/>
+	<field name="sexoHisAsString" class="java.lang.String"/>
+	<field name="tipoAseguradoHisAsString" class="java.lang.String"/>
+	<field name="hijosHistoAsString" class="java.lang.String"/>
+	<field name="asmaHistAsString" class="java.lang.String"/>
+	<field name="cancerHisAsString" class="java.lang.String"/>
+	<field name="diabetesAsString" class="java.lang.String"/>
+	<field name="epilepAsString" class="java.lang.String"/>
+	<field name="transmentaAsString" class="java.lang.String"/>
+	<field name="obesidadAsString" class="java.lang.String"/>
+	<field name="cardioAsString" class="java.lang.String"/>
+	<field name="hipertenAsString" class="java.lang.String"/>
+	<field name="sifilisAsString" class="java.lang.String"/>
+	<field name="tuberAsString" class="java.lang.String"/>
+	<field name="nefroAsString" class="java.lang.String"/>
+	<field name="otrosHisAsString" class="java.lang.String"/>
+	<field name="tipoPacienteHisAsString" class="java.lang.String"/>
+	<field name="asmaParen" class="java.lang.String"/>
+	<field name="cancerParen" class="java.lang.String"/>
+	<field name="diabeteParen" class="java.lang.String"/>
+	<field name="epilepParen" class="java.lang.String"/>
+	<field name="transtorParen" class="java.lang.String"/>
+	<field name="obesiParen" class="java.lang.String"/>
+	<field name="cardioParen" class="java.lang.String"/>
+	<field name="hiperParen" class="java.lang.String"/>
+	<field name="sifiParen" class="java.lang.String"/>
+	<field name="tuberParen" class="java.lang.String"/>
+	<field name="nefroParen" class="java.lang.String"/>
+	<field name="otroParen" class="java.lang.String"/>
+	<field name="madreEdadHis" class="java.lang.String"/>
+	<field name="madreSana" class="java.lang.String"/>
+	<field name="madreEnfer" class="java.lang.String"/>
+	<field name="madreCausa" class="java.lang.String"/>
+	<field name="madreEdadMuer" class="java.lang.String"/>
+	<field name="padreEdad" class="java.lang.String"/>
+	<field name="padreSano" class="java.lang.String"/>
+	<field name="padreEnfer" class="java.lang.String"/>
+	<field name="padreCausa" class="java.lang.String"/>
+	<field name="padreEdadMuer" class="java.lang.String"/>
+	<field name="hermanoEdad" class="java.lang.String"/>
+	<field name="hermaSnado" class="java.lang.String"/>
+	<field name="hermaEnfer" class="java.lang.String"/>
+	<field name="hermaCausa" class="java.lang.String"/>
+	<field name="hermaEdadMuer" class="java.lang.String"/>
+	<field name="esposEdad" class="java.lang.String"/>
+	<field name="espoSano" class="java.lang.String"/>
+	<field name="espoEnfe" class="java.lang.String"/>
+	<field name="espoCausa" class="java.lang.String"/>
+	<field name="espoEdad" class="java.lang.String"/>
+	<field name="tipoEstablecimientoNuevoAsString" class="java.lang.String"/>
+	<field name="aseguradoActivoNuevoAsString" class="java.lang.String"/>
+	<field name="accidenteTrabajoNuevoAsString" class="java.lang.String"/>
+	<field name="referenciaFueAsString" class="java.lang.String"/>
+	<field name="tipoEstablecimientoAsString" class="java.lang.String"/>
+	<field name="tipoReferenciaAsString" class="java.lang.String"/>
+	<field name="aseguradoActivoAsString" class="java.lang.String"/>
+	<field name="accidenteTrabajoAsString" class="java.lang.String"/>
+	<field name="tipoAseguradoAsString" class="java.lang.String"/>
+	<field name="horaIngre" class="java.lang.String"/>
+	<field name="responsableAsString" class="java.lang.String"/>
+	<field name="servicioRetiroAsString" class="java.lang.String"/>
+	<field name="primerApellido" class="java.lang.String"/>
+	<field name="segundoApellido" class="java.lang.String"/>
+	<field name="nombres" class="java.lang.String"/>
+	<field name="numeroINSS" class="java.lang.String"/>
+	<field name="fechaNacimiento" class="java.util.Date"/>
+	<field name="direccionDomiciliaria" class="java.lang.String"/>
+	<field name="silais" class="java.lang.String"/>
+	<field name="municipioCarpeta" class="java.lang.String"/>
+	<field name="unidadLinea" class="java.lang.String"/>
+	<field name="ultMovi" class="java.lang.String"/>
+	<field name="fechaPro" class="java.util.Date"/>
+	<field name="dosMAsString" class="java.lang.String"/>
+	<field name="unoMAsString" class="java.lang.String"/>
+	<field name="dosAAsString" class="java.lang.String"/>
+	<field name="unoAAsString" class="java.lang.String"/>
+	<field name="diaUni" class="java.lang.String"/>
+	<field name="mesUni" class="java.lang.String"/>
+	<field name="anioUni" class="java.lang.String"/>
+	<field name="unidadCuadro" class="java.lang.String"/>
+	<field name="nombreProblema" class="java.lang.String"/>
+	<field name="establecimientoSalud" class="java.lang.String"/>
+	<field name="nombreUsuario" class="java.lang.String"/>
+	<field name="numeroCedula" class="java.lang.String"/>
+	<field name="expnumero" class="java.lang.Integer"/>
+	<field name="fechaIngreso" class="java.util.Date"/>
+	<field name="sexoAsString" class="java.lang.String"/>
+	<field name="categoriaAsString" class="java.lang.String"/>
+	<field name="fechaAb" class="java.util.Date"/>
+	<field name="tiempoEstancia" class="java.lang.String"/>
+	<field name="unidadSalud" class="java.lang.String"/>
+	<field name="servicioRef" class="java.lang.String"/>
+	<field name="expedienteRef" class="java.lang.String"/>
+	<field name="nombreApellido" class="java.lang.String"/>
+	<field name="edadReferencia" class="java.lang.Integer"/>
+	<field name="sexoRef" class="java.lang.String"/>
+	<field name="direccionRef" class="java.lang.String"/>
+	<field name="comunidadRef" class="java.lang.String"/>
+	<field name="municipioRef" class="java.lang.String"/>
+	<field name="departamentoRef" class="java.lang.String"/>
+	<field name="ocupacionReferencia" class="java.lang.String"/>
+	<field name="comunicacionLlamar" class="java.lang.String"/>
+	<field name="parentescoRef" class="java.lang.String"/>
+	<field name="telefonoRef" class="java.lang.String"/>
+	<field name="empleadorReferencia" class="java.lang.String"/>
+	<field name="numeroSeguro" class="java.lang.String"/>
+	<field name="motivoReferencia" class="java.lang.String"/>
+	<field name="pulso" class="java.lang.String"/>
+	<field name="presionArterial" class="java.lang.String"/>
+	<field name="temperatura" class="java.lang.String"/>
+	<field name="frecRespi" class="java.lang.String"/>
+	<field name="peso" class="java.lang.String"/>
+	<field name="talla" class="java.lang.String"/>
+	<field name="resumenClinico" class="java.lang.String"/>
+	<field name="diagnosticoProblem" class="java.lang.String"/>
+	<field name="fechaEnvio" class="java.util.Date"/>
+	<field name="horaEnvio" class="java.lang.String"/>
+	<field name="acompRef" class="java.lang.String"/>
+	<field name="envioServ" class="java.lang.String"/>
+	<field name="contactoRef" class="java.lang.String"/>
+	<field name="uniRef" class="java.lang.String"/>
+	<field name="silaRef" class="java.lang.String"/>
+	<field name="nomMedRef" class="java.lang.String"/>
+	<field name="serviRefbajo" class="java.lang.String"/>
+	<field name="fechaReci" class="java.util.Date"/>
+	<field name="horaReci" class="java.lang.String"/>
+	<field name="nombresApellidosUsuario" class="java.lang.String"/>
+	<field name="numeroCedAb" class="java.lang.String"/>
+	<field name="nombreFirmante" class="java.lang.String"/>
+	<field name="servicioSaludRetiro" class="java.lang.String"/>
+	<field name="diagnosticoRazonAbandono" class="java.lang.String"/>
+	<field name="razones" class="java.lang.String"/>
+	<field name="responsableUsuario" class="java.lang.String"/>
+	<field name="nombrePersonaRetiraUsuario" class="java.lang.String"/>
+	<field name="parentescoAb" class="java.lang.String"/>
+	<field name="contUniSalud" class="java.lang.String"/>
+	<field name="servicioCont" class="java.lang.String"/>
+	<field name="expedienteCont" class="java.lang.String"/>
+	<field name="nomApCont" class="java.lang.String"/>
+	<field name="edadCont" class="java.lang.String"/>
+	<field name="sexoCont" class="java.lang.String"/>
+	<field name="direccionCont" class="java.lang.String"/>
+	<field name="municipioCont" class="java.lang.String"/>
+	<field name="departCont" class="java.lang.String"/>
+	<field name="ocupCont" class="java.lang.String"/>
+	<field name="llamarCont" class="java.lang.String"/>
+	<field name="parentescoCont" class="java.lang.String"/>
+	<field name="telefCont" class="java.lang.String"/>
+	<field name="emplCont" class="java.lang.String"/>
+	<field name="numSegCont" class="java.lang.String"/>
+	<field name="uniCont" class="java.lang.String"/>
+	<field name="fechaEgreCont" class="java.util.Date"/>
+	<field name="horaCont" class="java.lang.String"/>
+	<field name="diasCont" class="java.lang.String"/>
+	<field name="diagnostegre" class="java.lang.String"/>
+	<field name="resumenCont" class="java.lang.String"/>
+	<field name="paciCont" class="java.lang.String"/>
+	<field name="unidadRefCont" class="java.lang.String"/>
+	<field name="noPermitidaCont" class="java.lang.String"/>
+	<field name="nomMedCont" class="java.lang.String"/>
+	<field name="nomEstbNot" class="java.lang.String"/>
+	<field name="numExpeNot" class="java.lang.Integer"/>
+	<field name="numCedNotas" class="java.lang.String"/>
+	<field name="nomApNot" class="java.lang.String"/>
+	<field name="fechHorNot" class="java.util.Date"/>
+	<field name="problNot" class="java.lang.String"/>
+	<field name="planes" class="java.lang.String"/>
+	<field name="numPagNot" class="java.lang.Integer"/>
+	<field name="enfNomEstbNot" class="java.lang.String"/>
+	<field name="enfNumExpeNot" class="java.lang.String"/>
+	<field name="enfNumCedNotas" class="java.lang.String"/>
+	<field name="enfNomApNot" class="java.lang.String"/>
+	<field name="enfFechHorNot" class="java.util.Date"/>
+	<field name="enfObservNot" class="java.lang.String"/>
+	<field name="enfPlanes" class="java.lang.String"/>
+	<field name="enfNumPagNot" class="java.lang.Integer"/>
+	<field name="fechaClic" class="java.lang.String"/>
+	<field name="numExpHis" class="java.lang.Integer"/>
+	<field name="nomClic" class="java.lang.String"/>
+	<field name="carneClic" class="java.lang.String"/>
+	<field name="nacClic" class="java.lang.String"/>
+	<field name="direCic" class="java.lang.String"/>
+	<field name="ocupaClic" class="java.lang.String"/>
+	<field name="razaClic" class="java.lang.String"/>
+	<field name="estadoClic" class="java.lang.String"/>
+	<field name="numExpClic" class="java.lang.String"/>
+	<field name="fechaNaClic" class="java.lang.String"/>
+	<field name="residenClic" class="java.lang.String"/>
+	<field name="ciudadClic" class="java.lang.String"/>
+	<field name="escolaClic" class="java.lang.String"/>
+	<field name="religiClic" class="java.lang.String"/>
+	<field name="indiCausaClic" class="java.lang.String"/>
+	<field name="numHijoClic" class="java.lang.Integer"/>
+	<field name="enfermoFalleClic" class="java.lang.String"/>
+	<field name="promeClic" class="java.lang.String"/>
+	<field name="otroClic" class="java.lang.String"/>
+	<field name="tipoClic" class="java.lang.String"/>
+	<field name="tiempoSustClic" class="java.lang.String"/>
+	<field name="tipoContaClic" class="java.lang.String"/>
+	<field name="tiempoContaClic" class="java.lang.String"/>
+	<field name="tipoRuidoClic" class="java.lang.String"/>
+	<field name="tiempoRuidoClic" class="java.lang.String"/>
+	<field name="viveCasaClic" class="java.lang.String"/>
+	<field name="cuartoClic" class="java.lang.String"/>
+	<field name="cantPersClic" class="java.lang.Integer"/>
+	<field name="ensuCuartoClic" class="java.lang.String"/>
+	<field name="cafe" class="java.lang.String"/>
+	<field name="tabaco" class="java.lang.String"/>
+	<field name="bebiAlco" class="java.lang.String"/>
+	<field name="deport" class="java.lang.String"/>
+	<field name="distracciones" class="java.lang.String"/>
+	<field name="dieta" class="java.lang.String"/>
+	<field name="otroCostum" class="java.lang.String"/>
+	<field name="enfermeInf" class="java.lang.String"/>
+	<field name="inmunizacion" class="java.lang.String"/>
+	<field name="motivoConsul" class="java.lang.String"/>
+	<field name="historiaActu" class="java.lang.String"/>
+	<field name="cardiovas" class="java.lang.String"/>
+	<field name="respirato" class="java.lang.String"/>
+	<field name="digestiv" class="java.lang.String"/>
+	<field name="urogeni" class="java.lang.String"/>
+	<field name="endocri" class="java.lang.String"/>
+	<field name="neuro" class="java.lang.String"/>
+	<field name="organoSenti" class="java.lang.String"/>
+	<field name="sintoGene" class="java.lang.String"/>
+	<field name="gine" class="java.lang.String"/>
+	<field name="psicoso" class="java.lang.String"/>
+	<field name="pesoActu" class="java.lang.String"/>
+	<field name="estatu" class="java.lang.String"/>
+	<field name="pulsoUnoDecu" class="java.lang.String"/>
+	<field name="pulsoDosDecu" class="java.lang.String"/>
+	<field name="despuUnoEjer" class="java.lang.String"/>
+	<field name="despuDosEjer" class="java.lang.String"/>
+	<field name="tadecu" class="java.lang.String"/>
+	<field name="sentado" class="java.lang.String"/>
+	<field name="pie" class="java.lang.String"/>
+	<field name="cabeza" class="java.lang.String"/>
+	<field name="ojos" class="java.lang.String"/>
+	<field name="fdo" class="java.lang.String"/>
+	<field name="nariz" class="java.lang.String"/>
+	<field name="orofaringe" class="java.lang.String"/>
+	<field name="oido" class="java.lang.String"/>
+	<field name="cuello" class="java.lang.String"/>
+	<field name="torax" class="java.lang.String"/>
+	<field name="campleuro" class="java.lang.String"/>
+	<field name="areaPre" class="java.lang.String"/>
+	<field name="axiDer" class="java.lang.String"/>
+	<field name="axiIzq" class="java.lang.String"/>
+	<field name="mamaDer" class="java.lang.String"/>
+	<field name="mamaIzq" class="java.lang.String"/>
+	<field name="abdomen" class="java.lang.String"/>
+	<field name="tr" class="java.lang.String"/>
+	<field name="genita" class="java.lang.String"/>
+	<field name="dorso" class="java.lang.String"/>
+	<field name="miembroSup" class="java.lang.String"/>
+	<field name="pulsoUltiHis" class="java.lang.String"/>
+	<field name="miembroInf" class="java.lang.String"/>
+	<field name="examenNeuro" class="java.lang.String"/>
+	<field name="nomLegal" class="java.lang.String"/>
+	<field name="numCedCons" class="java.lang.String"/>
+	<field name="direCasaCons" class="java.lang.String"/>
+	<field name="nomFamCons" class="java.lang.String"/>
+	<field name="numCedFamCons" class="java.lang.String"/>
+	<field name="direCasaFamCons" class="java.lang.String"/>
+	<field name="numCeluFamCons" class="java.lang.String"/>
+	<field name="numExpHoja" class="java.lang.Integer"/>
+	<field name="etnia" class="java.lang.String"/>
+	<field name="fecha" class="java.util.Date"/>
+	<field name="diafechaNa" class="java.lang.Integer"/>
+	<field name="mesfechaNa" class="java.lang.Integer"/>
+	<field name="aniofechaNa" class="java.lang.Integer"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="escolaridad" class="java.lang.String"/>
+	<field name="ocupacion" class="java.lang.String"/>
+	<field name="direccionResidencia" class="java.lang.String"/>
+	<field name="localidad" class="java.lang.String"/>
+	<field name="municipio" class="java.lang.String"/>
+	<field name="departamento" class="java.lang.String"/>
+	<field name="responsableEmergencia" class="java.lang.String"/>
+	<field name="parentesco" class="java.lang.String"/>
+	<field name="direccion" class="java.lang.String"/>
+	<field name="empleador" class="java.lang.String"/>
+	<field name="estadoCivil" class="java.lang.String"/>
+	<field name="telefonos" class="java.lang.String"/>
+	<field name="direccionEmpleador" class="java.lang.String"/>
+	<field name="numeroAsegurado" class="java.lang.String"/>
+	<field name="actualizacionDirecciones" class="java.lang.String"/>
+	<detail>
+		<band height="1689" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="-21" width="1440" height="1709" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/carpetaClinica.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="926" width="350" height="30" uuid="59e52de5-0f18-409b-aa2a-005d65e20e27"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{primerApellido}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="926" width="350" height="30" uuid="d2459e88-1d97-4a00-82a1-bfe6ee42a3b6"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{segundoApellido}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="800" y="925" width="350" height="30" uuid="3946822a-ab5a-400d-9870-79e9977a012c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="1165" width="280" height="30" uuid="66fdaf71-030f-4aca-a157-700be70ab52c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{silais}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="1222" width="280" height="30" uuid="b87f586a-f926-4d78-b07c-a9218666c832"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{municipioCarpeta}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="1293" width="280" height="30" uuid="76623860-b174-4318-92f3-4c69a30b895b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unidadLinea}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="404" y="1165" width="280" height="30" uuid="bccf88c2-8208-4a2e-80b8-d038451341ba"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroINSS}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="1064" width="739" height="30" uuid="97663355-521a-4268-bbbb-162aba5e7acd"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccionDomiciliaria}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="224" y="1037" width="79" height="30" uuid="33e44f50-26d4-4cd4-b2ca-f2b03a6d2592"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aniofechaNa}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="121" y="1037" width="79" height="30" uuid="c2fea635-4571-4945-aa10-73341b0b3f86"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mesfechaNa}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="1037" width="70" height="30" uuid="6e6d97dc-7461-42f3-a10e-112b343de458"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diafechaNa}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1306" y="1359" width="60" height="50" uuid="da20a330-b801-4b68-a3d6-c5e531d993be">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="17"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ultMovi}]]></textFieldExpression>
+			</textField>
+			<image rotation="Left">
+				<reportElement x="1307" y="1288" width="56" height="47" uuid="f79ea2a1-8367-454f-a94c-0b8850d8ba38">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{dosMAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image rotation="Left">
+				<reportElement x="1307" y="1236" width="56" height="47" uuid="849b0edd-98dc-420e-abf6-6d941fbcb2b7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{unoMAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image rotation="Left">
+				<reportElement x="1307" y="1187" width="56" height="47" uuid="b89c0fd3-d111-42fb-af34-a93c00989bfa">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{dosAAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image rotation="Left">
+				<reportElement x="1307" y="1140" width="56" height="47" uuid="e9c33fdc-71e7-4b7d-9a24-2b1c6f0b15b8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{unoAAsString}.equals("MARCADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1306" y="1079" width="58" height="58" uuid="f3b541ab-990e-4204-bd77-848926b50be2">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diaUni}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1306" y="1019" width="58" height="58" uuid="76608d1a-b858-45f8-92b3-7d809eb95bcf">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mesUni}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1305" y="960" width="58" height="58" uuid="f221d537-478a-4169-b245-bff288793f84">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" rotation="Left">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{anioUni}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1305" y="872" width="58" height="58" uuid="b61d702b-262c-4eb2-b7d7-d7be88fec321">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" rotation="None">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unidadCuadro}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/listaProblema.png"]]></imageExpression>
+			</image>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="50" y="334" width="139" height="59" uuid="52ca0b65-31bd-4dc8-b5c0-d31ebb69f895"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaPro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="334" width="655" height="59" uuid="ab09c578-eeaa-4322-8749-a17c7a73194f"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblema}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="334" width="75" height="59" uuid="e7d6f0b1-3d9c-4f17-8c60-23d33c4d80a1"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaUno}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="189" y="396" width="76" height="59" uuid="f9a6d0c2-8c74-4a57-b6f8-4f1d2e3b97c8"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaDos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="458" width="75" height="59" uuid="8c4c1d3e-2a7f-4f87-99a1-10f5d8a3b4c6"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaTres}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="189" y="524" width="76" height="59" uuid="3b6e9c1f-8a2d-45c7-9f1d-7e6c9a1b2c3d"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaCuatro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="586" width="75" height="59" uuid="5d1f8b7a-6e3c-4b8f-9d2c-1a3b5c6d7e8f"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaCinco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="650" width="75" height="59" uuid="2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaSeis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="712" width="75" height="59" uuid="1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaSiete}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="776" width="71" height="59" uuid="9f8e7d6c-5b4a-3c2d-1e0f-9a8b7c6d5e4f"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaOcho}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="839" width="70" height="59" uuid="0f1e2d3c-4b5a-6978-8a7b-6c5d4e3f2a1b"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroProblemaNueve}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="396" width="655" height="59" uuid="420935de-064c-4cb0-bc59-cc74c9c0a164"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaDos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="266" y="460" width="655" height="59" uuid="399a38d0-d1bd-4ebd-91b4-6aafd535fea7"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaTres}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="266" y="523" width="655" height="59" uuid="6aba10a4-7458-4d68-b65e-a52c3bc50927"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaCuatro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="586" width="653" height="59" uuid="c5077c99-1149-44a4-887f-b02cf392d865"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaCinco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="650" width="655" height="59" uuid="7e70ef95-6f7e-4994-b63c-3f9878616dcf"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaSeis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="712" width="655" height="59" uuid="908d2746-f8a2-464b-9b4d-42cedfbada71"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaSiete}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="775" width="655" height="59" uuid="8a4d5ed6-55f7-4c42-8a82-e9f9e729dc1f"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaOcho}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="267" y="839" width="652" height="59" uuid="ab5fc102-9faf-4766-98f3-4ef407d2b6e2"/>
+				<textElement textAlignment="Left">
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreProblemaNueve}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="332" width="216" height="59" uuid="b22e5a91-001e-4c36-b43d-7170a8b84ccf"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblema}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="396" width="216" height="59" uuid="ef6294ec-bb06-4752-a78a-8ebf80ed64ab"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaDos}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1146" y="333" width="203" height="59" uuid="947cadd2-f4b6-4b61-a623-b30aa3b42422"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResuelto}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1147" y="396" width="202" height="59" uuid="1d358505-cd2e-4bf7-8ad9-c83da8611beb"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoDos}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="460" width="216" height="59" uuid="ecca7b71-54e0-4cb4-b9cc-710cf2f13ec6"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaTres}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="523" width="216" height="59" uuid="9dff3b45-464e-4c72-a2da-f8505b438d9b"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaCuatro}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="586" width="216" height="59" uuid="f89477c1-0541-417e-946b-3de6c2ef3990"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaCinco}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="650" width="216" height="59" uuid="98da2acf-7794-42a2-ae59-187a67057d35"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaSeis}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="712" width="216" height="59" uuid="88121227-e619-459c-a640-be0869586545"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaSiete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="924" y="775" width="216" height="59" uuid="dfe9df6a-4959-41d2-ae3e-e98070fde72c"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaOcho}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="923" y="839" width="216" height="59" uuid="370008d6-b782-4d30-bc0f-9a444409cc83"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProblemaNueve}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1146" y="459" width="202" height="59" uuid="d80c2438-7378-41c5-967f-fc4de41f90a9"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoTres}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1147" y="522" width="202" height="59" uuid="58052489-ecff-4d67-8218-281233641e27"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoCuatro}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1147" y="586" width="202" height="59" uuid="e52be711-82dc-41b1-b04e-c22cacf1b22b"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoCinco}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1147" y="650" width="202" height="59" uuid="9a62bdd7-e014-4b52-aca1-767422023b5a"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoSeis}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1146" y="712" width="202" height="59" uuid="350a47f9-fce5-4d58-9712-2c313d075746"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoSiete}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1147" y="775" width="202" height="59" uuid="69888772-2fa1-4e47-bbf0-5ff7da342c0c"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoOcho}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement x="1143" y="839" width="202" height="59" uuid="cacfc312-1460-4d0f-bd44-85a38e08c03e"/>
+				<textElement textAlignment="Center">
+					<font size="21"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaProbResueltoNueve}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/constancia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="220" width="470" height="30" uuid="91f25ddc-79ee-41b5-a593-df26f49a64de"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expnumero}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="851" y="517" width="20" height="18" uuid="123e4567-e89b-12d3-a456-426614174000"/>
+				<imageExpression><![CDATA[$F{responsableAsString}.equals("USUARIO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1150" y="517" width="27" height="18" uuid="123e4567-e89b-12d3-a456-426614174001"/>
+				<imageExpression><![CDATA[$F{responsableAsString}.equals("RESPONSABLE_DEL_USUARIO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="767" y="747" width="20" height="18" uuid="123e4567-e89b-12d3-a456-426614174002"/>
+				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("PERSONA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="869" y="746" width="27" height="18" uuid="123e4567-e89b-12d3-a456-426614174003"/>
+				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("HIJA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1004" y="746" width="27" height="18" uuid="123e4567-e89b-12d3-a456-426614174004"/>
+				<imageExpression><![CDATA[$F{servicioRetiroAsString}.equals("FAMILIAR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="290" width="850" height="30" uuid="edb0dc9f-43fc-4ae8-934d-b9ffeb44ef91"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombresApellidosUsuario}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="55" y="349" width="470" height="30" uuid="364c3f96-70d1-4875-bb0b-be3469694874"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroCedAb}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="970" y="220" width="160" height="30" uuid="d212b329-310f-433b-9276-91575bea32e6"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaIngreso}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="973" y="280" width="157" height="30" uuid="89d7e67b-a08a-4aac-ad28-fc99fd1ab2a3"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaAb}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="973" y="349" width="320" height="30" uuid="17f402cd-3029-4c52-b3a2-1b69e988dbce"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tiempoEstancia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="94" y="511" width="670" height="30" uuid="32d3fdc9-320d-49fb-8aff-83adeefb07e7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreFirmante}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="581" y="535" width="600" height="32" uuid="20d4098f-27a1-4487-9ac0-12c3c4886473"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicioSaludRetiro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="336" y="560" width="964" height="24" uuid="819e4df9-5e2b-4297-a37e-e9efd9768e56"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diagnosticoRazonAbandono}.length() > 100 ? $F{diagnosticoRazonAbandono}.substring(0, 100) : $F{diagnosticoRazonAbandono}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="64" y="589" width="1013" height="24" uuid="9b03f5d8-26d5-4e11-b83f-33c2bae6f4a0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diagnosticoRazonAbandono}.length() > 100 ? $F{diagnosticoRazonAbandono}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="389" y="766" width="758" height="30" uuid="37fac1d9-9458-4300-ab4b-62d1aebc21be"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{responsableUsuario}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="1231" width="1248" height="30" uuid="b19bc8e6-984d-4d85-99a2-90843893f1ee"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombrePersonaRetiraUsuario}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="57" y="1349" width="1248" height="90" uuid="ec5198ca-b191-4774-a0dc-6f8d818b1bde"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parentescoAb}]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm a" isBlankWhenNull="true">
+				<reportElement x="1147" y="220" width="160" height="30" uuid="832a82bd-20ae-4d37-85cd-895a43e8eeb1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaIngre}]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm a" isBlankWhenNull="true">
+				<reportElement x="1140" y="280" width="160" height="30" uuid="33de65e7-3238-4413-be31-56eb9c71185a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaAb}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="684" y="640" width="626" height="30" uuid="30779b31-a316-41b4-ab24-652174ad900d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{razones}.length() > 100 ? $F{razones}.substring(0, 100) : $F{razones}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="64" y="670" width="1246" height="30" uuid="f1048c88-9927-4b1e-b5d7-6076185e3cdd"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{razones}.length() > 99 ? $F{razones}.substring(99) : ""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/referencia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="230" y="262" width="295" height="30" uuid="bd6bc62f-3590-4f1e-8af5-a3ae588f5d39"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unidadSalud}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="140" y="330" width="20" height="20" uuid="3f76c8d4-b6ae-4f8b-972b-1b9ad6f5e0d5"/>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoAsString}.equals("PUBLICO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="293" y="330" width="20" height="20" uuid="5df80a64-dbe0-4c81-b621-b8fc32ebf3dc"/>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoAsString}.equals("PRIVADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1204" y="301" width="20" height="20" uuid="c1f74a4c-d729-4d83-9022-835b5573e839"/>
+				<imageExpression><![CDATA[$F{tipoReferenciaAsString}.equals("URGENTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1347" y="301" width="20" height="20" uuid="8e8b934b-2188-4a07-9837-2c9c257986ff"/>
+				<imageExpression><![CDATA[$F{tipoReferenciaAsString}.equals("NO_URGENTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="75" y="513" width="20" height="20" uuid="9c25b496-f36b-404a-8cf7-7dcae28a5091"/>
+				<imageExpression><![CDATA[$F{aseguradoActivoAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="176" y="512" width="20" height="20" uuid="34b3da02-b0f5-432a-bb71-1a5a1645cb08"/>
+				<imageExpression><![CDATA[$F{aseguradoActivoAsString}.equals("NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="434" y="513" width="20" height="20" uuid="e815dcec-2ed7-4d07-a02d-1af0d5e5bea4"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("INTENCIONAL") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="640" y="512" width="20" height="20" uuid="1af02b76-aa21-4a9f-9c3e-97be07b9349b"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("AUTO_INFLIGIDO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="815" y="512" width="20" height="20" uuid="d2c7551b-14e0-47db-9786-5b537f4b3922"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("ACCIDENTAL") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="967" y="513" width="20" height="20" uuid="3062f61c-50b5-45ed-9794-7a6926f6f4ba"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoAsString}.equals("SE_IGNORA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="186" y="600" width="20" height="20" uuid="48bf6c7f-1c45-4b3e-8dbb-8070e2a727a5"/>
+				<imageExpression><![CDATA[$F{tipoAseguradoAsString}.equals("COTIZANTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="185" y="635" width="20" height="20" uuid="cb68a3d1-388e-4cb2-8b4f-65e36017318b"/>
+				<imageExpression><![CDATA[$F{tipoAseguradoAsString}.equals("BENEFICIARIO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="160" y="400" width="729" height="30" uuid="d70029ec-2296-48d9-b188-7c0859fa7a2b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccionRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="170" y="430" width="355" height="30" uuid="07e4d7d6-1bdb-4ac9-a8de-688b17b2822c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{municipioRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1024" y="429" width="339" height="30" uuid="fd074c99-784b-47ac-9fff-4fb06620aa49"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ocupacionReferencia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="543" y="301" width="341" height="30" uuid="fc0e48a4-b81d-475f-b2e3-870ca00b7c80"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicioRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1034" y="263" width="328" height="30" uuid="d45f6e20-ab85-41f2-b67c-d1871a0f2142"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expedienteRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="963" y="363" width="147" height="30" uuid="566f6d92-6fda-4b2a-9efb-81136ba79143"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{edadReferencia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1180" y="363" width="183" height="30" uuid="a8ca41b7-da1c-4179-bd7c-c0d4f1710f89"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sexoRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="696" y="429" width="194" height="30" uuid="dfa843ae-6c92-4690-b950-3ea0883beec3"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamentoRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1030" y="400" width="333" height="30" uuid="87c143a4-404a-4913-b52b-16b23a84b43d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comunidadRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="273" y="363" width="617" height="30" uuid="526d67b9-697c-4098-a1b5-1ea12229deda"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreApellido}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="308" y="584" width="1055" height="30" uuid="297c6f20-1d89-46c6-ab8f-d59040dfbc57"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comunicacionLlamar}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="170" y="682" width="550" height="30" uuid="54e7050c-329b-4904-aa4e-6641efeabd71"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empleadorReferencia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="440" y="630" width="280" height="30" uuid="9d89af77-87ba-4cf6-b01f-957451f9db2a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parentescoRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="840" y="630" width="200" height="30" uuid="985d49bc-1ce3-4a0d-9da4-220d7254d378"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonoRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="890" y="682" width="473" height="30" uuid="45f02a6f-d936-4f04-b012-75383e5c21f1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroSeguro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="299" y="725" width="1064" height="30" uuid="58edeae2-523a-4c6d-88eb-d0d1a1506175"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motivoReferencia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="780" width="80" height="30" uuid="8a29e20c-3f1f-40c2-ab76-ddd7c060441a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pulso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="392" y="779" width="73" height="30" uuid="8c77514d-e22a-4da4-ac24-81426a5cf951"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{presionArterial}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="613" y="780" width="95" height="30" uuid="62fa56cb-7c82-4945-8514-a449ffca9581">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{temperatura}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="920" y="778" width="60" height="30" uuid="2917b12f-2336-444e-a22d-ff07365f5161">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{frecRespi}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1056" y="778" width="124" height="30" uuid="a008c5a6-fae4-4652-a013-924669e78e30">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{peso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1249" y="780" width="114" height="30" uuid="a619d54f-7661-46db-a9c5-8f45c4018e29">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{talla}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="866" width="1316" height="264" uuid="213cc0be-f51f-4741-a979-cee9925dd36c"/>
+				<textElement markup="none">
+					<font size="18"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{resumenClinico}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="1170" width="1316" height="69" uuid="8ffa4790-5c87-46ec-9a10-37f13836464d"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diagnosticoProblem}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="380" y="1590" width="273" height="30" uuid="f019245b-1ad8-4fc9-a93a-db26b3cb390e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaReci}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="210" y="1363" width="1156" height="30" uuid="393e091b-7308-46d2-83c4-6abd7d4be468"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactoRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="1483" width="1173" height="30" uuid="dacf01a3-c82b-45a3-afc3-88b6798d227c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{serviRefbajo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="1443" width="689" height="30" uuid="b8e301ab-4ae5-439c-978b-961a998c055c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomMedRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="236" y="1278" width="1131" height="30" uuid="a0445b4e-69a5-4692-b2a7-b65b0aadb9ac"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acompRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="299" y="1330" width="451" height="30" uuid="6745dd5b-31e2-448b-845a-cf93fa1d7e57"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{envioServ}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="907" y="1330" width="133" height="30" uuid="0a23caab-c897-4c86-b656-b84960653205"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{uniRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1182" y="1330" width="185" height="30" uuid="77118240-608b-41fb-a205-ff7f1562f4d0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{silaRef}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="710" y="1590" width="273" height="30" uuid="936ca901-a244-42ef-98f1-0cfae20f7707"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaReci}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="218" y="1245" width="152" height="30" uuid="9448178d-2aa2-41a1-8998-804fe92d308f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaEnvio}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="538" y="1246" width="222" height="30" uuid="ab991963-01b5-45f9-b75a-0844cfa903e1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaEnvio}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/contrareferencia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="242" y="264" width="283" height="30" uuid="a3f6540f-8bec-4fbb-9a2f-5e624f9f7381"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contUniSalud}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="197" y="570" width="20" height="20" uuid="8b7f182a-e74d-4618-ae6d-8de7a1cbee76">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{tipoAseguradoHisAsString}.equals("COTIZANTEHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="197" y="608" width="20" height="20" uuid="fa1ec4b9-d55b-4209-8e15-a4635b6599b6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{tipoAseguradoHisAsString}.equals("BENEHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="543" y="301" width="329" height="30" uuid="f819a6f2-be00-4098-a15a-5791bdbe9a53"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicioCont}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="147" y="330" width="20" height="20" uuid="cae5de21-b792-4bda-870f-0ea85b9e6fbb"/>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoNuevoAsString}.equals("PUBLICONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="290" y="330" width="20" height="20" uuid="1a89fa85-8191-475a-993f-bc8322ee8b94"/>
+				<imageExpression><![CDATA[$F{tipoEstablecimientoNuevoAsString}.equals("PRIVADOCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="80" y="506" width="20" height="20" uuid="ef1b713c-c5ef-45d2-aa23-5d23bdf5401b"/>
+				<imageExpression><![CDATA[$F{aseguradoActivoNuevoAsString}.equals("SICONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="181" y="505" width="20" height="20" uuid="f5c1af22-2087-47b9-b16f-85f62c3f60b6"/>
+				<imageExpression><![CDATA[$F{aseguradoActivoNuevoAsString}.equals("NOCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="486" y="525" width="20" height="20" uuid="a154fc10-4702-4ba0-8dfb-5c841b4c3a28"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("INTENCIONALCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="708" y="525" width="20" height="20" uuid="bbb71e5f-e2a8-45e5-b3b1-a2f7dab68dfa"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("AUTO_INFLIGIDOCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="909" y="526" width="20" height="20" uuid="d004ac42-1b2b-4506-9d3d-a4c9799b8760"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("ACCIDENTALCONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1087" y="524" width="20" height="20" uuid="fc43bba5-0aad-4db1-8108-e18b3b5a507b"/>
+				<imageExpression><![CDATA[$F{accidenteTrabajoNuevoAsString}.equals("SE_IGNORACONT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="381" y="1413" width="20" height="20" uuid="8c231abe-45be-43e9-9b47-036256c1e0ff"/>
+				<imageExpression><![CDATA[$F{referenciaFueAsString}.equals("ADECUADA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="567" y="1412" width="20" height="20" uuid="af0422ae-7c31-4b07-93b6-05825e5e9e34"/>
+				<imageExpression><![CDATA[$F{referenciaFueAsString}.equals("INADECUADA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1054" y="262" width="330" height="30" uuid="09b67d0a-9729-43e9-a06e-0b5958dff6c0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expedienteCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="170" y="430" width="360" height="30" uuid="55a61f35-9997-4c81-ac15-16591c0581f2"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{municipioCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="300" y="363" width="589" height="30" uuid="a9757892-3d6f-44f1-bd82-4de1b108499a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomApCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="170" y="400" width="718" height="30" uuid="8c718cf1-943a-4a7a-a306-43c1419b102c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccionCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="720" y="429" width="170" height="30" uuid="990241e5-e87e-41ff-a0b2-ba4df75cee92"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1040" y="429" width="324" height="30" uuid="889af35e-a5db-4493-a58b-3e6c832ac7ac"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ocupCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="971" y="363" width="147" height="30" uuid="a7e98da9-56cd-4bcf-977d-07b7da652c51"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{edadCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1240" y="363" width="123" height="30" uuid="78168114-abf6-4089-a7ef-c275736dc8e1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sexoCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="760" y="558" width="603" height="30" uuid="fd8f8825-62d8-4260-a787-9f9ff3c2c41c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{llamarCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="645" width="850" height="30" uuid="40762fac-b09e-4c5e-8154-3ae4c307defd"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emplCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="490" y="592" width="240" height="30" uuid="13ce6fcb-402f-48b1-a088-f9ea1d017bdb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parentescoCont}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="255" y="723" width="245" height="30" uuid="e97261b0-6fce-47d5-b2ec-7aa27932a355"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaEgreCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1231" y="644" width="134" height="30" uuid="e97b40ae-ce96-4956-9ef1-df79db69c259"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numSegCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="844" y="591" width="326" height="30" uuid="16dfbb4d-3864-410f-a510-8a57f2853967"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="500" y="681" width="863" height="30" uuid="8ea0aa9c-ac78-48d0-b3aa-7bc43799dd8e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{uniCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="251" y="761" width="468" height="30" uuid="5f919cfa-654d-4cbc-97f6-31afcb6e5d84"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diasCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="63" y="1103" width="628" height="290" uuid="f2591926-8e22-4faf-acb5-264b5a0098c1"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paciCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="248" y="1442" width="1117" height="30" uuid="19e3090b-b50d-4480-a664-4a9dc71efb97"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noPermitidaCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="288" y="1489" width="1075" height="30" uuid="65dd3718-4554-4db0-90b8-1d2251f9d9f9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomMedCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="720" y="1102" width="636" height="290" uuid="719781b0-2ecf-4446-ac01-94e730c948f2"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unidadRefCont}]]></textFieldExpression>
+			</textField>
+			<textField pattern="h:mm a" isBlankWhenNull="true">
+				<reportElement x="798" y="724" width="126" height="30" uuid="9d0e5955-0cb8-4e9f-ac69-937664208eba"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1009" y="761" width="346" height="30" uuid="e78f9fdc-40b5-4cbd-a3b5-f200a3f21ef9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diagnostegre}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="853" width="1314" height="146" uuid="fab56eb8-0e6f-4e89-8500-9b087719c888"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{resumenCont}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1045" y="400" width="324" height="30" uuid="69da5174-0c57-4c44-88db-37bd73164a27"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comunidadCont}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1evolucion.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="297" width="720" height="30" uuid="435b07ce-c329-4162-b4b9-23041cc46cd4"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomEstbNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="369" width="720" height="30" uuid="d14d8ea7-f52a-461b-8aeb-aa362754771a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomApNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="500" width="171" height="30" uuid="6eccf996-d02b-4aaa-9a90-de50fb376ee1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechHorNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="243" y="520" width="756" height="1030" uuid="778fa253-ab2d-40f6-a1f9-54485b7a4cc2"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{problNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1009" y="523" width="340" height="1028" uuid="897d6583-ac7e-4c9f-a321-d9529a9e277f"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{planes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="908" y="368" width="441" height="30" uuid="d5a1f1bb-1f90-4bad-a9a4-137d58bf2365"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numCedNotas}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="950" y="297" width="398" height="30" uuid="0bb6edb7-9ebc-4120-bf9f-7198bda62ba7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numExpeNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1105" y="1595" width="238" height="30" uuid="f9a1585b-4702-47a1-98ba-85106c75c541"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numPagNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="560" width="171" height="30" uuid="fe3aa8ed-b721-4a5a-a4e6-350fb766c57e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaFechaNotUno}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2evolucion.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="243" y="398" width="756" height="1220" uuid="8165f9de-6ede-4746-9faa-0a3050647341"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{problemDos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1004" y="398" width="340" height="1220" uuid="823d59e3-c491-4dba-b1e8-3c7a5dbee6ee"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{planesDos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="57" y="434" width="171" height="30" uuid="0224e113-9b8d-4217-bf84-472683858dbb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaEvoluDos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="57" y="374" width="171" height="30" uuid="08b047c3-a35f-4168-8a3c-cb1318a8cc70"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaEvoluDos}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1enfermeria.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="287" width="720" height="30" uuid="12e0e412-1999-4b37-9056-a433827dcfcc"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfNomEstbNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="356" width="720" height="30" uuid="26daba76-2690-4d1b-bd6c-e98158d6e525"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfNomApNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1105" y="1595" width="238" height="30" uuid="9e4368f3-4ce1-4a67-b248-f24836614541"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfNumPagNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="950" y="286" width="398" height="30" uuid="3df1398f-712a-4b2d-8c99-d05c0ca88f78"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfNumExpeNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="908" y="358" width="441" height="30" uuid="6035d466-4dfa-4bfc-b53f-10a9ccdcae7a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfNumCedNotas}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1011" y="523" width="340" height="1027" uuid="3eff8c08-629d-45a8-843a-bf05ab734930"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfPlanes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="243" y="523" width="756" height="1030" uuid="e1a20afb-99f1-42ae-a258-d881c33c9226"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfObservNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="500" width="175" height="30" uuid="74de5865-e92f-47b2-8b14-d248c30a357e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfFechHorNot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="560" width="175" height="30" uuid="2a7c9d72-02ca-40cf-b5a3-e45aaac3612b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaFaltanteEnf}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2enfermeria.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="249" y="400" width="756" height="1218" uuid="7c6b1671-2433-4c79-a17a-5abdbe5982a8"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{obserCuidadoEnfDos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1011" y="400" width="340" height="1215" uuid="df92dd08-61c9-4c99-8b2a-435db98fe91c"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{planesdosEnf}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="67" y="381" width="158" height="30" uuid="583de47f-a075-410f-8e23-c060f323a901"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaDosNotasEnf}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="62" y="440" width="163" height="30" uuid="bcb13730-6f42-4109-9d9b-8e6cef93a70f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaEnfNota}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1historia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="123" y="257" width="637" height="30" uuid="f3cecebe-4da9-4602-be91-96a7694e6531"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaClic}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="1107" y="380" width="23" height="20" uuid="c59e8abf-5327-4111-bcce-b1bd36e94c32"/>
+				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("ESTUDIANTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1274" y="384" width="23" height="20" uuid="37eb8b8f-6d27-4b57-a25f-f1b253d5f0b3">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("COLABORADOR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1348" y="384" width="23" height="20" uuid="784b9923-d1de-47b6-9381-2c92c8a5a0f7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{tipoPacienteHisAsString}.equals("CIVIL") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="991" y="1164" width="80" height="41" uuid="4fd3bf90-470f-4d10-89b0-c2b8d830dcbc"/>
+				<imageExpression><![CDATA[$F{cardioAsString}.equals("SICAR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="907" y="1160" width="79" height="41" uuid="ec8c07c3-3f5a-49e9-899b-65a13dadb539"/>
+				<imageExpression><![CDATA[$F{cardioAsString}.equals("NOCAR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="340" y="1160" width="90" height="41" uuid="5fc6d957-7d91-44ea-9ca9-03e45b162b0a"/>
+				<imageExpression><![CDATA[$F{asmaHistAsString}.equals("SIA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="260" y="1160" width="79" height="41" uuid="f77a8c60-1f5c-4f4b-aa9f-6b5613a8b84d"/>
+				<imageExpression><![CDATA[$F{asmaHistAsString}.equals("NOA") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="342" y="1205" width="90" height="41" uuid="2b9aee4d-cb04-4c58-af47-a1b7b5b8c9fc"/>
+				<imageExpression><![CDATA[$F{cancerHisAsString}.equals("SIC") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="260" y="1205" width="79" height="41" uuid="c0f56dca-9b28-4594-99a8-d57848c7c02d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{cancerHisAsString}.equals("NOC") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="340" y="1252" width="89" height="49" uuid="3e87b1d7-7580-48ee-8b77-33fa2ce72a60"/>
+				<imageExpression><![CDATA[$F{diabetesAsString}.equals("SID") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="260" y="1252" width="79" height="49" uuid="6ebea56f-91f8-45e7-9717-a4fe05f46759"/>
+				<imageExpression><![CDATA[$F{diabetesAsString}.equals("NOD") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="342" y="1310" width="87" height="40" uuid="2b5b9733-d0c8-4f43-8cdc-63a5538f51d9"/>
+				<imageExpression><![CDATA[$F{epilepAsString}.equals("SIE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="260" y="1310" width="80" height="40" uuid="9ba3dc57-3d8d-47f3-8533-2d5b0f917362"/>
+				<imageExpression><![CDATA[$F{epilepAsString}.equals("NOE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="217" y="980" width="32" height="27" uuid="3b6748dc-bb8d-474d-8615-1c7ff0f60cf4"/>
+				<imageExpression><![CDATA[$F{hijosHistoAsString}.equals("SIHI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="218" y="914" width="37" height="29" uuid="1e2d01fa-752b-4687-8d92-82fe5f283c3d"/>
+				<imageExpression><![CDATA[$F{hijosHistoAsString}.equals("NOHI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="990" y="1205" width="79" height="41" uuid="8ed4d85b-2cd3-4656-a0ee-5c6f589c8c78"/>
+				<imageExpression><![CDATA[$F{hipertenAsString}.equals("SIHIP") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="904" y="1205" width="79" height="41" uuid="5de61bbf-d2f8-4f57-9e55-cb7b82c0ed0f"/>
+				<imageExpression><![CDATA[$F{hipertenAsString}.equals("NOHIP") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="991" y="1435" width="80" height="63" uuid="f31df3f4-bf31-4893-8ab4-52c7f6339e76"/>
+				<imageExpression><![CDATA[$F{otrosHisAsString}.equals("SIOTR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="904" y="1435" width="79" height="64" uuid="1e80f198-6c7d-4385-bd26-d5e601797e4b"/>
+				<imageExpression><![CDATA[$F{otrosHisAsString}.equals("NOOTR") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="343" y="1360" width="80" height="66" uuid="9c9bc06d-fcd4-4849-a5fc-9cb4b9c1e5d8"/>
+				<imageExpression><![CDATA[$F{transmentaAsString}.equals("SIT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="260" y="1360" width="79" height="67" uuid="59cf1fd7-5907-40e9-bf3c-85d3d7f03632"/>
+				<imageExpression><![CDATA[$F{transmentaAsString}.equals("NOT") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="343" y="1440" width="80" height="59" uuid="72c3f67a-0e95-4dab-a603-9a6f0dabc641"/>
+				<imageExpression><![CDATA[$F{obesidadAsString}.equals("SIOB") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="261" y="1440" width="79" height="59" uuid="2d9e6050-0c56-4d71-bc58-b2866c6a95f6"/>
+				<imageExpression><![CDATA[$F{obesidadAsString}.equals("NOOB") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="140" y="344" width="620" height="30" uuid="ace50422-a0d3-4e01-b410-e05baf4cced8"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="203" y="380" width="201" height="30" uuid="2773c589-0bca-4e45-bc72-f5a3ed0da19d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{carneClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="550" y="380" width="201" height="30" uuid="a463bbe7-dcf1-4c3c-a124-7af7ae2326e7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estadoClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="275" y="420" width="485" height="30" uuid="bd765b7e-dcea-4cfe-b7e5-e6cb1b0d21e6"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nacClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="161" y="457" width="599" height="30" uuid="3786d774-551e-4a42-bd6f-901f79dbb5ba"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direCic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="169" y="506" width="381" height="30" uuid="d126e330-1484-4118-9f02-b6bb3b37957e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ocupaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="113" y="568" width="437" height="30" uuid="70079b29-9ce2-4d13-bce6-4f8bc7f0b305"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{razaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="738" y="508" width="371" height="30" uuid="47d6a1e4-ab92-40a3-8f61-503e349e23e7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{escolaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="700" y="569" width="410" height="30" uuid="d2216ba0-46fd-4285-8a46-94e3b037bc0d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{religiClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="906" y="255" width="456" height="30" uuid="8f4320f9-fa53-4c77-9412-56e36c780d53"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numExpHis}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="865" y="382" width="20" height="20" uuid="c2f7fead-07d4-4228-9f00-7475a666e841"/>
+				<imageExpression><![CDATA[$F{sexoHisAsString}.equals("MASCULINOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="924" y="382" width="20" height="20" uuid="b1a3adfb-ef7b-46b1-a9bf-4e30e3e3782e"/>
+				<imageExpression><![CDATA[$F{sexoHisAsString}.equals("FEMENINOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1004" y="345" width="358" height="30" uuid="3f25e169-bf89-4faf-b6d0-54aacdf19882"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaNaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="999" y="420" width="364" height="30" uuid="0dee18ce-989d-4229-8de9-1c29811738dd"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{residenClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="855" y="458" width="508" height="30" uuid="4a4f9fff-2c7b-4bb3-b3fd-682930d16350"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ciudadClic}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="992" y="1250" width="79" height="51" uuid="7b91cb17-8b95-4db7-9059-a67c01d761c5"/>
+				<imageExpression><![CDATA[$F{sifilisAsString}.equals("SISI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="901" y="1252" width="79" height="49" uuid="3b294146-e5f4-49c5-abe1-3c1f76dffa2d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{sifilisAsString}.equals("NOSI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="991" y="1306" width="80" height="49" uuid="a2b0f0b5-4b09-4985-8c14-eaeeca8f8db1">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{tuberAsString}.equals("SITU") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="901" y="1310" width="90" height="49" uuid="880a07d3-0e76-4ad7-99a2-d67a80de533e">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{tuberAsString}.equals("NOTU") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="991" y="1359" width="80" height="69" uuid="c4f8dc4f-00c0-403d-8634-f7f55de3dabb"/>
+				<imageExpression><![CDATA[$F{nefroAsString}.equals("SINE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="901" y="1364" width="79" height="59" uuid="e206e964-2a63-4d58-88cf-17dc1c466498"/>
+				<imageExpression><![CDATA[$F{nefroAsString}.equals("NONE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="490" y="910" width="872" height="30" uuid="2ee98c3b-9033-4959-aee5-82dfe61a82c0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{indiCausaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="403" y="958" width="187" height="30" uuid="a2601d2f-4b17-4ba9-8ae8-74667ef3a71a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numHijoClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="310" y="1008" width="1053" height="72" uuid="6b8f7719-b57a-4347-8a1c-75649695e4a5"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfermoFalleClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="434" y="1165" width="207" height="36" uuid="5b720746-e5bc-47f6-8bf3-b605fd9e6f06"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{asmaParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="438" y="1210" width="207" height="36" uuid="9556b8aa-30bd-401f-bf74-37a09e246c90"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cancerParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="438" y="1254" width="207" height="52" uuid="e4e724d8-0a70-4b4f-8bca-d885d5468aeb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diabeteParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="433" y="1309" width="207" height="49" uuid="71204aac-5e62-4f8a-be52-d0cdbf332a0a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{epilepParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="432" y="1361" width="207" height="73" uuid="c3002cc0-06dc-4acb-b9d8-16e7e950cefd"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transtorParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="432" y="1435" width="207" height="63" uuid="f82b3e23-0adf-4440-9b8c-40bbcd73afe9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{obesiParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1079" y="1165" width="280" height="36" uuid="bdbe556a-18c8-4ba6-b68d-c6ef5b02f5fe"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cardioParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1080" y="1207" width="274" height="36" uuid="a52b38cc-a516-41e5-ac4c-c6b081fcd6da"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hiperParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1080" y="1255" width="274" height="46" uuid="f850a1d5-bc02-403d-bfbf-6c47da6fdc1f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sifiParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1083" y="1310" width="274" height="46" uuid="011d0563-f295-4cd2-b543-8eb2431a34b3"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tuberParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1080" y="1360" width="274" height="66" uuid="8a233aaf-5c65-453d-a890-383b4d57ea86"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nefroParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1082" y="1435" width="274" height="63" uuid="c8d8620c-ab9f-4cc4-aeb4-e626a425ff28"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otroParen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="360" y="720" width="130" height="36" uuid="49f76605-8263-47ea-b826-d956e95be0f7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{madreEdadHis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="759" width="130" height="36" uuid="9495a64c-b965-4ab5-a3a7-0cee816b8477"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{padreEdad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="363" y="800" width="130" height="36" uuid="2fda7f24-7e0b-462f-9bb8-3d8455846408"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hermanoEdad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="363" y="836" width="130" height="36" uuid="d86088f6-b2a1-4e12-917d-59e5c57d6211"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{esposEdad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="493" y="720" width="130" height="36" uuid="c0f5a33a-1196-4ff1-996e-6c9d11313450"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{madreSana}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="494" y="759" width="130" height="36" uuid="8318cdcd-45dd-447a-be75-07e74a25ea84"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{padreSano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="495" y="800" width="130" height="36" uuid="005fd240-f3fd-40ba-8d25-505b38673d77"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hermaSnado}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="495" y="840" width="130" height="36" uuid="1a71393d-550d-403f-b211-924f81b810a7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{espoSano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="628" y="720" width="158" height="36" uuid="5b96bea6-12f1-4351-a67b-9b3ea07afcbb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{madreEnfer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="628" y="759" width="158" height="36" uuid="bf172cf6-f865-4cff-893e-e3bd92a7f35a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{padreEnfer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="625" y="800" width="161" height="36" uuid="83e9f567-205c-489f-958f-d6882e8a5b7f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hermaSnado}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="625" y="840" width="160" height="36" uuid="3a89f9be-3274-4c2f-a15c-bd010dbfaeac"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{espoEnfe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="796" y="720" width="382" height="36" uuid="a8d9c999-204f-423c-9662-6b316a6d28ca"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{madreCausa}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="796" y="759" width="382" height="36" uuid="7db02fa6-4219-40fa-a404-8c51fb62ea15"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{padreCausa}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="796" y="800" width="382" height="36" uuid="44f19eed-70b2-404d-af72-a3da2cb0a251"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hermaSnado}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="796" y="840" width="382" height="36" uuid="732259d5-f600-437b-9e1e-ec1b3277a754"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{espoSano}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1182" y="720" width="178" height="36" uuid="a17c004a-5147-4d91-92c7-e9bcb6354ff5"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{madreEdadMuer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1182" y="759" width="178" height="36" uuid="fb9cf89a-2cdf-4855-a6e9-75dac8957fa7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{padreEdadMuer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1182" y="800" width="178" height="36" uuid="b4a85cf9-4906-4cc2-a2fb-acc6ba849a29"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hermaEdadMuer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1180" y="840" width="178" height="36" uuid="2a0aa935-c3c1-4ddf-a7cd-68d88ac8569b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{espoEdad}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2historia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="389" y="210" width="560" height="30" uuid="ca942809-4d4f-447d-9add-f9f459c048c8"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{promeClic}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="1062" y="220" width="20" height="20" uuid="934c9bfc-f8c0-446b-9b2e-d2f1dd440bc1"/>
+				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("DIURNOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1197" y="220" width="20" height="20" uuid="a7d73012-7f87-48b4-aa17-ee4d06c076e6"/>
+				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("NOCTURNOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1300" y="220" width="20" height="20" uuid="bd3abefe-2cc7-4fe4-9888-acf2a93425ab"/>
+				<imageExpression><![CDATA[$F{tipoJornadaHisAsString}.equals("MIXTOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="460" y="393" width="20" height="20" uuid="f9d31197-3789-4527-9ce8-518c8d8ba42e"/>
+				<imageExpression><![CDATA[$F{sustanciasToxicasHisAsString}.equals("SUSTOXICASHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="389" y="393" width="20" height="20" uuid="aceb2e05-ae8a-40bc-9422-256c1ab5c1a1"/>
+				<imageExpression><![CDATA[$F{sustanciasToxicasHisAsString}.equals("SUSTOXICASHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="440" y="437" width="20" height="20" uuid="4d826ae2-9223-4fca-b72a-9a1fcb39c1c9"/>
+				<imageExpression><![CDATA[$F{radiacionesHisAsString}.equals("RADHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="367" y="437" width="20" height="20" uuid="65524ec8-33d5-43f1-a5fc-e839e5c88f11"/>
+				<imageExpression><![CDATA[$F{radiacionesHisAsString}.equals("RADHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="226" y="477" width="20" height="20" uuid="d6aafe54-b0d4-4777-8ea3-098544b2943b"/>
+				<imageExpression><![CDATA[$F{ruidoHisAsString}.equals("RUIDOHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="156" y="477" width="20" height="20" uuid="3bdfd8f2-1e81-43f2-9866-e9c890597f0b"/>
+				<imageExpression><![CDATA[$F{ruidoHisAsString}.equals("RUIDOHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="583" y="677" width="20" height="20" uuid="114e792f-e07f-4318-8b72-88c733c57460"/>
+				<imageExpression><![CDATA[$F{medicamentosHisAsString}.equals("MEDICAMENTOSHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="510" y="678" width="20" height="20" uuid="2bcf0f59-a9a5-4f79-95fe-3345db920b65"/>
+				<imageExpression><![CDATA[$F{medicamentosHisAsString}.equals("MEDICAMENTOSHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="936" y="1340" width="20" height="20" uuid="a976f3c9-f0b1-498a-907b-c19fbfdef6ed"/>
+				<imageExpression><![CDATA[$F{reposoHisAsString}.equals("REPOSOHIS_SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="863" y="1340" width="20" height="20" uuid="72d8ad07-95da-4b90-bd85-69ceebb1e242"/>
+				<imageExpression><![CDATA[$F{reposoHisAsString}.equals("REPOSOHIS_NO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="253" y="264" width="40" height="20" uuid="cc7e4bb9-9d72-4c85-b3b8-a1b2df4b8b25"/>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("SENTADOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="399" y="264" width="40" height="20" uuid="55f0984e-0b00-4f1a-9891-5d56b0f89635"/>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("PIEHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="590" y="264" width="34" height="20" uuid="f7185b04-59ac-4f8c-8aa3-9de599f5c860"/>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("CAMINANDOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="710" y="260" width="40" height="20" uuid="e20d224b-3b5a-43fa-bddd-191f76d4e3f1"/>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("MIXTOHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="896" y="264" width="40" height="20" uuid="4f1fbeb9-df93-4ac3-aa90-cf368fc97b60"/>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("OFICINAHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1024" y="264" width="40" height="20" uuid="812c8363-8b1e-4605-a192-94f8b3b1b3c3"/>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("TALLERHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1205" y="262" width="40" height="20" uuid="e7b9df68-5c3b-4e0a-989e-f8c6065d3b6b"/>
+				<imageExpression><![CDATA[$F{posicionLaboralHisAsString}.equals("AIRE_LIBREHIS") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="301" width="1244" height="30" uuid="1c9d32af-9813-4506-a8ff-429d203a26df"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otroClic}.length() > 100 ? $F{otroClic}.substring(0, 100) : $F{otroClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="55" y="340" width="1309" height="30" uuid="e42841d2-9d07-4e86-81e4-4c4bb065c48c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otroClic}.length() > 100 ? $F{otroClic}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="370" y="472" width="579" height="30" uuid="b10871b7-4d3a-4c83-a5ac-860ae233f1dc"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoRuidoClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="547" y="432" width="403" height="30" uuid="b240e683-0481-4c0b-9f39-82c94527fde5"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoContaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="629" y="388" width="379" height="30" uuid="f57c0e45-10f1-4302-804c-365bd798f8b6"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1056" y="432" width="312" height="30" uuid="8d11b0a2-ec8c-40b1-be93-d9a06bb3b109"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tiempoContaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1060" y="472" width="308" height="30" uuid="f1c83d53-1b49-463e-a7b9-007a1f2a99ff"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tiempoRuidoClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1121" y="388" width="246" height="30" uuid="9a4ed02d-e6d5-4c2a-8c1a-3719c34cf3cc"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tiempoSustClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="112" y="753" width="1256" height="30" uuid="3ddd1238-6e67-4f0b-889f-3af332d32282"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cafe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="140" y="786" width="1227" height="30" uuid="d66e5099-d34e-4c2c-8966-df4939f3509b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabaco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="273" y="819" width="1095" height="30" uuid="1e80bee9-1366-4c8c-b797-3380c5b428c0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bebiAlco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="161" y="852" width="1207" height="30" uuid="55ae3d5b-7172-4a9c-9013-221d321d5d85"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deport}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="210" y="886" width="1158" height="30" uuid="97b0e129-1bff-4d6d-b165-f151d179283c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{distracciones}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="919" width="1247" height="30" uuid="73b17c6e-157c-4194-b4d6-0521595c4c0c"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dieta}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="121" y="952" width="1247" height="30" uuid="2749d92a-6450-41f6-8cac-3fa7d350f76d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{otroCostum}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="410" y="1034" width="957" height="30" uuid="9bbfbbff-837f-434d-9bd3-957ce7ac082b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enfermeInf}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="382" y="1086" width="41" height="24" uuid="a1b2c3d4-e5f6-7890-1234-567890abcdef"/>
+				<imageExpression><![CDATA[$F{antAlerMedAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="381" y="1124" width="40" height="21" uuid="b2c3d4e5-f6a7-8901-2345-678901bcdefa"/>
+				<imageExpression><![CDATA[$F{antAlerComAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="381" y="1166" width="38" height="26" uuid="c3d4e5f6-a7b8-9012-3456-789012cdefab">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$F{antMalaAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="380" y="1210" width="39" height="20" uuid="d4e5f6a7-b8c9-0123-4567-890123defabc"/>
+				<imageExpression><![CDATA[$F{antHepaAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="380" y="1250" width="40" height="20" uuid="e5f6a7b8-c9d0-1234-5678-901234efabcd"/>
+				<imageExpression><![CDATA[$F{antHospAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="381" y="1290" width="40" height="20" uuid="f6a7b8c9-d0e1-2345-6789-012345fabcde"/>
+				<imageExpression><![CDATA[$F{antOpeAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="703" y="1088" width="35" height="20" uuid="a7b8c9d0-e1f2-3456-7890-123456abcdef"/>
+				<imageExpression><![CDATA[$F{antAsmAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="701" y="1124" width="37" height="20" uuid="b8c9d0e1-f2a3-4567-8901-234567bcdefa"/>
+				<imageExpression><![CDATA[$F{antParaAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="703" y="1169" width="35" height="20" uuid="c9d0e1f2-a3b4-5678-9012-345678cdefab"/>
+				<imageExpression><![CDATA[$F{antTuberAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="701" y="1210" width="37" height="20" uuid="d0e1f2a3-b4c5-6789-0123-456789defabc"/>
+				<imageExpression><![CDATA[$F{antSifiAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="701" y="1250" width="40" height="20" uuid="e1f2a3b4-c5d6-7890-1234-056789efabcd"/>
+				<imageExpression><![CDATA[$F{antGonoAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="701" y="1290" width="40" height="20" uuid="f2a3b4c5-d6e7-8901-2345-067890fabcde"/>
+				<imageExpression><![CDATA[$F{antAmigAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="958" y="1086" width="41" height="20" uuid="a3b4c5d6-e7f8-9012-3456-078901abcdef"/>
+				<imageExpression><![CDATA[$F{antTransAsString}.equals("SI") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="1481" width="1318" height="30" uuid="85f2d85c-a997-4b52-a337-1df34396dfc9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inmunizacion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="360" y="570" width="60" height="30" uuid="41e557d5-3a45-47e1-95d1-f5e3780f8722"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuartoClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="218" y="569" width="60" height="30" uuid="dffd9e6f-3856-4660-a175-f5247b5ea015"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{viveCasaClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="896" y="571" width="60" height="30" uuid="8904dfde-592b-455f-8b64-90684bba41b7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cantPersClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1119" y="570" width="60" height="30" uuid="d54b3816-383e-426d-8c80-deed3804df79"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ensuCuartoClic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="947" y="1121" width="134" height="30" uuid="b8b2abd4-ac74-4892-b907-d777d0f96e3e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoRh}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="57" y="1381" width="1307" height="30" uuid="529dafb4-962e-4ce9-8186-06a46f5918d5"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reposoAcciden}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="57" y="716" width="1308" height="30" uuid="ef655942-f47c-40b5-a64b-fba4898708d7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acostumbraMedicamento}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/3historia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="52" y="205" width="1318" height="30" uuid="896d6e18-c12f-4e54-877f-6c70dfbcd323"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{motivoConsul}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="286" width="1316" height="534" uuid="41d49f3e-8bb9-46d9-b8f8-17907df34fe6"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{historiaActu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="220" y="874" width="1143" height="30" uuid="2a3f1421-3bfb-4698-8a0b-46a21d5cf372"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cardiovas}.length() > 100 ? $F{cardiovas}.substring(0, 100) : $F{cardiovas}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="913" width="1310" height="30" uuid="3d8be2d5-29bb-43b3-b7f8-7f0e23a0f91b"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cardiovas}.length() > 100 ? $F{cardiovas}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="190" y="1001" width="1172" height="30" uuid="dbd5a0e7-ae25-42b8-8c7d-8d2b7861f6b1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{respirato}.length() > 100 ? $F{respirato}.substring(0, 100) : $F{respirato}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="1041" width="1309" height="30" uuid="9ed28e6a-c3e9-463a-9f0b-51ab8d61ae53"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{respirato}.length() > 100 ? $F{respirato}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="167" y="1126" width="1195" height="30" uuid="2e3156c5-e382-4f65-ae19-17a0e13d4bb3"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{digestiv}.length() > 100 ? $F{digestiv}.substring(0, 100) : $F{digestiv}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="54" y="1165" width="1309" height="30" uuid="dc68ba32-66db-44b9-9d77-7b5de52f0ebc"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{digestiv}.length() > 100 ? $F{digestiv}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="173" y="1254" width="1195" height="30" uuid="fd02f4c5-44a2-4ab1-8d47-bf5db6658373"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{urogeni}.length() > 100 ? $F{urogeni}.substring(0, 100) : $F{urogeni}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="59" y="1293" width="1301" height="30" uuid="7f0e5a3b-a246-4389-b98e-4f63f197558f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{urogeni}.length() > 100 ? $F{urogeni}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="175" y="1383" width="1195" height="30" uuid="f8de2f70-d675-4c80-a452-d92c39b893a7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{endocri}.length() > 100 ? $F{endocri}.substring(0, 100) : $F{endocri}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="58" y="1421" width="1313" height="30" uuid="7c86af6b-bf0f-400d-a596-71cbedd01997"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{endocri}.length() > 100 ? $F{endocri}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="188" y="1509" width="1180" height="30" uuid="dc639ca7-4993-4d21-8564-2109f9676e94"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{neuro}.length() > 100 ? $F{neuro}.substring(0, 100) : $F{neuro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="55" y="1549" width="1311" height="30" uuid="825cdff3-2d4a-40f1-bfcd-b14ae2ae8fcb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{neuro}.length() > 100 ? $F{neuro}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/4historia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="323" y="130" width="1038" height="30" uuid="184a57f4-0c57-4a0d-8ee9-58acfa7e0e2f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{organoSenti}.length() > 100 ? $F{organoSenti}.substring(0, 100) : $F{organoSenti}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="170" width="1309" height="30" uuid="70d25e22-50b0-4b50-b4e7-f7ae575f7abf"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{organoSenti}.length() > 100 ? $F{organoSenti}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="273" y="260" width="1087" height="30" uuid="5d82137e-9c39-4b60-8756-51b08cfda58a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sintoGene}.length() > 100 ? $F{sintoGene}.substring(0, 100) : $F{sintoGene}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="298" width="1312" height="30" uuid="1bd5cb1e-bd1f-4f90-9f16-e31701b117c9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sintoGene}.length() > 100 ? $F{sintoGene}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="203" y="385" width="1158" height="30" uuid="43f2c9a2-1fe4-454f-94ee-26b537748e9f"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gine}.length() > 100 ? $F{gine}.substring(0, 100) : $F{gine}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="426" width="1313" height="30" uuid="f47575ad-2f93-4a0c-9509-1db94cbfeaee"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gine}.length() > 100 ? $F{gine}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="226" y="527" width="1134" height="30" uuid="c0f302fb-106d-45b7-a493-162f46ad1352"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{psicoso}.length() > 100 ? $F{psicoso}.substring(0, 100) : $F{psicoso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="59" y="566" width="1300" height="30" uuid="f61c177b-0b98-40fa-a8b4-eb20d2571b7a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{psicoso}.length() > 100 ? $F{psicoso}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="188" y="690" width="216" height="30" uuid="89c36055-e68f-4502-b086-75a90888df07"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pesoActu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="251" y="738" width="238" height="30" uuid="de1c6a83-f385-4489-b909-4505f267c19e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pulsoUnoDecu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="248" y="790" width="238" height="30" uuid="3751802a-d081-4c5d-ad84-a4ad4dca2daa"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pulsoDosDecu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="152" y="914" width="1211" height="30" uuid="3d1adfa1-cf18-47c5-9c11-af21b0d8f5f7"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cabeza}.length() > 100 ? $F{cabeza}.substring(0, 100) : $F{cabeza}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="941" width="1311" height="30" uuid="ae86f9c5-f1f0-490d-a4f3-b4a8cb3cdaf3"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cabeza}.length() > 100 ? $F{cabeza}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="803" y="737" width="175" height="30" uuid="729c4d3e-058c-4036-a969-61408d7acac4"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{despuUnoEjer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="803" y="790" width="175" height="30" uuid="fe0d4931-9eb4-4afb-8e2e-fe62f7ae11fd"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{despuDosEjer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1156" y="738" width="175" height="30" uuid="61e63aff-de2a-4d7b-b8d6-e883a1fcc945"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tadecu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1146" y="791" width="175" height="30" uuid="a2c1ad0e-65b0-45fa-b023-79122576be80"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sentado}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1144" y="838" width="175" height="30" uuid="d0bf6dc6-efcd-4bba-a844-91a729157c92"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pie}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="120" y="977" width="1244" height="30" uuid="ead5163e-50f8-4b39-a96a-a3d9b5106fa9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ojos}.length() > 100 ? $F{ojos}.substring(0, 100) : $F{ojos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="1000" width="1309" height="30" uuid="6cb58b3f-7261-4a24-8e06-6f3b5c0ea2a8"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ojos}.length() > 100 ? $F{ojos}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="156" y="1035" width="1205" height="30" uuid="b4eecbef-5f4c-4b92-ae65-1deb59e69a47"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fdo}.length() > 100 ? $F{fdo}.substring(0, 100) : $F{fdo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="58" y="1062" width="1305" height="30" uuid="aeec344b-3ae5-4cdd-b8bb-3b41fcf67fd0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fdo}.length() > 100 ? $F{fdo}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="133" y="1095" width="1230" height="30" uuid="fc9a678d-d119-4548-8c26-1b579f75ceaa"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nariz}.length() > 100 ? $F{nariz}.substring(0, 100) : $F{nariz}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="1122" width="1305" height="30" uuid="3d94e82d-2818-47ba-90c7-afa21f2ec8ec"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nariz}.length() > 100 ? $F{nariz}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="1155" width="1180" height="30" uuid="50dbf742-594c-4522-b07e-0c7eadd74b9d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orofaringe}.length() > 100 ? $F{orofaringe}.substring(0, 100) : $F{orofaringe}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="52" y="1181" width="1308" height="30" uuid="878f98ee-32f8-4460-9de8-e8e5cc1e3ee9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orofaringe}.length() > 100 ? $F{orofaringe}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="135" y="1214" width="1227" height="30" uuid="86e40048-3f5d-4ebd-a20e-2156acb37afe"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{oido}.length() > 100 ? $F{oido}.substring(0, 100) : $F{oido}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="54" y="1241" width="1308" height="30" uuid="17a3320e-9376-4624-97fc-6690b32a9953"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{oido}.length() > 100 ? $F{oido}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="188" y="1283" width="1174" height="30" uuid="a8579de1-1cb8-453f-bd30-4da3affcb759"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cuello}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="188" y="1320" width="1175" height="30" uuid="0163e3c1-db38-495c-bf30-6ad0a0e1ef6a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{torax}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="347" y="1361" width="1013" height="30" uuid="46fa7495-189b-4e07-85e1-e77f58205c22"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{campleuro}.length() > 100 ? $F{campleuro}.substring(0, 100) : $F{campleuro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="1396" width="1299" height="30" uuid="7a2fe6b4-b1a6-49e4-a28d-5c769ec94b28"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{campleuro}.length() > 100 ? $F{campleuro}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="226" y="1440" width="1134" height="30" uuid="ff9489bc-f7c3-40bf-9cad-8d3d6982a5b0"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{areaPre}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="321" y="1488" width="1042" height="30" uuid="143b5257-c9b5-4c71-9246-400843ee7b00"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{axiDer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="1530" width="1042" height="30" uuid="abce3d42-7849-41e9-9f4f-49125e1522d8"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{axiIzq}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="326" y="1571" width="1042" height="30" uuid="57745b8f-4668-4d62-83e5-973e6475dd2a"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mamaDer}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="324" y="1613" width="1042" height="30" uuid="d18e0031-2bda-43b2-887c-fe23cd4fc132"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mamaIzq}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1020" y="690" width="238" height="30" uuid="bf3cce81-b3c4-41a0-a4fe-18fb9b0999e9"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estatu}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="653" y="683" width="84" height="30" uuid="4c9b3f3e-3ed0-49ac-bc85-59db862a0956"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pesoUnMes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="804" y="684" width="84" height="30" uuid="573bf159-e378-432f-a43e-8ffe69c3f25e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pesoUnAnio}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/5historia.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="133" width="1042" height="30" uuid="fddf80ad-0fef-4ea5-9fe8-d2c466526468"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{abdomen}.length() > 100 ? $F{abdomen}.substring(0, 100) : $F{abdomen}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="64" y="173" width="1303" height="30" uuid="f8c507d5-9dd4-4d6f-813e-90ec4fe41bcf"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{abdomen}.length() > 100 ? $F{abdomen}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="216" width="1042" height="30" uuid="45468e86-ca4d-4f1f-91b8-1a97dce121fc"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tr}.length() > 100 ? $F{tr}.substring(0, 100) : $F{tr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="58" y="256" width="1309" height="30" uuid="1a2780c7-805c-4379-9333-678814c57eae"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tr}.length() > 100 ? $F{tr}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="324" y="298" width="1042" height="30" uuid="5c7dc9aa-9f68-49c0-9231-c6b66827ae61"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{genita}.length() > 100 ? $F{genita}.substring(0, 100) : $F{genita}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="59" y="334" width="1302" height="30" uuid="1f192b87-56a0-4b9e-8a73-ccff6db907b4"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{genita}.length() > 100 ? $F{genita}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="414" width="1312" height="30" uuid="d242ea52-25a7-487f-936b-2f239ea99031"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dorso}.length() > 100 ? $F{dorso}.substring(0, 100) : $F{dorso}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="52" y="453" width="1312" height="76" uuid="6e38f5ab-b245-43f2-a2fa-9fe2b1d26de0"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dorso}.length() > 100 ? $F{dorso}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="582" width="1312" height="30" uuid="2e9b9660-dc31-4224-a816-014ef1f0dbcb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{miembroSup}.length() > 100 ? $F{miembroSup}.substring(0, 100) : $F{miembroSup}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="621" width="1312" height="78" uuid="354271e7-f5de-42a5-aa26-1ba029c29b82"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{miembroSup}.length() > 100 ? $F{miembroSup}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="138" y="735" width="1222" height="30" uuid="7abe4210-245b-458f-b3e2-6c4391899cc8"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pulsoUltiHis}.length() > 100 ? $F{pulsoUltiHis}.substring(0, 100) : $F{pulsoUltiHis}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="51" y="775" width="1310" height="30" uuid="a9315d68-d31d-4d54-b532-97d1131389e3"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pulsoUltiHis}.length() > 100 ? $F{pulsoUltiHis}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="879" width="1312" height="30" uuid="1ae394fd-a834-4334-916f-f14465bed9ae"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{miembroInf}.length() > 100 ? $F{miembroInf}.substring(0, 100) : $F{miembroInf}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="915" width="1312" height="80" uuid="38954d2d-82a9-445f-8a03-cbf3b2a6f1ae"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{miembroInf}.length() > 100 ? $F{miembroInf}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="48" y="1060" width="1312" height="30" uuid="21950314-2609-4d80-8336-7e5dcbf2ef53"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenNeuro}.length() > 100 ? $F{examenNeuro}.substring(0, 100) : $F{examenNeuro}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="48" y="1090" width="1312" height="130" uuid="59f97ba2-743d-471c-a4ea-8f96b6b8ebe5"/>
+				<textElement>
+					<font size="18"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{examenNeuro}.length() > 100 ? $F{examenNeuro}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/1consentimiento.png"]]></imageExpression>
+			</image>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/2consentimiento.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="290" y="242" width="450" height="30" uuid="9257f389-4a34-43f3-b6be-6b4a4f1fd340"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numCedCons}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="321" y="300" width="994" height="30" uuid="f10936e1-329d-4262-b326-54744e3c3e61"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direCasaCons}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="641" y="192" width="673" height="30" uuid="4468c76a-b023-44d5-8b11-676d4649f09e"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomLegal}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="176" y="435" width="1138" height="30" uuid="8b7ccb72-1bfd-4822-a8e3-9e726b93cceb"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomFamCons}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="290" y="490" width="450" height="30" uuid="b7f39b75-add6-42a2-ade0-1019bebceeb1"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numCedFamCons}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="323" y="542" width="992" height="30" uuid="e7d1b7d5-0bce-4c26-b3bf-75a0dca81d44"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direCasaFamCons}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="987" y="490" width="328" height="30" uuid="52c45596-ea89-4fd9-8474-ea985f59504d"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numCeluFamCons}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/3consentimiento.png"]]></imageExpression>
+			</image>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/usuario.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="306" width="790" height="30" uuid="2f00a65c-79ee-43da-abeb-8363c7fd4299"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{establecimientoSalud}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="381" width="790" height="30" uuid="8898ca88-cc3f-46a8-946a-1c37f29ee684"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreUsuario}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1056" y="229" width="260" height="25" uuid="691c91f0-9ee9-470f-a50d-7c6833346d2c"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{etnia}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="980" y="300" width="330" height="25" uuid="cc2af039-21cb-443b-8c8f-a3feb05b2260"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMM d, yyyy" isBlankWhenNull="true">
+				<reportElement x="980" y="380" width="330" height="25" uuid="3eefa729-143d-40bb-9393-2ea48a010433"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaNacimiento}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1040" y="440" width="110" height="25" uuid="9dae2397-dbf3-4d16-a121-d6e137ab2ceb"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{edad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1130" y="520" width="190" height="25" uuid="4bf4b719-2b1b-458b-a079-6113e14d0b09"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estadoCivil}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="830" y="574" width="490" height="25" uuid="bd1c0fe1-7ab1-4046-8b2e-827f71b11b08"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ocupacion}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="1249" y="447" width="20" height="18" uuid="f79ea2a1-8367-454f-a94c-0b8850d8ba38"/>
+				<imageExpression><![CDATA[$F{sexoAsString}.equals("M") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1300" y="447" width="27" height="18" uuid="849b0edd-98dc-420e-abf6-6d941fbcb2b7"/>
+				<imageExpression><![CDATA[$F{sexoAsString}.equals("F") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="209" y="521" width="77" height="35" uuid="aca3f7ab-46ae-4743-951c-d826e668e887"/>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("COTIZANTE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="353" y="521" width="87" height="39" uuid="cfc7b6ee-b27c-4de2-b911-d4e05b014057"/>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("CONYUGE") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="473" y="520" width="77" height="37" uuid="17644fee-a0b4-4d93-8a66-7d0ec879caff"/>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("HIJO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="560" y="518" width="95" height="45" uuid="e9018ef2-0da8-40bf-b88d-cb6e63815fac"/>
+				<imageExpression><![CDATA[$F{categoriaAsString}.equals("JUBILADO") ? "C:/Users/DELL/git/CLINICA-MEDICA/imagen/check.png" : null]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="210" y="575" width="450" height="25" uuid="914ba682-100c-446d-982e-d9327b91a4e0"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{escolaridad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="60" y="465" width="790" height="25" uuid="76f101d8-b143-4e89-9250-3c9411fa7532"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroCedula}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="483" y="649" width="833" height="30" uuid="454755bd-8d35-498b-8049-b0b456d917f2"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccionResidencia}.length() > 100 ? $F{direccionResidencia}.substring(0, 100) : $F{direccionResidencia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="62" y="693" width="1253" height="130" uuid="c7f95363-d53f-47c2-8558-4ca8a8e2baf3"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font size="16"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccionResidencia}.length() > 100 ? $F{direccionResidencia}.substring(100) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="196" y="840" width="1119" height="25" uuid="a73431ac-b8ad-4181-85e3-b9acab748d5f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{localidad}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="197" y="895" width="443" height="25" uuid="df579de6-60c4-48e7-a012-6081841f1adb"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{municipio}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="860" y="893" width="459" height="24" uuid="f2dca15f-c96d-471b-bd46-9b28cc07377e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{departamento}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="810" y="1020" width="509" height="24" uuid="a439b77f-6923-4e62-b682-3265746ebfab">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1070" y="1180" width="249" height="24" uuid="16afbdc6-5ba9-4a19-96a1-ea8b666f3c50">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroAsegurado}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="210" y="1020" width="443" height="25" uuid="74d1b901-31ae-4ea2-83e8-948303522484"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parentesco}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="1082" width="1139" height="25" uuid="3950e1ef-4328-4896-a9af-07dd88e9e66d"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="196" y="1177" width="663" height="25" uuid="2b74aeaa-965a-4c65-903e-df3acc142ff9"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empleador}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="360" y="1233" width="959" height="25" uuid="442b21fe-6849-4594-9cca-51497768c27f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccionEmpleador}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="605" y="970" width="714" height="24" uuid="fa0a0a9f-e28e-4bc3-863c-92d5d46a7d89">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{responsableEmergencia}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="419" y="1272" width="903" height="29" uuid="fb98ab0f-0ac6-42b4-88b5-c32084e8f85b"/>
+				<box leftPadding="32" rightPadding="0"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actualizacionDirecciones}.length() > 100 ? $F{actualizacionDirecciones}.substring(0, 100) : $F{actualizacionDirecciones}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="66" y="1310" width="1253" height="29" uuid="a5c41fa3-1d92-4e55-9301-5c02faa56b0b"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actualizacionDirecciones}.length() > 100 ? $F{actualizacionDirecciones}.substring(100, Math.min($F{actualizacionDirecciones}.length(), 200)) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="96" y="1364" width="1223" height="29" uuid="c2037fdc-4d07-4ec5-aa69-6deffac0d8c7"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actualizacionDirecciones}.length() > 200 ? $F{actualizacionDirecciones}.substring(200, Math.min($F{actualizacionDirecciones}.length(), 300)) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="66" y="1401" width="798" height="29" uuid="d4aebd42-6b1a-4f4e-9dd0-1df05bcb342e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actualizacionDirecciones}.length() > 300 ? $F{actualizacionDirecciones}.substring(300, Math.min($F{actualizacionDirecciones}.length(), 350)) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="1444" width="1220" height="29" uuid="fe070ac1-7cbf-460f-bf80-2b9d34ea451f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actualizacionDirecciones}.length() > 350 ? $F{actualizacionDirecciones}.substring(350, Math.min($F{actualizacionDirecciones}.length(), 450)) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="72" y="1481" width="899" height="29" uuid="099aab6e-9d7e-44d6-ae0a-3c036b4fa099"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actualizacionDirecciones}.length() > 450 ? $F{actualizacionDirecciones}.substring(450, Math.min($F{actualizacionDirecciones}.length(), 500)) : ""]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="260" y="231" width="368" height="25" uuid="90670fba-a00f-4462-8089-c52cc52f3e1b"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numExpHoja}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1689">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame">
+				<reportElement x="-20" y="0" width="1440" height="1689" uuid="1b8eec88-9d59-4149-ac3b-d8100392435c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement fill="Solid"/>
+				<imageExpression><![CDATA["C:/Users/DELL/git/CLINICA-MEDICA/imagen/reporte.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>
