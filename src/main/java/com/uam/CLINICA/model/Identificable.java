@@ -56,9 +56,13 @@ public class Identificable {
  		System.out.println("IGUALES O NO: " + !usuarioUpd.equals(usuarioIng));
  		if (!usuarioUpd.equals(usuarioIng))
  		{
+ 			if(usuarioUpd.isBlank() || usuarioIng.isBlank()) {
+ 				System.out.println("Campos de auditoría vacíos");
+ 			}
+ 			else {
  			throw new javax.validation.ValidationException(
                     "No puede modificar este elemento porque lo creó otra persona."
-            );
+            );}
  		}
 
  	}

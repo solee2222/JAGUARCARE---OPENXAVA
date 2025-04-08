@@ -6,6 +6,7 @@ import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.validation.constraints.*;
 
 import org.hibernate.annotations.*;
 import org.openxava.annotations.*;
@@ -29,7 +30,7 @@ import lombok.*;
 }
 )
 @Views({
-    @View(members="name, cedula; password;")
+    @View(members="name, cedula; password; email")
 })
 
 public class Recepcionista{
@@ -56,6 +57,11 @@ public class Recepcionista{
     @Password
     @Hidden
     String password;
+    
+    @Column(length=50)
+    @Email
+    @Required(message="Ingrese su correo")
+    String email;
 
     private static final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     

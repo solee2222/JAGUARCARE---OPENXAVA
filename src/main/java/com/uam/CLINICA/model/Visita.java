@@ -15,14 +15,14 @@ import lombok.*;
 @Getter @Setter
 
 @View(members = "Auditoria [usuarioIng,fechaIng;usuarioUpd,fechaUpd];"
-        + "anyo, numero;"
+        + "anyo, numero; recepcionista;"
         + "horaEntrada, horaSalida, date;"
         + "visitante;"
         + "sintomatologia;"
         + "destino;"
         + "diagnostico;"
         + "medicamento;"
-        + "cantidadDispensada;")
+        + "cantidadDispensada; insumo; cantidadDispensadaIns;")
 @Views({
 	
 })
@@ -75,6 +75,13 @@ public class Visita extends Identificable{
 	@ManyToMany(fetch=FetchType.LAZY)
 	@ListProperties("nombreComercial, dosis, presentacion, cantidadDisponible")
 	private List<Medicamento> medicamento;
+	
+	@Column
+	private Integer cantidadDispensadaIns;
+	    
+	@ManyToMany(fetch=FetchType.LAZY)
+	@ListProperties("nombreInsumo, cantidadDisponible")
+	private List<Insumo> insumo;
 	 
 	   
     @PrePersist
@@ -89,6 +96,19 @@ public class Visita extends Identificable{
                     );
                 }
                 med.setCantidadDisponible(nuevaCantidad);
+            }
+            
+        }
+        
+        if (cantidadDispensadaIns != null && insumo != null && !insumo.isEmpty()) {
+            for (Insumo ins : insumo) {
+                int nuevaCantidad = ins.getCantidadDisponible() - cantidadDispensadaIns;
+                if (nuevaCantidad < 0) {
+                    throw new javax.validation.ValidationException(
+                            "La cantidad dispensada no puede ser mayor que la cantidad disponible."
+                    );
+                }
+                ins.setCantidadDisponible(nuevaCantidad);
             }
         }
     }
